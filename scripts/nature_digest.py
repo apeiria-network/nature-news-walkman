@@ -9,17 +9,23 @@ Usage:
 Outputs:
     - Nature_Article{N}_English.mp3   (English TTS audio per article, if --tts)
 
+TTS runtime:
+    - Reuse the skill-local .venv first
+    - Create .venv under the skill root if needed
+    - Install missing runtime dependencies only into that .venv
+
 TTS Engines:
     - gTTS (default): Google TTS, requires internet access to Google servers
     - edge-tts (fallback): Microsoft Edge TTS, works in China without VPN
 """
 
 import argparse
-import asyncio
-import os
+import subprocess
 import sys
 import re
 from pathlib import Path
+
+from local_venv import ensure_local_venv
 
 
 DEFAULT_OUTPUT_DIRS = [
@@ -76,20 +82,25 @@ def clean_text_for_tts(text: str) -> str:
 # TTS Engine: gTTS (primary)
 # ============================================================
 
-def generate_tts_gtts(text: str, output_path: str, lang: str = 'en') -> bool:
+def generate_tts_gtts(text: str, output_path: str, lang: str = 'en', python_path: str | None = None) -> bool:
     """Generate TTS audio using gTTS (Google). Returns True on success."""
-    try:
-        from gtts import gTTS
-        cleaned = clean_text_for_tts(text)
-        tts = gTTS(text=cleaned, lang=lang, slow=False)
-        tts.save(output_path)
+    cleaned = clean_text_for_tts(text)
+    runner = python_path or sys.executable
+    script = (
+        "import sys; "
+        "from gtts import gTTS; "
+        "gTTS(text=sys.argv[1], lang=sys.argv[2], slow=False).save(sys.argv[3])"
+    )
+    completed = subprocess.run(
+        [runner, '-c', script, cleaned, lang, output_path],
+        check=False,
+        capture_output=True,
+        text=True,
+    )
+    if completed.returncode == 0:
         return True
-    except ImportError:
-        print("WARNING: gTTS not installed. Run: pip install gTTS", file=sys.stderr)
-        return False
-    except Exception as e:
-        print(f"WARNING: gTTS generation failed: {e}", file=sys.stderr)
-        return False
+    print(f"WARNING: gTTS generation failed: {completed.stderr.strip() or completed.stdout.strip()}", file=sys.stderr)
+    return False
 
 
 # ============================================================
@@ -106,27 +117,28 @@ EDGE_TTS_VOICES = {
 }
 
 
-def generate_tts_edge(text: str, output_path: str, lang: str = 'en') -> bool:
+def generate_tts_edge(text: str, output_path: str, lang: str = 'en', python_path: str | None = None) -> bool:
     """Generate TTS audio using edge-tts (Microsoft Edge). Returns True on success."""
-    try:
-        import edge_tts
-    except ImportError:
-        print("WARNING: edge-tts not installed. Run: pip install edge-tts", file=sys.stderr)
-        return False
-
-    try:
-        cleaned = clean_text_for_tts(text)
-        voice = EDGE_TTS_VOICES.get(lang, EDGE_TTS_VOICES['en'])
-
-        async def _generate():
-            communicate = edge_tts.Communicate(cleaned, voice)
-            await communicate.save(output_path)
-
-        asyncio.run(_generate())
+    cleaned = clean_text_for_tts(text)
+    voice = EDGE_TTS_VOICES.get(lang, EDGE_TTS_VOICES['en'])
+    runner = python_path or sys.executable
+    script = (
+        "import asyncio, sys, edge_tts; "
+        "async def main():\n"
+        "    communicate = edge_tts.Communicate(sys.argv[1], sys.argv[2])\n"
+        "    await communicate.save(sys.argv[3])\n"
+        "asyncio.run(main())"
+    )
+    completed = subprocess.run(
+        [runner, '-c', script, cleaned, voice, output_path],
+        check=False,
+        capture_output=True,
+        text=True,
+    )
+    if completed.returncode == 0:
         return True
-    except Exception as e:
-        print(f"WARNING: edge-tts generation failed: {e}", file=sys.stderr)
-        return False
+    print(f"WARNING: edge-tts generation failed: {completed.stderr.strip() or completed.stdout.strip()}", file=sys.stderr)
+    return False
 
 
 # ============================================================
@@ -149,30 +161,26 @@ def generate_tts_audio(text: str, output_path: str, lang: str = 'en',
     Returns:
         (success: bool, engine_used: str)
     """
+    skill_root = Path(__file__).resolve().parents[1]
+    env_info = ensure_local_venv(skill_root, skill_root / 'requirements.txt')
+    python_path = env_info['python_path']
+
     if engine == 'edge-tts':
-        success = generate_tts_edge(text, output_path, lang)
+        success = generate_tts_edge(text, output_path, lang, python_path=python_path)
         return (success, 'edge-tts' if success else '')
 
     if engine == 'gtts':
-        success = generate_tts_gtts(text, output_path, lang)
+        success = generate_tts_gtts(text, output_path, lang, python_path=python_path)
         return (success, 'gTTS' if success else '')
 
-    # Auto mode: try gTTS first, fallback to edge-tts
     print("Trying gTTS (primary engine)...")
-    success = generate_tts_gtts(text, output_path, lang)
+    success = generate_tts_gtts(text, output_path, lang, python_path=python_path)
     if success:
         print(f"OK gTTS succeeded: {output_path}")
         return (True, 'gTTS')
 
     print("gTTS failed, falling back to edge-tts...")
-    # Try installing edge-tts if not present
-    try:
-        import edge_tts
-    except ImportError:
-        print("Installing edge-tts as fallback...")
-        os.system('pip3 install edge-tts --break-system-packages -q')
-
-    success = generate_tts_edge(text, output_path, lang)
+    success = generate_tts_edge(text, output_path, lang, python_path=python_path)
     if success:
         print(f"OK edge-tts succeeded: {output_path}")
         return (True, 'edge-tts')

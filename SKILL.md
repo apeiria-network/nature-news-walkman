@@ -93,7 +93,15 @@ For **each** article (can run in parallel):
    - Remove image references
    - Collapse excessive whitespace
 
-2. Generate audio with **auto-fallback** (gTTS → edge-tts):
+2. Before generating audio, prepare the Python runtime in the skill root:
+   - Always prefer an existing `.venv` under the skill root
+   - A reusable `.venv` must use Python **3.10–3.14**
+   - If that `.venv` is missing required dependencies, install the missing dependencies into **that same `.venv`**
+   - If no suitable local `.venv` exists, create `.venv` under the skill root with Python **3.10–3.14**
+   - Install all runtime dependencies for this skill only into the skill-local `.venv`
+   - Do **not** install dependencies into system Python, user site-packages, or any environment outside the skill root
+
+3. Generate audio with **auto-fallback** (gTTS → edge-tts):
 
    **Primary: gTTS** (requires Google access):
    ```python
@@ -111,17 +119,17 @@ For **each** article (can run in parallel):
    asyncio.run(_gen(cleaned_english_text, f'D:/nature-news-digest-sounds/Nature_Article{N}_English.mp3'))
    ```
 
-   Or use the unified helper (auto-fallback built in):
+   Or use the unified helper (auto-fallback built in, local `.venv` enforced):
    ```python
    from scripts.nature_digest import generate_tts_audio
    success, engine = generate_tts_audio(text, output_path, lang='en', engine='auto')
    ```
 
-   **Fallback logic**: Try gTTS first. If gTTS fails (e.g., Google blocked in China), automatically install and use edge-tts instead. Log which engine was used.
+   **Fallback logic**: Try gTTS first. If gTTS fails (e.g., Google blocked in China), automatically switch to edge-tts. Log which engine was used.
 
-3. Save each file as: `Nature_Article{N}_English.mp3` in `D:/nature-news-digest-sounds` by default; if `D:` is unavailable or not writable, fall back to `C:/nature-news-digest-sounds`
-4. When presenting results, send newly generated audio as actual `.mp3` files. Do **not** send audio content as text, transcript, or a language-only description.
-5. If file delivery fails, explicitly tell the user the current saved file path so they can retrieve the audio manually.
+4. Save each file as: `Nature_Article{N}_English.mp3` in `D:/nature-news-digest-sounds` by default; if `D:` is unavailable or not writable, fall back to `C:/nature-news-digest-sounds`
+5. When presenting results, send newly generated audio as actual `.mp3` files. Do **not** send audio content as text, transcript, or a language-only description.
+6. If file delivery fails, explicitly tell the user the current saved file path so they can retrieve the audio manually.
 
 ### Step 5: Present Results
 
@@ -135,8 +143,10 @@ For **each** article (can run in parallel):
 ## Error Handling
 
 - **WebFetch fails**: Retry once. If still failing, skip the article and inform the user.
-- **gTTS fails (Google blocked)**: Automatically fall back to edge-tts. Install with `pip3 install edge-tts --break-system-packages` if needed.
-- **edge-tts also fails**: Inform the user that both TTS engines failed and suggest manual installation or checking network.
+- **Local `.venv` missing or incomplete**: Reuse the existing skill-local `.venv` when valid; otherwise create `.venv` under the skill root with Python 3.10–3.14 and install any missing required dependencies only into that `.venv`.
+- **Local `.venv` version invalid**: If the existing skill-local `.venv` is not Python 3.10–3.14, do not use any external environment; report the issue and recreate the local `.venv` under the skill root.
+- **gTTS fails (Google blocked)**: Automatically fall back to edge-tts within the prepared skill-local `.venv`.
+- **edge-tts also fails**: Inform the user that both TTS engines failed and suggest checking network or the skill-local `.venv` dependencies.
 - **Audio file delivery fails**: Inform the user that file delivery failed and provide the current saved path for each generated audio file.
 - **Paywalled content**: Extract all freely visible text. Add a note at the end of the article.
 - **Empty article**: If an article has no extractable body text, skip it and fetch the next most prominent article.

@@ -41,6 +41,14 @@
 
 ## TTS Guidelines
 
+### Local Python Environment
+- Always prefer the existing `.venv` under the skill root before generating audio
+- A reusable local `.venv` must use Python **3.10–3.14**
+- If the local `.venv` is missing required dependencies, install the missing dependencies into **that same `.venv`**
+- If no suitable local `.venv` exists, create `.venv` under the skill root with Python **3.10–3.14**
+- Install all runtime dependencies only into the skill-local `.venv`
+- Do **not** install dependencies into system Python, global site-packages, user site-packages, or any environment outside the skill root
+
 ### Text Preparation for TTS
 1. Remove markdown formatting (*, **, #, etc.)
 2. Remove credit lines ("Credit: ...")
@@ -89,7 +97,7 @@ async def generate(text, output_path, voice='en-US-AvaNeural'):
 asyncio.run(generate(cleaned_text, 'output.mp3'))
 ```
 
-- Install: `pip3 install edge-tts --break-system-packages`
+- Install inside the skill-local `.venv` only
 - List available voices: `edge-tts --list-voices`
 - Typical output: ~2-3 MB for a 3-4 minute article
 - Advantage: No Google dependency, works in mainland China
@@ -106,6 +114,10 @@ success, engine = generate_tts_audio(text, 'output.mp3', lang='en', engine='auto
 success, engine = generate_tts_audio(text, 'output.mp3', lang='en', engine='edge-tts')
 success, engine = generate_tts_audio(text, 'output.mp3', lang='en', engine='gtts')
 ```
+
+- `generate_tts_audio(...)` will first prepare the skill-local `.venv`
+- It reuses `.venv` when the Python version is 3.10–3.14 and installs any missing required dependencies into that same environment
+- It does not use or modify Python environments outside the skill root
 
 ## Nature News Page Structure
 
