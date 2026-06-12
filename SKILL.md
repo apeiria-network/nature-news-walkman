@@ -42,7 +42,7 @@ Use:
 
 ### `brief`
 - Present the shared top-10 shortlist as summaries
-- Keep each summary around **120-180 words**
+- Keep each summary around **75-100 words**
 - Do not output the full English text unless the user explicitly asks
 
 ### `text`

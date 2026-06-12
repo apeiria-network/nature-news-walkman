@@ -38,7 +38,7 @@ For the shared top-10 shortlist:
 - Output `News {N}: {English Title}`
 - Include `Publication Date: {Date in English}` when available
 - Include `Source: {URL}`
-- Output one English summary of about **120-180 words** for each shortlisted item
+- Output one English summary of about **75-100 words** for each shortlisted item
 - If the user asks for Chinese support, add Chinese notes or key points as an extra section
 - Do not output the full English text unless the user explicitly asks
 
@@ -57,7 +57,7 @@ Publication Date: {Date in English}
 Source: {URL}
 
 Summary
-{120-180 word English summary}
+{75-100 word English summary}
 
 [Optional Chinese Notes]
 {Chinese key points only if the user asked for them}

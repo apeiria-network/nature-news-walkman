@@ -37,7 +37,7 @@ That shared guide covers:
 
 1. Retrieve or reuse the shared top-10 summary shortlist
 2. Present the top-10 summary text to the user in ranking order
-3. Ask the user to choose one or more article numbers
+3. Ask the user to choose one or more article numbers, and wait until user provides an answer
 4. Fetch or reuse the **full original English text** only for the selected article(s)
 5. Output the selected full English text
 6. Generate English full-text audio only for the selected article(s)
@@ -52,7 +52,7 @@ Publication Date: {Date in English}
 Source: {URL}
 
 Summary
-{120-180 word English summary}
+{75-100 word English summary}
 
 [Optional Chinese Notes]
 {Chinese key points / Chinese explanation only if the user asked for them}
