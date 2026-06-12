@@ -32,14 +32,14 @@ This reference is only for English TTS generation used by `/nature-news-sound`.
 
 ```python
 from gtts import gTTS
-tts = gTTS(text=article_text, lang='en', slow=False)
+tts = gTTS(text=news_text, lang='en', slow=False)
 tts.save('output.mp3')
 ```
 
 - `lang='en'` for English
 - `lang='zh-CN'` for Mandarin Chinese
 - `slow=False` for natural reading speed
-- Typical output: ~1.7 MB for a 3-4 minute article
+- Typical output: ~1.7 MB for a 3-4 minute new
 
 ### edge-tts Usage (Fallback)
 
@@ -62,7 +62,7 @@ asyncio.run(generate(cleaned_text, 'output.mp3'))
 
 - Install inside the skill-local `.venv` only
 - List available voices: `edge-tts --list-voices`
-- Typical output: ~2-3 MB for a 3-4 minute article
+- Typical output: ~2-3 MB for a 3-4 minute new
 - Advantage: No Google dependency, works in mainland China
 
 ### Using the Unified Interface
