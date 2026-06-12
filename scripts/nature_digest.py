@@ -20,6 +20,7 @@ TTS Engines:
 """
 
 import argparse
+import json
 import subprocess
 import sys
 import re
@@ -51,6 +52,17 @@ def resolve_default_output_dir() -> str:
     fallback = DEFAULT_OUTPUT_DIRS[-1]
     fallback.mkdir(parents=True, exist_ok=True)
     return str(fallback)
+
+
+def latest_batch_cache(data: dict | None = None, output_dir: str | None = None) -> dict | str | None:
+    """Read or write the latest Nature news batch cache JSON."""
+    cache_path = Path(output_dir or resolve_default_output_dir()) / 'Nature_LatestBatch_Cache.json'
+    if data is None:
+        if not cache_path.exists():
+            return None
+        return json.loads(cache_path.read_text(encoding='utf-8'))
+    cache_path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding='utf-8')
+    return str(cache_path)
 
 
 def clean_text_for_tts(text: str) -> str:

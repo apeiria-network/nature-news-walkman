@@ -1,43 +1,6 @@
-# Nature News Bilingual Translation Reference
+# Nature News TTS Reference
 
-## Translation Style Guide
-
-### General Principles
-- Translate sentence by sentence, preserving paragraph structure
-- One English line followed by one Chinese translation line
-- Keep technical terms accurate; add Chinese equivalent in parentheses on first occurrence
-- Preserve proper nouns (names, institutions) in original English
-
-### Common Scientific Terms (Examples)
-
-| English | Chinese |
-|---------|---------|
-| cellular reprogramming | 细胞重编程 |
-| partial reprogramming | 部分重编程 |
-| glaucoma | 青光眼 |
-| optic nerve | 视神经 |
-| neuron regeneration | 神经元再生 |
-| gene therapy | 基因疗法 |
-| base editing | 碱基编辑 |
-| CRISPR-Cas9 | CRISPR-Cas9 |
-| nucleation | 成核 |
-| homogeneous nucleation | 均匀成核 |
-| heterogeneous nucleation | 非均匀成核 |
-| classical nucleation theory (CNT) | 经典成核理论 |
-| mosaicism | 镶嵌性 |
-| in vitro fertilization (IVF) | 体外受精 |
-| preprint | 预印本 |
-| peer review | 同行评审 |
-| stem cell | 干细胞 |
-| sickle-cell disease | 镰状细胞病 |
-| haemoglobin | 血红蛋白 |
-
-### Formatting Rules
-- **Article headers**: `## Article N: [English Title]`
-- **Bilingual metadata**: One EN line, one CN line (e.g., Title / 标题, Author / 作者)
-- **Sub-headings**: `#### English Heading / 中文标题`
-- **Quotes**: Translate the quote and attribute in Chinese
-- **Credits/DOI**: Keep in original English
+This reference is only for English TTS generation used by `/nature-news-sound`.
 
 ## TTS Guidelines
 
@@ -119,16 +82,3 @@ success, engine = generate_tts_audio(text, 'output.mp3', lang='en', engine='gtts
 - It reuses `.venv` when the Python version is 3.10–3.14 and installs any missing required dependencies into that same environment
 - It does not use or modify Python environments outside the skill root
 
-## Nature News Page Structure
-
-### URL Patterns
-- News index: `https://www.nature.com/news`
-- Individual article: `https://www.nature.com/articles/d41586-XXXX-XXXXX-X`
-- Volume/Issue: `https://www.nature.com/nature/volumes/{vol}/issues/{issue}`
-
-### Article Extraction
-- **Title**: Usually in `<h1>` or prominent heading
-- **Author**: Listed after title, sometimes with affiliations
-- **Date**: Format "DD Month YYYY"
-- **Body**: Sequential paragraphs; may be partially paywalled
-- Extract all freely visible content; note paywall limitations
