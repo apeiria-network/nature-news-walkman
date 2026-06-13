@@ -1,19 +1,19 @@
 # Shared Retrieval Guide
 
-This document contains the shared retrieval logic for `/nature-news-brief`, `/nature-news-text`, and `/nature-news-sound`.
+This document contains the shared retrieval logic for the three sibling Nature news skills: `/nature-news-brief`, `/nature-news-text`, and `/nature-news-sound`.
 
 ## Scope
 
-Apply this guide across all 3 command modes:
+Apply this guide across all 3 sibling skills:
 - `/nature-news-brief`
 - `/nature-news-text`
 - `/nature-news-sound`
 
-The command-specific output behavior should be defined in each command's own guide. This file covers the shared Nature news retrieval, shortlist generation, cache management, and reuse logic.
+The skill-specific output behavior should be defined in each skill's own `SKILL.md`. This file covers the shared Nature news retrieval, shortlist generation, cache management, and reuse logic.
 
 ## Shared Retrieval Logic
 
-Across all 3 command modes:
+Across all 3 sibling skills:
 
 1. Use **WebSearch** and/or **WebFetch** to identify the latest Nature news from `https://www.nature.com/news`
 2. Build a shortlist of the **top 10 news items** based primarily on **news-page heat, prominence, or apparent readership / browse visibility signals**
@@ -90,7 +90,7 @@ When presenting results for any command mode:
 - Note any paywall limitations
 - Note any fetch failures
 
-The detailed text formatting and delivery behavior should be handled by each command-specific guide.
+The detailed text formatting and delivery behavior should be handled by each skill's `SKILL.md`.
 
 ## Shared Error Handling
 

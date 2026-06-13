@@ -1,6 +1,19 @@
-# Text Command Guide
+---
+name: nature-news-text
+description: Provide a full-text Nature news reading skill. Fetch or reuse the latest top Nature news shortlist, present summary previews first, then deliver the full original English text only for the article numbers the user selects. Use when the user wants full article text, English reading practice, or `/nature-news-text`.
+agent_created: true
+---
 
-This document contains the detailed instructions for the `/nature-news-text` command.
+# Nature News Text
+
+Provide a full-text Nature news reading experience built around a reusable top-10 shortlist.
+
+## When to Use
+
+- User wants the full original English text of recent Nature news
+- User wants English reading practice with complete articles instead of summaries only
+- User wants to preview a shortlist before choosing which article to read
+- User uses `/nature-news-text`
 
 ## Command
 
@@ -20,16 +33,9 @@ Examples:
 
 The command name controls the output mode. The trailing text controls customization.
 
-## When to Use
-- User asks for "Nature最新新闻" / "Nature news"
-- User wants English summaries of Nature news
-- User wants full English text of Nature news
-- User wants English listening practice with Nature news audio
-- User uses `/nature-news-text`
-
 ## Shared Retrieval Reference
 
-Use the shared retrieval logic in [search_guide.md](search_guide.md).
+Use the shared retrieval logic in [search_guide.md](../references/search_guide.md).
 
 That shared guide covers:
 - Latest Nature news discovery

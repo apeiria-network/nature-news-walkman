@@ -1,16 +1,16 @@
 # Nature News TTS Reference
 
-This reference is only for English TTS generation used by `/nature-news-sound`.
+This reference is for English TTS generation used by the `nature-news-sound` sibling skill.
 
 ## TTS Guidelines
 
 ### Local Python Environment
-- Always prefer the existing `.venv` under the skill root before generating audio
+- Always prefer the existing `.venv` under the repository runtime root before generating audio
 - A reusable local `.venv` must use Python **3.10–3.14**
 - If the local `.venv` is missing required dependencies, install the missing dependencies into **that same `.venv`**
-- If no suitable local `.venv` exists, create `.venv` under the skill root with Python **3.10–3.14**
-- Install all runtime dependencies only into the skill-local `.venv`
-- Do **not** install dependencies into system Python, global site-packages, user site-packages, or any environment outside the skill root
+- If no suitable local `.venv` exists, create `.venv` under the repository runtime root with Python **3.10–3.14**
+- Install all runtime dependencies only into the local `.venv`
+- Do **not** install dependencies into system Python, global site-packages, user site-packages, or any environment outside the repository runtime root
 
 ### Text Preparation for TTS
 1. Remove markdown formatting (*, **, #, etc.)
@@ -60,7 +60,7 @@ async def generate(text, output_path, voice='en-US-AvaNeural'):
 asyncio.run(generate(cleaned_text, 'output.mp3'))
 ```
 
-- Install inside the skill-local `.venv` only
+- Install inside the local `.venv` only
 - List available voices: `edge-tts --list-voices`
 - Typical output: ~2-3 MB for a 3-4 minute new
 - Advantage: No Google dependency, works in mainland China
@@ -78,7 +78,7 @@ success, engine = generate_tts_audio(text, 'output.mp3', lang='en', engine='edge
 success, engine = generate_tts_audio(text, 'output.mp3', lang='en', engine='gtts')
 ```
 
-- `generate_tts_audio(...)` will first prepare the skill-local `.venv`
+- `generate_tts_audio(...)` will first prepare the local `.venv`
 - It reuses `.venv` when the Python version is 3.10–3.14 and installs any missing required dependencies into that same environment
-- It does not use or modify Python environments outside the skill root
+- It does not use or modify Python environments outside the repository runtime root
 
