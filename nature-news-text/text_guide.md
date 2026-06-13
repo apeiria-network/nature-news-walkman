@@ -20,6 +20,13 @@ Examples:
 
 The command name controls the output mode. The trailing text controls customization.
 
+## When to Use
+- User asks for "Nature最新新闻" / "Nature news"
+- User wants English summaries of Nature news
+- User wants full English text of Nature news
+- User wants English listening practice with Nature news audio
+- User uses `/nature-news-text`
+
 ## Shared Retrieval Reference
 
 Use the shared retrieval logic in [search_guide.md](search_guide.md).
