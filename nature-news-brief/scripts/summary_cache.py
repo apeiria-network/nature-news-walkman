@@ -1,10 +1,26 @@
 #!/usr/bin/env python3
-"""Summary cache helpers for Nature news shortlist batches."""
+"""Cache helpers for Nature news shortlist batches."""
 
 import json
 from pathlib import Path
 
-from nature_digest import resolve_default_output_dir
+
+DEFAULT_OUTPUT_SUBDIR = Path('.claude/nature-news-walkman')
+
+
+def resolve_default_output_dir() -> str:
+    """Return the default writable project storage directory, creating it if needed."""
+    project_root = Path(__file__).resolve().parents[2]
+    candidate = project_root / DEFAULT_OUTPUT_SUBDIR
+    try:
+        candidate.mkdir(parents=True, exist_ok=True)
+        test_file = candidate / '.write_test.tmp'
+        test_file.write_text('ok', encoding='utf-8')
+        test_file.unlink()
+        return str(candidate)
+    except OSError:
+        candidate.mkdir(parents=True, exist_ok=True)
+        return str(candidate)
 
 
 CACHE_FILENAME = 'Nature_LatestBatch_Cache.json'
@@ -77,6 +93,7 @@ def save_summary_cache(batch: dict, output_dir: str | None = None) -> str | None
     normalized.setdefault('user_requirements', '')
     normalized['article_count'] = len(normalized_articles)
     cache_path = get_summary_cache_path(output_dir)
+    print(f"Using storage [project-claude-dir]: {cache_path}")
     try:
         cache_path.write_text(json.dumps(normalized, ensure_ascii=False, indent=2), encoding='utf-8')
     except OSError:
