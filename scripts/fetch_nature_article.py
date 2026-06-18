@@ -503,8 +503,9 @@ def main() -> int:
     output_path = Path(args.output)
     output_path.parent.mkdir(parents=True, exist_ok=True)
     indent = 2 if args.pretty else None
-    output_path.write_text(json.dumps(articles, ensure_ascii=False, indent=indent), encoding='utf-8')
-    print(json.dumps(articles, ensure_ascii=False, indent=indent))
+    serialized = json.dumps(articles, ensure_ascii=False, indent=indent)
+    output_path.write_text(serialized, encoding='utf-8')
+    sys.stdout.buffer.write((serialized + '\n').encode('utf-8'))
     print(f'Saved {len(articles)} article(s) to: {output_path}', file=sys.stderr)
     return 0
 

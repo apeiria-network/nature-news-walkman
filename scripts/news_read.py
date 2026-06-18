@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import sys
 from datetime import datetime
 from pathlib import Path
 
@@ -90,7 +91,7 @@ def main() -> int:
     except ValueError as exc:
         raise SystemExit(str(exc)) from exc
 
-    print(format_articles(selected_articles))
+    sys.stdout.buffer.write((format_articles(selected_articles) + '\n').encode('utf-8'))
     return 0
 
 

@@ -18,6 +18,8 @@
         <items>
             <rdf:Seq>
                 
+                    <rdf:li rdf:resource="https://www.nature.com/articles/d41586-026-01910-0"/>
+                
                     <rdf:li rdf:resource="https://www.nature.com/articles/s41586-026-10764-5"/>
                 
                     <rdf:li rdf:resource="https://www.nature.com/articles/d41586-026-01868-z"/>
@@ -166,8 +168,6 @@
                 
                     <rdf:li rdf:resource="https://www.nature.com/articles/d41586-026-01866-1"/>
                 
-                    <rdf:li rdf:resource="https://www.nature.com/articles/d41586-026-01857-2"/>
-                
             </rdf:Seq>
         </items>
     </channel>
@@ -176,6 +176,21 @@
         <url>https://www.nature.com/uploads/product/nature/rss.png</url>
         <link>http://feeds.nature.com/nature/rss/current</link>
     </image>
+    
+        <item rdf:about="https://www.nature.com/articles/d41586-026-01910-0">
+            <title><![CDATA[Cell transplant across the tree of life hints at how animals emerged]]></title>
+            <link>https://www.nature.com/articles/d41586-026-01910-0</link>
+            <content:encoded>
+                <![CDATA[<p>Nature, Published online: 18 June 2026; <a href="https://www.nature.com/articles/d41586-026-01910-0">doi:10.1038/d41586-026-01910-0</a></p>Embryonic ‘organizer cells’ can tell embryos of various phyla what kind of body to build.]]></content:encoded>
+            <dc:title><![CDATA[Cell transplant across the tree of life hints at how animals emerged]]></dc:title>
+            <dc:creator>Ewen Callaway</dc:creator>
+            <dc:identifier>doi:10.1038/d41586-026-01910-0</dc:identifier>
+            <dc:source>Nature, Published online: 2026-06-18; | doi:10.1038/d41586-026-01910-0</dc:source>
+            <dc:date>2026-06-18</dc:date>
+            <prism:publicationName>Nature</prism:publicationName>
+            <prism:doi>10.1038/d41586-026-01910-0</prism:doi>
+            <prism:url>https://www.nature.com/articles/d41586-026-01910-0</prism:url>
+        </item>
     
         <item rdf:about="https://www.nature.com/articles/s41586-026-10764-5">
             <title><![CDATA[Towards Conversational AI for Disease Management]]></title>
@@ -1285,21 +1300,6 @@
             <prism:publicationName>Nature</prism:publicationName>
             <prism:doi>10.1038/d41586-026-01866-1</prism:doi>
             <prism:url>https://www.nature.com/articles/d41586-026-01866-1</prism:url>
-        </item>
-    
-        <item rdf:about="https://www.nature.com/articles/d41586-026-01857-2">
-            <title><![CDATA[Revealed: how Venus flytraps snap shut with astonishing speed]]></title>
-            <link>https://www.nature.com/articles/d41586-026-01857-2</link>
-            <content:encoded>
-                <![CDATA[<p>Nature, Published online: 11 June 2026; <a href="https://www.nature.com/articles/d41586-026-01857-2">doi:10.1038/d41586-026-01857-2</a></p>Softening of the cells on the outermost surface of the trap lets the plant move at a breakneck pace.]]></content:encoded>
-            <dc:title><![CDATA[Revealed: how Venus flytraps snap shut with astonishing speed]]></dc:title>
-            <dc:creator>Lauren Wolf</dc:creator>
-            <dc:identifier>doi:10.1038/d41586-026-01857-2</dc:identifier>
-            <dc:source>Nature, Published online: 2026-06-11; | doi:10.1038/d41586-026-01857-2</dc:source>
-            <dc:date>2026-06-11</dc:date>
-            <prism:publicationName>Nature</prism:publicationName>
-            <prism:doi>10.1038/d41586-026-01857-2</prism:doi>
-            <prism:url>https://www.nature.com/articles/d41586-026-01857-2</prism:url>
         </item>
     
 </rdf:RDF>
