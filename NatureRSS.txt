@@ -1,0 +1,1305 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/" xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns="http://purl.org/rss/1.0/" xmlns:admin="http://webns.net/mvcb/">
+    <channel rdf:about="http://feeds.nature.com/nature/rss/current">
+        <title>Nature</title>
+        <description>Nature is the foremost international weekly scientific journal in the world and is the flagship journal for Nature Portfolio. It publishes the finest peer-reviewed research in all fields of science and technology on the basis of its originality, importance, interdisciplinary interest, timeliness, accessibility, elegance and surprising conclusions. Nature publishes landmark papers, award winning news, leading comment and expert opinion on important, topical scientific news and events that enable readers to share the latest discoveries in science and evolve the discussion amongst the global scientific community.</description>
+        <link>http://feeds.nature.com/nature/rss/current</link>
+        <admin:generatorAgent rdf:resource="https://www.nature.com/"/>
+        <admin:errorReportsTo rdf:resource="mailto:feedback@nature.com"/>
+        <dc:publisher>Nature Publishing Group</dc:publisher>
+        <dc:language>en</dc:language>
+        <dc:rights>© 2026 Macmillan Publishers Limited, part of Springer Nature. All rights reserved.</dc:rights>
+        <prism:publicationName>Nature</prism:publicationName>
+        
+        
+        <prism:copyright>© 2026 Macmillan Publishers Limited, part of Springer Nature. All rights reserved.</prism:copyright>
+        <prism:rightsAgent>permissions@nature.com</prism:rightsAgent>
+        <image rdf:resource="https://www.nature.com/uploads/product/nature/rss.png"/>
+        <items>
+            <rdf:Seq>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41586-026-10764-5"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/d41586-026-01868-z"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/d41586-026-01870-5"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/d41586-026-01941-7"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41586-026-10614-4"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41586-026-10586-5"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41586-026-10638-w"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41586-026-10673-7"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41586-026-10617-1"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41586-026-10657-7"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41586-026-10676-4"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41586-025-09553-3"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41586-025-09473-2"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41586-026-10650-0"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41586-026-10664-8"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41586-026-10679-1"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41586-026-10643-z"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41586-026-10648-8"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41586-026-10667-5"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41586-026-10653-x"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41586-026-10660-y"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41586-026-10540-5"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41586-026-10691-5"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41586-026-10675-5"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41586-026-10682-6"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41586-026-10635-z"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41586-026-10654-w"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41586-026-10666-6"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/d41586-026-01756-6"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/d41586-026-01923-9"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/d41586-026-01938-2"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/d41586-026-01719-x"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/d41586-026-01702-6"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/d41586-026-01891-0"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/d41586-026-01705-3"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/d41586-026-01882-1"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/d41586-026-01903-z"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/d41586-026-01922-w"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/d41586-026-01703-5"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/d41586-026-01739-7"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/d41586-026-01883-0"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41586-026-10770-7"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/d41586-026-01916-8"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/d41586-026-01914-w"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/d41586-026-01811-2"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/d41586-026-01915-9"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/d41586-026-01881-2"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/d41586-026-01877-y"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/d41586-026-01884-z"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/d41586-026-01939-1"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41586-026-10768-1"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/d41586-026-01833-w"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/d41586-026-01867-0"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/d41586-026-01929-3"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/d41586-026-01917-7"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/d41586-026-01889-8"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/d41586-026-01863-4"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/d41586-026-01887-w"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/d41586-026-01885-y"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/d41586-026-01834-9"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/d41586-026-01911-z"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/d41586-026-01912-y"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/d41586-026-01876-z"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/d41586-026-01902-0"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/d41586-026-01888-9"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/d41586-026-01858-1"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/d41586-026-01920-y"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41586-026-10784-1"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/d41586-026-01886-x"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/d41586-026-01129-z"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/d41586-026-01707-1"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/d41586-026-01865-2"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/d41586-026-01905-x"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/d41586-026-01866-1"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/d41586-026-01857-2"/>
+                
+            </rdf:Seq>
+        </items>
+    </channel>
+    <image rdf:about="https://www.nature.com/uploads/product/nature/rss.png">
+        <title>Nature</title>
+        <url>https://www.nature.com/uploads/product/nature/rss.png</url>
+        <link>http://feeds.nature.com/nature/rss/current</link>
+    </image>
+    
+        <item rdf:about="https://www.nature.com/articles/s41586-026-10764-5">
+            <title><![CDATA[Towards Conversational AI for Disease Management]]></title>
+            <link>https://www.nature.com/articles/s41586-026-10764-5</link>
+            <content:encoded>
+                <![CDATA[<p>Nature, Published online: 17 June 2026; <a href="https://www.nature.com/articles/s41586-026-10764-5">doi:10.1038/s41586-026-10764-5</a></p>Towards Conversational AI for Disease Management]]></content:encoded>
+            <dc:title><![CDATA[Towards Conversational AI for Disease Management]]></dc:title>
+            <dc:creator>Valentin Liévin</dc:creator><dc:creator>Anil Palepu</dc:creator><dc:creator>Wei-Hung Weng</dc:creator><dc:creator>Khaled Saab</dc:creator><dc:creator>David Stutz</dc:creator><dc:creator>Yong Cheng</dc:creator><dc:creator>Kavita Kulkarni</dc:creator><dc:creator>S. Sara Mahdavi</dc:creator><dc:creator>Joëlle Barral</dc:creator><dc:creator>Dale R. Webster</dc:creator><dc:creator>Katherine Chou</dc:creator><dc:creator>Avinatan Hassidim</dc:creator><dc:creator>Yossi Matias</dc:creator><dc:creator>James Manyika</dc:creator><dc:creator>Ryutaro Tanno</dc:creator><dc:creator>Vivek Natarajan</dc:creator><dc:creator>Adam Rodman</dc:creator><dc:creator>Tao Tu</dc:creator><dc:creator>Alan Karthikesalingam</dc:creator><dc:creator>Mike Schaekermann</dc:creator>
+            <dc:identifier>doi:10.1038/s41586-026-10764-5</dc:identifier>
+            <dc:source>Nature, Published online: 2026-06-17; | doi:10.1038/s41586-026-10764-5</dc:source>
+            <dc:date>2026-06-17</dc:date>
+            <prism:publicationName>Nature</prism:publicationName>
+            <prism:doi>10.1038/s41586-026-10764-5</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41586-026-10764-5</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/d41586-026-01868-z">
+            <title><![CDATA[Fiery data hint that controlled forest fires benefit human health]]></title>
+            <link>https://www.nature.com/articles/d41586-026-01868-z</link>
+            <content:encoded>
+                <![CDATA[<p>Nature, Published online: 17 June 2026; <a href="https://www.nature.com/articles/d41586-026-01868-z">doi:10.1038/d41586-026-01868-z</a></p>Analysis of wildfire in California suggests a net reduction in exposure to blaze-related air pollution.]]></content:encoded>
+            <dc:title><![CDATA[Fiery data hint that controlled forest fires benefit human health]]></dc:title>
+            
+            <dc:identifier>doi:10.1038/d41586-026-01868-z</dc:identifier>
+            <dc:source>Nature, Published online: 2026-06-17; | doi:10.1038/d41586-026-01868-z</dc:source>
+            <dc:date>2026-06-17</dc:date>
+            <prism:publicationName>Nature</prism:publicationName>
+            <prism:doi>10.1038/d41586-026-01868-z</prism:doi>
+            <prism:url>https://www.nature.com/articles/d41586-026-01868-z</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/d41586-026-01870-5">
+            <title><![CDATA[The brain region that could provide a cognitive ‘reservoir’ in old age]]></title>
+            <link>https://www.nature.com/articles/d41586-026-01870-5</link>
+            <content:encoded>
+                <![CDATA[<p>Nature, Published online: 17 June 2026; <a href="https://www.nature.com/articles/d41586-026-01870-5">doi:10.1038/d41586-026-01870-5</a></p>Having a greater tissue volume in some parts of the cerebellum is linked to higher scores on cognitive tests.]]></content:encoded>
+            <dc:title><![CDATA[The brain region that could provide a cognitive ‘reservoir’ in old age]]></dc:title>
+            
+            <dc:identifier>doi:10.1038/d41586-026-01870-5</dc:identifier>
+            <dc:source>Nature, Published online: 2026-06-17; | doi:10.1038/d41586-026-01870-5</dc:source>
+            <dc:date>2026-06-17</dc:date>
+            <prism:publicationName>Nature</prism:publicationName>
+            <prism:doi>10.1038/d41586-026-01870-5</prism:doi>
+            <prism:url>https://www.nature.com/articles/d41586-026-01870-5</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/d41586-026-01941-7">
+            <title><![CDATA[DNA from hunter-gatherer teeth reveals secrets of ancient plague]]></title>
+            <link>https://www.nature.com/articles/d41586-026-01941-7</link>
+            <content:encoded>
+                <![CDATA[<p>Nature, Published online: 17 June 2026; <a href="https://www.nature.com/articles/d41586-026-01941-7">doi:10.1038/d41586-026-01941-7</a></p>Analysis shows evidence of deadly outbreaks 5,500 years ago — plus, a prototype dark-matter detector.]]></content:encoded>
+            <dc:title><![CDATA[DNA from hunter-gatherer teeth reveals secrets of ancient plague]]></dc:title>
+            <dc:creator>Benjamin Thompson</dc:creator><dc:creator>Nick Petrić Howe</dc:creator>
+            <dc:identifier>doi:10.1038/d41586-026-01941-7</dc:identifier>
+            <dc:source>Nature, Published online: 2026-06-17; | doi:10.1038/d41586-026-01941-7</dc:source>
+            <dc:date>2026-06-17</dc:date>
+            <prism:publicationName>Nature</prism:publicationName>
+            <prism:doi>10.1038/d41586-026-01941-7</prism:doi>
+            <prism:url>https://www.nature.com/articles/d41586-026-01941-7</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41586-026-10614-4">
+            <title><![CDATA[Emergent decadal predictability in Antarctic contribution to sea-level rise]]></title>
+            <link>https://www.nature.com/articles/s41586-026-10614-4</link>
+            <content:encoded>
+                <![CDATA[<p>Nature, Published online: 17 June 2026; <a href="https://www.nature.com/articles/s41586-026-10614-4">doi:10.1038/s41586-026-10614-4</a></p>Although Antarctic ice loss projections diverge widely by 2100, this Perspective shows that present-day rates robustly predict mid-century sea level rise, providing a firm basis for near-term planning, while highlighting priorities for model development aimed at resolving longer-term sea level rise uncertainty.]]></content:encoded>
+            <dc:title><![CDATA[Emergent decadal predictability in Antarctic contribution to sea-level rise]]></dc:title>
+            <dc:creator>Felicity S. McCormack</dc:creator><dc:creator>Mathieu Morlighem</dc:creator><dc:creator>Frank Pattyn</dc:creator><dc:creator>Alexander A. Robel</dc:creator><dc:creator>Hélène Seroussi</dc:creator>
+            <dc:identifier>doi:10.1038/s41586-026-10614-4</dc:identifier>
+            <dc:source>Nature, Published online: 2026-06-17; | doi:10.1038/s41586-026-10614-4</dc:source>
+            <dc:date>2026-06-17</dc:date>
+            <prism:publicationName>Nature</prism:publicationName>
+            <prism:doi>10.1038/s41586-026-10614-4</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41586-026-10614-4</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41586-026-10586-5">
+            <title><![CDATA[A distant brown dwarf coplanar to a warm Jupiter and a hot super-Earth]]></title>
+            <link>https://www.nature.com/articles/s41586-026-10586-5</link>
+            <content:encoded>
+                <![CDATA[<p>Nature, Published online: 17 June 2026; <a href="https://www.nature.com/articles/s41586-026-10586-5">doi:10.1038/s41586-026-10586-5</a></p>Analysis of long-term radial velocity data and transit time variations, induced by a super-Earth, a warm Jupiter and a brown dwarf in a coplanar orbit around the relatively young star TOI201.]]></content:encoded>
+            <dc:title><![CDATA[A distant brown dwarf coplanar to a warm Jupiter and a hot super-Earth]]></dc:title>
+            <dc:creator>Matías I. Jones</dc:creator><dc:creator>Luca Naponiello</dc:creator><dc:creator>Trifon Trifonov</dc:creator><dc:creator>Rafael Brahm</dc:creator><dc:creator>Gabriele Pichierri</dc:creator><dc:creator>Lorena Acuña-Aguirre</dc:creator><dc:creator>Robert J. De Rosa</dc:creator><dc:creator>Marcelo Tala Pinto</dc:creator><dc:creator>Aldo S. Bonomo</dc:creator><dc:creator>Luigi Mancini</dc:creator><dc:creator>Alessandro Sozzetti</dc:creator><dc:creator>Yared Reinarz</dc:creator><dc:creator>Alessandro Morbidelli</dc:creator><dc:creator>Néstor Espinoza</dc:creator><dc:creator>Giovanni Rosotti</dc:creator><dc:creator>Eric L. Nielsen</dc:creator><dc:creator>Stefan Y. Stefanov</dc:creator><dc:creator>Thomas Henning</dc:creator><dc:creator>Andrés Jordán</dc:creator><dc:creator>Jan Eberhardt</dc:creator><dc:creator>Artie Hatzes</dc:creator><dc:creator>Leonardo Vanzi</dc:creator><dc:creator>Jan Janik</dc:creator><dc:creator>Petr Kabath</dc:creator>
+            <dc:identifier>doi:10.1038/s41586-026-10586-5</dc:identifier>
+            <dc:source>Nature, Published online: 2026-06-17; | doi:10.1038/s41586-026-10586-5</dc:source>
+            <dc:date>2026-06-17</dc:date>
+            <prism:publicationName>Nature</prism:publicationName>
+            <prism:doi>10.1038/s41586-026-10586-5</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41586-026-10586-5</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41586-026-10638-w">
+            <title><![CDATA[Probing picometre-scale interlayer deformations via hyperbolic polaritons]]></title>
+            <link>https://www.nature.com/articles/s41586-026-10638-w</link>
+            <content:encoded>
+                <![CDATA[<p>Nature, Published online: 17 June 2026; <a href="https://www.nature.com/articles/s41586-026-10638-w">doi:10.1038/s41586-026-10638-w</a></p>A new polaritonic optical method that uses the mid-infrared out-of-plane hyperbolic polaritons mode is described and experimentally validated to allow the examination of picometre-scale interlayer deformations, providing a bridge between nanomechanics and photonics.]]></content:encoded>
+            <dc:title><![CDATA[Probing picometre-scale interlayer deformations via hyperbolic polaritons]]></dc:title>
+            <dc:creator>Shu Zhang</dc:creator><dc:creator>Xiangdong Guo</dc:creator><dc:creator>Xiaowen Zhang</dc:creator><dc:creator>Jiashu Yang</dc:creator><dc:creator>Qinzheng Yu</dc:creator><dc:creator>Zhengyang Mou</dc:creator><dc:creator>Bingze Wu</dc:creator><dc:creator>Chenchen Wu</dc:creator><dc:creator>Shiyu Yang</dc:creator><dc:creator>Yongxin Lan</dc:creator><dc:creator>Peiyi He</dc:creator><dc:creator>Jing Shi</dc:creator><dc:creator>Kaijun Feng</dc:creator><dc:creator>Yuxiang Gao</dc:creator><dc:creator>Qiang Zheng</dc:creator><dc:creator>Shuang Zhang</dc:creator><dc:creator>F. Javier García de Abajo</dc:creator><dc:creator>Zhipei Sun</dc:creator><dc:creator>Mingguang Yao</dc:creator><dc:creator>Feng Ding</dc:creator><dc:creator>Peng Gao</dc:creator><dc:creator>Xiaoxia Yang</dc:creator><dc:creator>Qing Dai</dc:creator>
+            <dc:identifier>doi:10.1038/s41586-026-10638-w</dc:identifier>
+            <dc:source>Nature, Published online: 2026-06-17; | doi:10.1038/s41586-026-10638-w</dc:source>
+            <dc:date>2026-06-17</dc:date>
+            <prism:publicationName>Nature</prism:publicationName>
+            <prism:doi>10.1038/s41586-026-10638-w</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41586-026-10638-w</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41586-026-10673-7">
+            <title><![CDATA[Optical fibre gripper for high-performance 3D micromanipulation]]></title>
+            <link>https://www.nature.com/articles/s41586-026-10673-7</link>
+            <content:encoded>
+                <![CDATA[<p>Nature, Published online: 17 June 2026; <a href="https://www.nature.com/articles/s41586-026-10673-7">doi:10.1038/s41586-026-10673-7</a></p>A miniature three-dimensional optical fibre gripper enables powerful, precise micromanipulation of particles and single cells in confined spaces, bridging the gap between optical and mechanical tweezers.]]></content:encoded>
+            <dc:title><![CDATA[Optical fibre gripper for high-performance 3D micromanipulation]]></dc:title>
+            <dc:creator>Deng Pan</dc:creator><dc:creator>Kaiwen Liang</dc:creator><dc:creator>Chen Xin</dc:creator><dc:creator>Lei Zhong</dc:creator><dc:creator>Shaojun Jiang</dc:creator><dc:creator>Chenchu Zhang</dc:creator><dc:creator>Liang Yang</dc:creator><dc:creator>Zhiqiang Wang</dc:creator><dc:creator>Zhaoxin Lao</dc:creator><dc:creator>Jincheng Ni</dc:creator><dc:creator>Chaowei Wang</dc:creator><dc:creator>Jiawen Li</dc:creator><dc:creator>Shenglai Zhen</dc:creator><dc:creator>Benli Yu</dc:creator><dc:creator>Zhixiang Huang</dc:creator><dc:creator>Fang-Wen Sun</dc:creator><dc:creator>Jiaru Chu</dc:creator><dc:creator>Yanlei Hu</dc:creator><dc:creator>Li Zhang</dc:creator><dc:creator>Dong Wu</dc:creator>
+            <dc:identifier>doi:10.1038/s41586-026-10673-7</dc:identifier>
+            <dc:source>Nature, Published online: 2026-06-17; | doi:10.1038/s41586-026-10673-7</dc:source>
+            <dc:date>2026-06-17</dc:date>
+            <prism:publicationName>Nature</prism:publicationName>
+            <prism:doi>10.1038/s41586-026-10673-7</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41586-026-10673-7</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41586-026-10617-1">
+            <title><![CDATA[A prototype differential atom interferometer for fundamental physics]]></title>
+            <link>https://www.nature.com/articles/s41586-026-10617-1</link>
+            <content:encoded>
+                <![CDATA[<p>Nature, Published online: 17 June 2026; <a href="https://www.nature.com/articles/s41586-026-10617-1">doi:10.1038/s41586-026-10617-1</a></p>A prototype differential atom interferometer operates at the standard quantum limit with no excess noise beyond atom shot noise, achieving performance in line with the specifications for future long-baseline atom interferometers.]]></content:encoded>
+            <dc:title><![CDATA[A prototype differential atom interferometer for fundamental physics]]></dc:title>
+            <dc:creator>C. F. A. Baynham</dc:creator><dc:creator>R. Hobson</dc:creator><dc:creator>O. Buchmüller</dc:creator><dc:creator>D. Evans</dc:creator><dc:creator>L. Hawkins</dc:creator><dc:creator>L. Iannizzotto Venezze</dc:creator><dc:creator>A. Josset</dc:creator><dc:creator>D. Lee</dc:creator><dc:creator>E. Pasatembou</dc:creator><dc:creator>B. E. Sauer</dc:creator><dc:creator>M. R. Tarbutt</dc:creator><dc:creator>T. Walker</dc:creator><dc:creator>O. Ennis</dc:creator><dc:creator>U. Chauhan</dc:creator><dc:creator>A. Brzakalik</dc:creator><dc:creator>S. Dey</dc:creator><dc:creator>S. Hedges</dc:creator><dc:creator>B. Stray</dc:creator><dc:creator>M. Langlois</dc:creator><dc:creator>K. Bongs</dc:creator><dc:creator>T. Hird</dc:creator><dc:creator>S. Lellouch</dc:creator><dc:creator>M. Holynski</dc:creator><dc:creator>B. Bostwick</dc:creator><dc:creator>J. Chen</dc:creator><dc:creator>Z. Eyler</dc:creator><dc:creator>V. Gibson</dc:creator><dc:creator>T. L. Harte</dc:creator><dc:creator>C. C. Hsu</dc:creator><dc:creator>M. Karzazi</dc:creator><dc:creator>C. Lu</dc:creator><dc:creator>B. Millward</dc:creator><dc:creator>J. Mitchell</dc:creator><dc:creator>N. Mouelle</dc:creator><dc:creator>B. Panchumarthi</dc:creator><dc:creator>J. Scheper</dc:creator><dc:creator>U. Schneider</dc:creator><dc:creator>X. Su</dc:creator><dc:creator>Y. Tang</dc:creator><dc:creator>K. Tkalčec</dc:creator><dc:creator>M. Zeuner</dc:creator><dc:creator>S. Zhang</dc:creator><dc:creator>Y. Zhi</dc:creator><dc:creator>L. Badurina</dc:creator><dc:creator>A. Beniwal</dc:creator><dc:creator>D. Blas</dc:creator><dc:creator>J. Carlton</dc:creator><dc:creator>J. Ellis</dc:creator><dc:creator>C. McCabe</dc:creator><dc:creator>G. Parish</dc:creator><dc:creator>D. Pathak Govardhan</dc:creator><dc:creator>V. Vaskonen</dc:creator><dc:creator>T. Bowcock</dc:creator><dc:creator>K. Bridges</dc:creator><dc:creator>A. Carroll</dc:creator><dc:creator>J. Coleman</dc:creator><dc:creator>G. Elertas</dc:creator><dc:creator>S. Hindley</dc:creator><dc:creator>C. Metelko</dc:creator><dc:creator>H. Throssell</dc:creator><dc:creator>J. N. Tinsley</dc:creator><dc:creator>E. Bentine</dc:creator><dc:creator>M. Booth</dc:creator><dc:creator>D. Bortoletto</dc:creator><dc:creator>N. Callaghan</dc:creator><dc:creator>C. Foot</dc:creator><dc:creator>C. Gómez-Monedero</dc:creator><dc:creator>K. Hughes</dc:creator><dc:creator>A. James</dc:creator><dc:creator>T. Leese</dc:creator><dc:creator>A. Lowe</dc:creator><dc:creator>J. March-Russell</dc:creator><dc:creator>J. Sander</dc:creator><dc:creator>J. Schelfhout</dc:creator><dc:creator>I. Shipsey</dc:creator><dc:creator>D. Weatherill</dc:creator><dc:creator>D. Wood</dc:creator><dc:creator>S. N. Balashov</dc:creator><dc:creator>M. G. Bason</dc:creator><dc:creator>K. Hussain</dc:creator><dc:creator>H. Labiad</dc:creator><dc:creator>P. Majewski</dc:creator><dc:creator>A. L. Marchant</dc:creator><dc:creator>D. Newbold</dc:creator><dc:creator>Z. Pan</dc:creator><dc:creator>Z. Tam</dc:creator><dc:creator>T. C. Thornton</dc:creator><dc:creator>T. Valenzuela</dc:creator><dc:creator>M. G. D. van der Grinten</dc:creator><dc:creator>I. Wilmut</dc:creator><dc:creator>K. Clarke</dc:creator><dc:creator>A. Vick</dc:creator><dc:creator>S. Hedges</dc:creator><dc:creator>B. Stray</dc:creator><dc:creator>M. Langlois</dc:creator><dc:creator>K. Bongs</dc:creator><dc:creator>B. Bostwick</dc:creator><dc:creator>B. Panchumarthi</dc:creator><dc:creator>X. Su</dc:creator><dc:creator>M. Zeuner</dc:creator><dc:creator>Y. Zhi</dc:creator><dc:creator>L. Badurina</dc:creator><dc:creator>A. Beniwal</dc:creator><dc:creator>D. Blas</dc:creator><dc:creator>V. Vaskonen</dc:creator><dc:creator>M. G. D. van der Grinten</dc:creator>
+            <dc:identifier>doi:10.1038/s41586-026-10617-1</dc:identifier>
+            <dc:source>Nature, Published online: 2026-06-17; | doi:10.1038/s41586-026-10617-1</dc:source>
+            <dc:date>2026-06-17</dc:date>
+            <prism:publicationName>Nature</prism:publicationName>
+            <prism:doi>10.1038/s41586-026-10617-1</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41586-026-10617-1</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41586-026-10657-7">
+            <title><![CDATA[Structure of the pre-initiation complex explains CMGE biogenesis]]></title>
+            <link>https://www.nature.com/articles/s41586-026-10657-7</link>
+            <content:encoded>
+                <![CDATA[<p>Nature, Published online: 17 June 2026; <a href="https://www.nature.com/articles/s41586-026-10657-7">doi:10.1038/s41586-026-10657-7</a></p>Cryo-electron microscopy and biochemical reconstitution experiments in yeast provide insight into the assembly of the CMGE complex, a helicase that establishes bidirectional DNA replication in eukaryotic cells, and elucidate the role of the firing factor Sld2.]]></content:encoded>
+            <dc:title><![CDATA[Structure of the pre-initiation complex explains CMGE biogenesis]]></dc:title>
+            <dc:creator>Thomas Pühringer</dc:creator><dc:creator>Berta Canal</dc:creator><dc:creator>Giacomo Palm</dc:creator><dc:creator>Agata Butryn</dc:creator><dc:creator>Emma C. Couves</dc:creator><dc:creator>Oliver Willhoft</dc:creator><dc:creator>Jacob S. Lewis</dc:creator><dc:creator>John F. X. Diffley</dc:creator><dc:creator>Alessandro Costa</dc:creator>
+            <dc:identifier>doi:10.1038/s41586-026-10657-7</dc:identifier>
+            <dc:source>Nature, Published online: 2026-06-17; | doi:10.1038/s41586-026-10657-7</dc:source>
+            <dc:date>2026-06-17</dc:date>
+            <prism:publicationName>Nature</prism:publicationName>
+            <prism:doi>10.1038/s41586-026-10657-7</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41586-026-10657-7</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41586-026-10676-4">
+            <title><![CDATA[A 98-qubit trapped-ion quantum computer with all-to-all connectivity]]></title>
+            <link>https://www.nature.com/articles/s41586-026-10676-4</link>
+            <content:encoded>
+                <![CDATA[<p>Nature, Published online: 17 June 2026; <a href="https://www.nature.com/articles/s41586-026-10676-4">doi:10.1038/s41586-026-10676-4</a></p>A new quantum computer, Quantinuum Helios, which is a 98-qubit trapped-ion quantum processor built on the QCCD architecture, demonstrates performance well beyond classical capabilities and provides a path for scaling up quantum computing.]]></content:encoded>
+            <dc:title><![CDATA[A 98-qubit trapped-ion quantum computer with all-to-all connectivity]]></dc:title>
+            <dc:creator>Anthony Ransford</dc:creator><dc:creator>M. S. Allman</dc:creator><dc:creator>Jake Arkinstall</dc:creator><dc:creator>J. P. Campora III</dc:creator><dc:creator>Samuel F. Cooper</dc:creator><dc:creator>Robert D. Delaney</dc:creator><dc:creator>Joan M. Dreiling</dc:creator><dc:creator>Brian Estey</dc:creator><dc:creator>Caroline Figgatt</dc:creator><dc:creator>Alex Hall</dc:creator><dc:creator>Ali A. Husain</dc:creator><dc:creator>Akhil Isanaka</dc:creator><dc:creator>Colin J. Kennedy</dc:creator><dc:creator>Nikhil Kotibhaskar</dc:creator><dc:creator>Ivaylo S. Madjarov</dc:creator><dc:creator>Karl Mayer</dc:creator><dc:creator>Alistair R. Milne</dc:creator><dc:creator>Annie J. Park</dc:creator><dc:creator>Adam P. Reed</dc:creator><dc:creator>Riley Ancona</dc:creator><dc:creator>Molly P. Andersen</dc:creator><dc:creator>Pablo Andres-Martinez</dc:creator><dc:creator>Will Angenent</dc:creator><dc:creator>Liz Argueta</dc:creator><dc:creator>Benjamin Arkin</dc:creator><dc:creator>Leonardo Ascarrunz</dc:creator><dc:creator>William Baker</dc:creator><dc:creator>Corey Barnes</dc:creator><dc:creator>John Bartolotta</dc:creator><dc:creator>Jordan Berg</dc:creator><dc:creator>Ryan Besand</dc:creator><dc:creator>Bryce Bjork</dc:creator><dc:creator>Matt Blain</dc:creator><dc:creator>Paul Blanchard</dc:creator><dc:creator>Robin Blume-Kohout</dc:creator><dc:creator>Matt Bohn</dc:creator><dc:creator>Agustíin Borgna</dc:creator><dc:creator>Daniel Y. Botamanenko</dc:creator><dc:creator>Robert Boutelle</dc:creator><dc:creator>Natalie Brown</dc:creator><dc:creator>Grant T. Buckingham</dc:creator><dc:creator>Nathaniel Q. Burdick</dc:creator><dc:creator>William Cody Burton</dc:creator><dc:creator>Varis Carey</dc:creator><dc:creator>Christopher J. Carron</dc:creator><dc:creator>Joe Chambers</dc:creator><dc:creator>Jia Wen Chan</dc:creator><dc:creator>John Children</dc:creator><dc:creator>Victor E. Colussi</dc:creator><dc:creator>Steven Crepinsek</dc:creator><dc:creator>Andrew Cureton</dc:creator><dc:creator>Joe Davies</dc:creator><dc:creator>Daniel Davis</dc:creator><dc:creator>Matthew DeCross</dc:creator><dc:creator>David Deen</dc:creator><dc:creator>Conor Delaney</dc:creator><dc:creator>Davide DelVento</dc:creator><dc:creator>B. J. DeSalvo</dc:creator><dc:creator>Jason Dominy</dc:creator><dc:creator>Sydney Drotar</dc:creator><dc:creator>Ross Duncan</dc:creator><dc:creator>Vanya Eccles</dc:creator><dc:creator>Alec Edgington</dc:creator><dc:creator>Neal Erickson</dc:creator><dc:creator>Stephen Erickson</dc:creator><dc:creator>Christopher T. Ertsgaard</dc:creator><dc:creator>Jay Esposito</dc:creator><dc:creator>Bruce Evans</dc:creator><dc:creator>Tyler Evans</dc:creator><dc:creator>Maya I. Fabrikant</dc:creator><dc:creator>Andrew Fischer</dc:creator><dc:creator>Cameron Foltz</dc:creator><dc:creator>Michael Foss-Feig</dc:creator><dc:creator>David Francois</dc:creator><dc:creator>Brad Freyberg</dc:creator><dc:creator>Charles Gao</dc:creator><dc:creator>Robert Garay</dc:creator><dc:creator>Jane Garvin</dc:creator><dc:creator>David M. Gaudiosi</dc:creator><dc:creator>Christopher N. Gilbreth</dc:creator><dc:creator>Josh Giles</dc:creator><dc:creator>Erin Glynn</dc:creator><dc:creator>Jeff Graves</dc:creator><dc:creator>Azure Hansen</dc:creator><dc:creator>David Hayes</dc:creator><dc:creator>Lukas Heidemann</dc:creator><dc:creator>Bob Higashi</dc:creator><dc:creator>Tyler Hilbun</dc:creator><dc:creator>Jordan Hines</dc:creator><dc:creator>Ariana Hlavaty</dc:creator><dc:creator>Kyle Hoffman</dc:creator><dc:creator>Ian M. Hoffman</dc:creator><dc:creator>Craig Holliman</dc:creator><dc:creator>Isobel Hooper</dc:creator><dc:creator>Bob Horning</dc:creator><dc:creator>James Hostetter</dc:creator><dc:creator>Daniel Hothem</dc:creator><dc:creator>Jack Houlton</dc:creator><dc:creator>Jared Hout</dc:creator><dc:creator>Ross Hutson</dc:creator><dc:creator>Ryan T. Jacobs</dc:creator><dc:creator>Trent Jacobs</dc:creator><dc:creator>Melf Johannsen</dc:creator><dc:creator>Jacob Johansen</dc:creator><dc:creator>Loren Jones</dc:creator><dc:creator>Sydney Julian</dc:creator><dc:creator>Ryan Jung</dc:creator><dc:creator>Aidan Keay</dc:creator><dc:creator>Todd Klein</dc:creator><dc:creator>Mark Koch</dc:creator><dc:creator>Ryo Kondo</dc:creator><dc:creator>Chang Kong</dc:creator><dc:creator>Asa Kosto</dc:creator><dc:creator>Alan Lawrence</dc:creator><dc:creator>David Liefer</dc:creator><dc:creator>Michelle Lollie</dc:creator><dc:creator>Dominic Lucchetti</dc:creator><dc:creator>Nathan K. Lysne</dc:creator><dc:creator>Christian Lytle</dc:creator><dc:creator>Callum MacPherson</dc:creator><dc:creator>Andrew Malm</dc:creator><dc:creator>Spencer Mather</dc:creator><dc:creator>Brian Mathewson</dc:creator><dc:creator>Daniel Maxwell</dc:creator><dc:creator>Lauren McCaffrey</dc:creator><dc:creator>Hannah McDougall</dc:creator><dc:creator>Robin Mendoza</dc:creator><dc:creator>David B. Miller</dc:creator><dc:creator>Michael Mills</dc:creator><dc:creator>Richard Morrison</dc:creator><dc:creator>Louis Narmour</dc:creator><dc:creator>Nhung Nguyen</dc:creator><dc:creator>Lora Nugent</dc:creator><dc:creator>Scott Olson</dc:creator><dc:creator>Daniel Ouellette</dc:creator><dc:creator>Jeremy Parks</dc:creator><dc:creator>Zach Peters</dc:creator><dc:creator>Timothy A. Peterson</dc:creator><dc:creator>Jessie Petricka</dc:creator><dc:creator>Juan M. Pino</dc:creator><dc:creator>Frank Polito</dc:creator><dc:creator>Andrew C. Potter</dc:creator><dc:creator>Matthias Preidl</dc:creator><dc:creator>Gabriel Price</dc:creator><dc:creator>Timothy Proctor</dc:creator><dc:creator>McKinley Pugh</dc:creator><dc:creator>Noah Ratcliff</dc:creator><dc:creator>Daisy Raymondson</dc:creator><dc:creator>Peter Rhodes</dc:creator><dc:creator>Conrad Roman</dc:creator><dc:creator>Craig Roy</dc:creator><dc:creator>Ciaran Ryan-Anderson</dc:creator><dc:creator>Fernando Betanzo Sanchez</dc:creator><dc:creator>George Sangiolo</dc:creator><dc:creator>Tatiana Sawadski</dc:creator><dc:creator>Andrew Schaffer</dc:creator><dc:creator>Peter Schow</dc:creator><dc:creator>Jon Sedlacek</dc:creator><dc:creator>Henry Semenenko</dc:creator><dc:creator>Peter Shevchuk</dc:creator><dc:creator>Susan Shore</dc:creator><dc:creator>Peter Siegfried</dc:creator><dc:creator>Kartik Singhal</dc:creator><dc:creator>Seyon Sivarajah</dc:creator><dc:creator>Thomas Skripka</dc:creator><dc:creator>Lucas Sletten</dc:creator><dc:creator>Ben Spaun</dc:creator><dc:creator>R. Tucker Sprenkle</dc:creator><dc:creator>Paul Stoufer</dc:creator><dc:creator>Mariel Tader</dc:creator><dc:creator>Stephen F. Taylor</dc:creator><dc:creator>Travis H. Thompson</dc:creator><dc:creator>Raanan Tobey</dc:creator><dc:creator>Anh Tran</dc:creator><dc:creator>Tam Tran</dc:creator><dc:creator>Grahame Vittorini</dc:creator><dc:creator>Curtis Volin</dc:creator><dc:creator>Jim Walker</dc:creator><dc:creator>Sam White</dc:creator><dc:creator>Garrett R. Williams</dc:creator><dc:creator>Douglas Wilson</dc:creator><dc:creator>Quinn Wolf</dc:creator><dc:creator>Chester Wringe</dc:creator><dc:creator>Kevin Young</dc:creator><dc:creator>Jian Zheng</dc:creator><dc:creator>Kristen Zuraski</dc:creator><dc:creator>Charles H. Baldwin</dc:creator><dc:creator>Alex Chernoguzov</dc:creator><dc:creator>John P. Gaebler</dc:creator><dc:creator>Steven J. Sanders</dc:creator><dc:creator>Brian Neyenhuis</dc:creator><dc:creator>Russell Stutz</dc:creator><dc:creator>Justin G. Bohnet</dc:creator>
+            <dc:identifier>doi:10.1038/s41586-026-10676-4</dc:identifier>
+            <dc:source>Nature, Published online: 2026-06-17; | doi:10.1038/s41586-026-10676-4</dc:source>
+            <dc:date>2026-06-17</dc:date>
+            <prism:publicationName>Nature</prism:publicationName>
+            <prism:doi>10.1038/s41586-026-10676-4</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41586-026-10676-4</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41586-025-09553-3">
+            <title><![CDATA[Fast formation to reinforce lithium-rich cathodes]]></title>
+            <link>https://www.nature.com/articles/s41586-025-09553-3</link>
+            <content:encoded>
+                <![CDATA[<p>Nature, Published online: 17 June 2026; <a href="https://www.nature.com/articles/s41586-025-09553-3">doi:10.1038/s41586-025-09553-3</a></p>Fast formation in lithium-ion batteries outperforms conventional slow formation, lowering costs and improving battery capacity, stability and cycle life, offering broader application to electrode systems.]]></content:encoded>
+            <dc:title><![CDATA[Fast formation to reinforce lithium-rich cathodes]]></dc:title>
+            <dc:creator>Mengjian Fan</dc:creator><dc:creator>Jiantao Li</dc:creator><dc:creator>Guiyang Gao</dc:creator><dc:creator>Benli Jiang</dc:creator><dc:creator>Longlong Fan</dc:creator><dc:creator>Qingxi Yuan</dc:creator><dc:creator>Yinggan Zhang</dc:creator><dc:creator>Hongfei Zheng</dc:creator><dc:creator>Saichao Li</dc:creator><dc:creator>Liang Lin</dc:creator><dc:creator>Zonghai Chen</dc:creator><dc:creator>Yang Ren</dc:creator><dc:creator>Yuanyuan Liu</dc:creator><dc:creator>Wei He</dc:creator><dc:creator>Gaosheng Chen</dc:creator><dc:creator>Baisheng Sa</dc:creator><dc:creator>Laisen Wang</dc:creator><dc:creator>Jie Lin</dc:creator><dc:creator>Dong-Liang Peng</dc:creator><dc:creator>Qingshui Xie</dc:creator>
+            <dc:identifier>doi:10.1038/s41586-025-09553-3</dc:identifier>
+            <dc:source>Nature, Published online: 2026-06-17; | doi:10.1038/s41586-025-09553-3</dc:source>
+            <dc:date>2026-06-17</dc:date>
+            <prism:publicationName>Nature</prism:publicationName>
+            <prism:doi>10.1038/s41586-025-09553-3</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41586-025-09553-3</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41586-025-09473-2">
+            <title><![CDATA[Revealing competitive interfacial reactions in high-energy Li–S batteries]]></title>
+            <link>https://www.nature.com/articles/s41586-025-09473-2</link>
+            <content:encoded>
+                <![CDATA[<p>Nature, Published online: 17 June 2026; <a href="https://www.nature.com/articles/s41586-025-09473-2">doi:10.1038/s41586-025-09473-2</a></p>Visualization of concentration-driven phase segregation within high-concentration interfacial layers in the context of high-energy lithium–sulfur batteries using liquid-cell electrochemical transmission electron microscopy reveals competitive interfacial reactions under lean electrolyte conditions at different phase boundaries.]]></content:encoded>
+            <dc:title><![CDATA[Revealing competitive interfacial reactions in high-energy Li–S batteries]]></dc:title>
+            <dc:creator>Shiyuan Zhou</dc:creator><dc:creator>Fei Pei</dc:creator><dc:creator>Qizheng Zheng</dc:creator><dc:creator>Gen Li</dc:creator><dc:creator>Hongyuan Yi</dc:creator><dc:creator>Linzhi Chen</dc:creator><dc:creator>Shi Tang</dc:creator><dc:creator>Qi Kang</dc:creator><dc:creator>Zu-Wei Yin</dc:creator><dc:creator>Sangui Liu</dc:creator><dc:creator>Liangping Xiao</dc:creator><dc:creator>Ling Huang</dc:creator><dc:creator>Yu Qiao</dc:creator><dc:creator>Yunhui Huang</dc:creator><dc:creator>Shi-Gang Sun</dc:creator><dc:creator>Hong-Gang Liao</dc:creator>
+            <dc:identifier>doi:10.1038/s41586-025-09473-2</dc:identifier>
+            <dc:source>Nature, Published online: 2026-06-17; | doi:10.1038/s41586-025-09473-2</dc:source>
+            <dc:date>2026-06-17</dc:date>
+            <prism:publicationName>Nature</prism:publicationName>
+            <prism:doi>10.1038/s41586-025-09473-2</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41586-025-09473-2</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41586-026-10650-0">
+            <title><![CDATA[Molecular basis of polyadenylated RNA fate determination in the nucleus]]></title>
+            <link>https://www.nature.com/articles/s41586-026-10650-0</link>
+            <content:encoded>
+                <![CDATA[<p>Nature, Published online: 17 June 2026; <a href="https://www.nature.com/articles/s41586-026-10650-0">doi:10.1038/s41586-026-10650-0</a></p>Biochemical, structural and cell biological analyses reveal that UAP56 (DDX39B) assembles with a TREX-2–like module that redirects non-functional polyadenylated RNAs from export to degradation.]]></content:encoded>
+            <dc:title><![CDATA[Molecular basis of polyadenylated RNA fate determination in the nucleus]]></dc:title>
+            <dc:creator>Andrii Bugai</dc:creator><dc:creator>Ulrich Hohmann</dc:creator><dc:creator>Ana Lorenzo</dc:creator><dc:creator>Max Graf</dc:creator><dc:creator>Laura Fin</dc:creator><dc:creator>Jérôme O. Rouvière</dc:creator><dc:creator>Laszlo Tirian</dc:creator><dc:creator>Yuhui Dou</dc:creator><dc:creator>Marion Le Rest</dc:creator><dc:creator>Patrik Polák</dc:creator><dc:creator>Dennis Johnsen</dc:creator><dc:creator>Lis Jakobsen</dc:creator><dc:creator>Jens Skorstengaard Andersen</dc:creator><dc:creator>Julius Brennecke</dc:creator><dc:creator>Clemens Plaschka</dc:creator><dc:creator>Torben Heick Jensen</dc:creator>
+            <dc:identifier>doi:10.1038/s41586-026-10650-0</dc:identifier>
+            <dc:source>Nature, Published online: 2026-06-17; | doi:10.1038/s41586-026-10650-0</dc:source>
+            <dc:date>2026-06-17</dc:date>
+            <prism:publicationName>Nature</prism:publicationName>
+            <prism:doi>10.1038/s41586-026-10650-0</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41586-026-10650-0</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41586-026-10664-8">
+            <title><![CDATA[Rock weathering can counteract river CO<sub>2</sub> emissions induced by permafrost thaw]]></title>
+            <link>https://www.nature.com/articles/s41586-026-10664-8</link>
+            <content:encoded>
+                <![CDATA[<p>Nature, Published online: 17 June 2026; <a href="https://www.nature.com/articles/s41586-026-10664-8">doi:10.1038/s41586-026-10664-8</a></p>Permafrost thaw on the Qinghai–Tibet Plateau increases rock-weathering rates while reducing river CO2 emissions, suggesting geological carbon fluxes may eventually outpace thaw-driven emissions.]]></content:encoded>
+            <dc:title><![CDATA[Rock weathering can counteract river CO<sub>2</sub> emissions induced by permafrost thaw]]></dc:title>
+            <dc:creator>Liwei Zhang</dc:creator><dc:creator>Aaron Bufe</dc:creator><dc:creator>Joshua F. Dean</dc:creator><dc:creator>Gerard Rocher-Ros</dc:creator><dc:creator>Ryan A. Sponseller</dc:creator><dc:creator>Emily H. Stanley</dc:creator><dc:creator>Jan Karlsson</dc:creator><dc:creator>David E. Butman</dc:creator><dc:creator>Ran Liu</dc:creator><dc:creator>Lijun Hou</dc:creator><dc:creator>Jinzhi Ding</dc:creator><dc:creator>Shilong Piao</dc:creator><dc:creator>Xinghui Xia</dc:creator><dc:creator>Tom J. Battin</dc:creator>
+            <dc:identifier>doi:10.1038/s41586-026-10664-8</dc:identifier>
+            <dc:source>Nature, Published online: 2026-06-17; | doi:10.1038/s41586-026-10664-8</dc:source>
+            <dc:date>2026-06-17</dc:date>
+            <prism:publicationName>Nature</prism:publicationName>
+            <prism:doi>10.1038/s41586-026-10664-8</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41586-026-10664-8</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41586-026-10679-1">
+            <title><![CDATA[Cortical development dynamics across autism spectrum disorder mouse models]]></title>
+            <link>https://www.nature.com/articles/s41586-026-10679-1</link>
+            <content:encoded>
+                <![CDATA[<p>Nature, Published online: 17 June 2026; <a href="https://www.nature.com/articles/s41586-026-10679-1">doi:10.1038/s41586-026-10679-1</a></p>Using single-nucleus multi-omic sequencing, diverse autism spectrum disorder-linked gene mutations converge on transient, stage-specific disruptions in early brain development, and highlight sex-specific gene expression alterations.]]></content:encoded>
+            <dc:title><![CDATA[Cortical development dynamics across autism spectrum disorder mouse models]]></dc:title>
+            <dc:creator>Lena A. Schwarz</dc:creator><dc:creator>Christoph P. Dotter</dc:creator><dc:creator>Sergey Isaev</dc:creator><dc:creator>Michela Lisi</dc:creator><dc:creator>Daniel Malzl</dc:creator><dc:creator>Christoph Büschl</dc:creator><dc:creator>Sabrina Ladstätter</dc:creator><dc:creator>Bárbara Oliveira</dc:creator><dc:creator>Matteo Barel</dc:creator><dc:creator>Bernadette Basilico</dc:creator><dc:creator>Chaitanya Chintaluri</dc:creator><dc:creator>Sarah Gorkiewicz</dc:creator><dc:creator>Mohammad Goudarzi</dc:creator><dc:creator>Tereza Belinova</dc:creator><dc:creator>Stephan Reichl</dc:creator><dc:creator>Gintarė Sendžikaitė</dc:creator><dc:creator>Satish Arcot Jayaram</dc:creator><dc:creator>Peter Koppensteiner</dc:creator><dc:creator>Christoph Sommer</dc:creator><dc:creator>Tim P. Vogels</dc:creator><dc:creator>Jörg Menche</dc:creator><dc:creator>Igor Adameyko</dc:creator><dc:creator>Peter V. Kharchenko</dc:creator><dc:creator>Christoph Bock</dc:creator><dc:creator>Gaia Novarino</dc:creator>
+            <dc:identifier>doi:10.1038/s41586-026-10679-1</dc:identifier>
+            <dc:source>Nature, Published online: 2026-06-17; | doi:10.1038/s41586-026-10679-1</dc:source>
+            <dc:date>2026-06-17</dc:date>
+            <prism:publicationName>Nature</prism:publicationName>
+            <prism:doi>10.1038/s41586-026-10679-1</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41586-026-10679-1</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41586-026-10643-z">
+            <title><![CDATA[A blastoporal organizer in a ctenophore]]></title>
+            <link>https://www.nature.com/articles/s41586-026-10643-z</link>
+            <content:encoded>
+                <![CDATA[<p>Nature, Published online: 17 June 2026; <a href="https://www.nature.com/articles/s41586-026-10643-z">doi:10.1038/s41586-026-10643-z</a></p>Experiments using the comb jelly Mnemiopsis leidyi and the sea anemone Nematostella vectensis reveal that the emergence of a core signalling pathway may have been a key innovation enabling the transition to multicellularity in animals.]]></content:encoded>
+            <dc:title><![CDATA[A blastoporal organizer in a ctenophore]]></dc:title>
+            <dc:creator>Stanislav Kremnyov</dc:creator><dc:creator>Tatiana Lebedeva</dc:creator><dc:creator>Grigory Genikhovich</dc:creator><dc:creator>Andreas Hejnol</dc:creator>
+            <dc:identifier>doi:10.1038/s41586-026-10643-z</dc:identifier>
+            <dc:source>Nature, Published online: 2026-06-17; | doi:10.1038/s41586-026-10643-z</dc:source>
+            <dc:date>2026-06-17</dc:date>
+            <prism:publicationName>Nature</prism:publicationName>
+            <prism:doi>10.1038/s41586-026-10643-z</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41586-026-10643-z</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41586-026-10648-8">
+            <title><![CDATA[Confined migration induces non-lethal DNA damage in developing neurons]]></title>
+            <link>https://www.nature.com/articles/s41586-026-10648-8</link>
+            <content:encoded>
+                <![CDATA[<p>Nature, Published online: 17 June 2026; <a href="https://www.nature.com/articles/s41586-026-10648-8">doi:10.1038/s41586-026-10648-8</a></p>The migration of neurons in developing cerebral and cerebellar cortices is accompanied by massive DNA double-strand breaks due to mechanostress during passage through narrow interstitial spaces.]]></content:encoded>
+            <dc:title><![CDATA[Confined migration induces non-lethal DNA damage in developing neurons]]></dc:title>
+            <dc:creator>Zhejing Zhang</dc:creator><dc:creator>Andres Canela</dc:creator><dc:creator>Junko Kurisu</dc:creator><dc:creator>Peilin Zou</dc:creator><dc:creator>Takumi Kawaue</dc:creator><dc:creator>Naotaka Nakazawa</dc:creator><dc:creator>Noriko Takeda</dc:creator><dc:creator>Mai Saeki</dc:creator><dc:creator>Masaki Utsunomiya</dc:creator><dc:creator>Merve Bilgic</dc:creator><dc:creator>Fumiyoshi Ishidate</dc:creator><dc:creator>Gianluca Grenci</dc:creator><dc:creator>Takahiro Furuta</dc:creator><dc:creator>Yusuke Kishi</dc:creator><dc:creator>Hiroyuki Sasanuma</dc:creator><dc:creator>Mineko Kengaku</dc:creator>
+            <dc:identifier>doi:10.1038/s41586-026-10648-8</dc:identifier>
+            <dc:source>Nature, Published online: 2026-06-17; | doi:10.1038/s41586-026-10648-8</dc:source>
+            <dc:date>2026-06-17</dc:date>
+            <prism:publicationName>Nature</prism:publicationName>
+            <prism:doi>10.1038/s41586-026-10648-8</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41586-026-10648-8</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41586-026-10667-5">
+            <title><![CDATA[Analysis of 173,303 exomes and genomes in the Pakistan Genome Resource]]></title>
+            <link>https://www.nature.com/articles/s41586-026-10667-5</link>
+            <content:encoded>
+                <![CDATA[<p>Nature, Published online: 17 June 2026; <a href="https://www.nature.com/articles/s41586-026-10667-5">doi:10.1038/s41586-026-10667-5</a></p>The Pakistan Genome Resource compiles biobank data from 173,303 individuals with high familial relatedness, broadening the catalogue of human genetic variation and establishing a population-specific genomic reference for Pakistan.]]></content:encoded>
+            <dc:title><![CDATA[Analysis of 173,303 exomes and genomes in the Pakistan Genome Resource]]></dc:title>
+            <dc:creator>Christopher Koch</dc:creator><dc:creator>Shareef Khalid</dc:creator><dc:creator>Maleeha Zaman Khan</dc:creator><dc:creator>Shruthi Bandyadka</dc:creator><dc:creator>Brian Doyon</dc:creator><dc:creator>Daniel P. Denning</dc:creator><dc:creator>Muhammad Jahanzaib</dc:creator><dc:creator>Muhammad Rehan Mian</dc:creator><dc:creator>Wafa Gul</dc:creator><dc:creator>Muhammad Bilal Liaqat</dc:creator><dc:creator>Aneeqa Bano</dc:creator><dc:creator>Marium Dahar</dc:creator><dc:creator>Namra Saqib</dc:creator><dc:creator>Lubna Kamani</dc:creator><dc:creator>Nazish Butt</dc:creator><dc:creator>Anjum Jalal</dc:creator><dc:creator>Riffat Sultana</dc:creator><dc:creator>Shahid Abbas</dc:creator><dc:creator>Musfireh Siddiqeh</dc:creator><dc:creator>Muhammad Haroon</dc:creator><dc:creator>Asadullah Khan</dc:creator><dc:creator>Khalid Parvez Babar</dc:creator><dc:creator>Aflak Rasheed</dc:creator><dc:creator>Javed Iqbal</dc:creator><dc:creator>Faizan Aslam</dc:creator><dc:creator>Umar Usman</dc:creator><dc:creator>Muhammad Akram Bajwa</dc:creator><dc:creator>Ali Hyder</dc:creator><dc:creator>Muhammad Sadik Memon</dc:creator><dc:creator>Nauman Hashmani</dc:creator><dc:creator>Mohsin Iqbal Haroon</dc:creator><dc:creator>Ambreen Muddassir</dc:creator><dc:creator>Syed Asif Raza Zaidi</dc:creator><dc:creator>Mateen Akram</dc:creator><dc:creator>Muhammad Hussain</dc:creator><dc:creator>Saima Naz Mohsin</dc:creator><dc:creator>Samreen Bugti</dc:creator><dc:creator>Tariq Mehmood</dc:creator><dc:creator>Abdul Lateef Rodeni</dc:creator><dc:creator>Shahid Mukhtar</dc:creator><dc:creator>Tahir Rasool</dc:creator><dc:creator>Adil Mahmood</dc:creator><dc:creator>Muhammad Noor Wazir</dc:creator><dc:creator>Sheraz Jamal Khan</dc:creator><dc:creator>Muhammad Asghar Khan</dc:creator><dc:creator>Rahmat Ghaffar</dc:creator><dc:creator>Sanaullah Jan</dc:creator><dc:creator>Noor Ul Hadi</dc:creator><dc:creator>Roshina Anjum</dc:creator><dc:creator>Rehan Abdullah</dc:creator><dc:creator>Muhammad Usman Musharraf</dc:creator><dc:creator>Muhammad Tahir Bashir</dc:creator><dc:creator>Muhammad Ali</dc:creator><dc:creator>Irfan Majeed</dc:creator><dc:creator>Muhammad Haroon Bilal</dc:creator><dc:creator>Shahzad Ali Khan</dc:creator><dc:creator>Chihiro Hata</dc:creator><dc:creator>Ikuyo Kou</dc:creator><dc:creator>Makoto Asaumi</dc:creator><dc:creator>Wataru Morii</dc:creator><dc:creator>Katherine R. Smith</dc:creator><dc:creator>Kousik Kundu</dc:creator><dc:creator>Kieren Lythgow</dc:creator><dc:creator>Stewart MacArthur</dc:creator><dc:creator>Sebastian Wasilewski</dc:creator><dc:creator>Slavé Petrovski</dc:creator><dc:creator>Aris Baras</dc:creator><dc:creator>Gonçalo Abecasis</dc:creator><dc:creator>Adolfo Ferrando</dc:creator><dc:creator>Giovanni Coppola</dc:creator><dc:creator>Andrew Deubler</dc:creator><dc:creator>Luca A. Lotta</dc:creator><dc:creator>John D. Overton</dc:creator><dc:creator>Jeffrey G. Reid</dc:creator><dc:creator>Alan Shuldiner</dc:creator><dc:creator>Katherine Siminovitch</dc:creator><dc:creator>Jason Portnoy</dc:creator><dc:creator>Marcus B. Jones</dc:creator><dc:creator>Lyndon Mitnaul</dc:creator><dc:creator>Alison Fenney</dc:creator><dc:creator>Jonathan Marchini</dc:creator><dc:creator>Manuel Allen Revez Ferreira</dc:creator><dc:creator>Maya Ghoussaini</dc:creator><dc:creator>Mona Nafde</dc:creator><dc:creator>William Salerno</dc:creator><dc:creator>Cristen Willer</dc:creator><dc:creator>Lourdes Crane</dc:creator><dc:creator>Christina Beechert</dc:creator><dc:creator>Erin Fuller</dc:creator><dc:creator>Laura M. Cremona</dc:creator><dc:creator>Eugene Kalyuskin</dc:creator><dc:creator>Hang Du</dc:creator><dc:creator>Caitlin Forsythe</dc:creator><dc:creator>Zhenhua Gu</dc:creator><dc:creator>Kristy Guevara</dc:creator><dc:creator>Michael Lattari</dc:creator><dc:creator>Alexander Lopez</dc:creator><dc:creator>Kia Manoochehri</dc:creator><dc:creator>Prathyusha Challa</dc:creator><dc:creator>Manasi Pradhan</dc:creator><dc:creator>Raymond Reynoso</dc:creator><dc:creator>Ricardo Schiavo</dc:creator><dc:creator>Maria Sotiropoulos Padilla</dc:creator><dc:creator>Chenggu Wang</dc:creator><dc:creator>Sarah E. Wolf</dc:creator><dc:creator>Manan Goyal</dc:creator><dc:creator>George Mitra</dc:creator><dc:creator>Sanjay Sreeram</dc:creator><dc:creator>Rouel Lanche</dc:creator><dc:creator>Vrushali Mahajan</dc:creator><dc:creator>Sai Lakshmi Vasireddy</dc:creator><dc:creator>Gisu Eom</dc:creator><dc:creator>Krishna Pawan Punuru</dc:creator><dc:creator>Sujit Gokhale</dc:creator><dc:creator>Benjamin Sultan</dc:creator><dc:creator>Pooja Mule</dc:creator><dc:creator>Mudasar Sarwar</dc:creator><dc:creator>Muhammad Aqeel</dc:creator><dc:creator>Xiaodong Bai</dc:creator><dc:creator>Lance Zhang</dc:creator><dc:creator>Sean O’Keeffe</dc:creator><dc:creator>Razvan Panea</dc:creator><dc:creator>Evan Edelstein</dc:creator><dc:creator>Ayesha Rasool</dc:creator><dc:creator>Evan K. Maxwell</dc:creator><dc:creator>Boris Boutkov</dc:creator><dc:creator>Alexander Gorovits</dc:creator><dc:creator>Ju Guan</dc:creator><dc:creator>Lukas Habegger</dc:creator><dc:creator>Alicia Hawes</dc:creator><dc:creator>Olga Krasheninina</dc:creator><dc:creator>Samantha Zarate</dc:creator><dc:creator>Adam J. Mansfield</dc:creator><dc:creator>Joshua Backman</dc:creator><dc:creator>Kathy Burch</dc:creator><dc:creator>Adrian Campos</dc:creator><dc:creator>Liron Ganel</dc:creator><dc:creator>Sheila Gaynor</dc:creator><dc:creator>Benjamin Geraghty</dc:creator><dc:creator>Arkopravo Ghosh</dc:creator><dc:creator>Salvador Romero Martinez</dc:creator><dc:creator>Christopher Gillies</dc:creator><dc:creator>Lauren Gurski</dc:creator><dc:creator>Eric Jorgenson</dc:creator><dc:creator>Tyler Joseph</dc:creator><dc:creator>Michael Kessler</dc:creator><dc:creator>Jack Kosmicki</dc:creator><dc:creator>Adam Locke</dc:creator><dc:creator>Priyanka Nakka</dc:creator><dc:creator>Karl Landheer</dc:creator><dc:creator>Olivier Delaneau</dc:creator><dc:creator>Anthony Marcketta</dc:creator><dc:creator>Joelle Mbatchou</dc:creator><dc:creator>Arden Moscati</dc:creator><dc:creator>Anita Pandit</dc:creator><dc:creator>Jonathan Ross</dc:creator><dc:creator>Carlo Sidore</dc:creator><dc:creator>Eli Stahl</dc:creator><dc:creator>Timothy Thornton</dc:creator><dc:creator>Sailaja Vedantam</dc:creator><dc:creator>Rujin Wang</dc:creator><dc:creator>Kuan-Han Wu</dc:creator><dc:creator>Bin Ye</dc:creator><dc:creator>Blair Zhang</dc:creator><dc:creator>Andrey Ziyatdinov</dc:creator><dc:creator>Yuxin Zou</dc:creator><dc:creator>Jingning Zhang</dc:creator><dc:creator>Kyoko Watanabe</dc:creator><dc:creator>Mira Tang</dc:creator><dc:creator>Frank Wendt</dc:creator><dc:creator>Suganthi Balasubramanian</dc:creator><dc:creator>Suying Bao</dc:creator><dc:creator>Kathie Sun</dc:creator><dc:creator>Chuanyi Zhang</dc:creator><dc:creator>Sean Yu</dc:creator><dc:creator>Aaron Zhang</dc:creator><dc:creator>David Corrigan</dc:creator><dc:creator>Dhruv Shidhaye</dc:creator><dc:creator>Chen Wang</dc:creator><dc:creator>Keyrun Adhikari</dc:creator><dc:creator>Alexander Lachmann</dc:creator><dc:creator>Brian Hobbs</dc:creator><dc:creator>Jon Silver</dc:creator><dc:creator>William Palmer</dc:creator><dc:creator>Rita Guerreiro</dc:creator><dc:creator>Amit Joshi</dc:creator><dc:creator>Antoine Baldassari</dc:creator><dc:creator>Sarah Graham</dc:creator><dc:creator>Ernst Mayerhofer</dc:creator><dc:creator>Erola Pairo Castineira</dc:creator><dc:creator>Mary Haas</dc:creator><dc:creator>Niek Verweij</dc:creator><dc:creator>George Hindy</dc:creator><dc:creator>Jonas Bovijn</dc:creator><dc:creator>Tanima De</dc:creator><dc:creator>Luanluan Sun</dc:creator><dc:creator>Olukayode Sosina</dc:creator><dc:creator>Arthur Gilly</dc:creator><dc:creator>Peter Dornbos</dc:creator><dc:creator>Juan Rodriguez-Flores</dc:creator><dc:creator>Gannie Tzoneva</dc:creator><dc:creator>Momodou W. Jallow</dc:creator><dc:creator>Anna Alkelai</dc:creator><dc:creator>Ariane Ayer</dc:creator><dc:creator>Veera Rajagopal</dc:creator><dc:creator>Sahar Gelfman</dc:creator><dc:creator>Vijay Kumar</dc:creator><dc:creator>Jacqueline Otto</dc:creator><dc:creator>Jose Bras</dc:creator><dc:creator>Silvia Alvarez</dc:creator><dc:creator>Jessie Brown</dc:creator><dc:creator>Hossein Khiabanian</dc:creator><dc:creator>Joana Revez</dc:creator><dc:creator>Kimberly Skead</dc:creator><dc:creator>Valentina Zavala</dc:creator><dc:creator>Jae Soon Sul</dc:creator><dc:creator>Lei Chen</dc:creator><dc:creator>Sam Choi</dc:creator><dc:creator>Amy Damask</dc:creator><dc:creator>Nan Lin</dc:creator><dc:creator>Charles Paulding</dc:creator><dc:creator>Sameer Malhotra</dc:creator><dc:creator>Joseph Herman</dc:creator><dc:creator>Michelle G. LeBlanc</dc:creator><dc:creator>Nadia Rana</dc:creator><dc:creator>Jennifer Rico-Varela</dc:creator><dc:creator>Jaimee Hernandez</dc:creator><dc:creator>Larizbeth Romero</dc:creator><dc:creator>Ashley Paynter</dc:creator><dc:creator>Randi Schwartz</dc:creator><dc:creator>Jody Hankins</dc:creator><dc:creator>Anna Han</dc:creator><dc:creator>Samuel Hart</dc:creator><dc:creator>Ryan Smith</dc:creator><dc:creator>Ann Perez-Beals</dc:creator><dc:creator>Gina Solari</dc:creator><dc:creator>Johannie Rivera-Picart</dc:creator><dc:creator>Michelle Pagan</dc:creator><dc:creator>Sunilbe Siceron</dc:creator><dc:creator>Juan L. Rodriguez-Flores</dc:creator><dc:creator>Moeen Riaz</dc:creator><dc:creator>Manav Kapoor</dc:creator><dc:creator>Joshua D. Backman</dc:creator><dc:creator>Alan R. Shuldiner</dc:creator><dc:creator>James E. Bradner</dc:creator><dc:creator>Igor Splawski</dc:creator><dc:creator>Asif Rasheed</dc:creator><dc:creator>John E. Dominy</dc:creator><dc:creator>Allan M. Gurtan</dc:creator><dc:creator>Danish Saleheen</dc:creator>
+            <dc:identifier>doi:10.1038/s41586-026-10667-5</dc:identifier>
+            <dc:source>Nature, Published online: 2026-06-17; | doi:10.1038/s41586-026-10667-5</dc:source>
+            <dc:date>2026-06-17</dc:date>
+            <prism:publicationName>Nature</prism:publicationName>
+            <prism:doi>10.1038/s41586-026-10667-5</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41586-026-10667-5</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41586-026-10653-x">
+            <title><![CDATA[A mosaic of whole-body representations on the human precentral gyrus]]></title>
+            <link>https://www.nature.com/articles/s41586-026-10653-x</link>
+            <content:encoded>
+                <![CDATA[<p>Nature, Published online: 17 June 2026; <a href="https://www.nature.com/articles/s41586-026-10653-x">doi:10.1038/s41586-026-10653-x</a></p>A comprehensive map of the human motor cortex at single-neuron resolution is described.]]></content:encoded>
+            <dc:title><![CDATA[A mosaic of whole-body representations on the human precentral gyrus]]></dc:title>
+            <dc:creator>Darrel R. Deo</dc:creator><dc:creator>Elizaveta V. Okorokova</dc:creator><dc:creator>Anna L. Pritchard</dc:creator><dc:creator>Nick V. Hahn</dc:creator><dc:creator>Nicholas S. Card</dc:creator><dc:creator>Samuel R. Nason-Tomaszewski</dc:creator><dc:creator>Justin Jude</dc:creator><dc:creator>Thomas Hosman</dc:creator><dc:creator>Eun Young Choi</dc:creator><dc:creator>Deqiang Qiu</dc:creator><dc:creator>Yuguang Meng</dc:creator><dc:creator>Maitreyee Wairagkar</dc:creator><dc:creator>Claire Nicolas</dc:creator><dc:creator>Foram B. Kamdar</dc:creator><dc:creator>Carrina Iacobacci</dc:creator><dc:creator>Alexander Acosta</dc:creator><dc:creator>Leigh R. Hochberg</dc:creator><dc:creator>Sydney S. Cash</dc:creator><dc:creator>Ziv M. Williams</dc:creator><dc:creator>Daniel B. Rubin</dc:creator><dc:creator>David M. Brandman</dc:creator><dc:creator>Sergey D. Stavisky</dc:creator><dc:creator>Nicholas AuYong</dc:creator><dc:creator>Chethan Pandarinath</dc:creator><dc:creator>John E. Downey</dc:creator><dc:creator>Sliman J. Bensmaia</dc:creator><dc:creator>Jaimie M. Henderson</dc:creator><dc:creator>Francis R. Willett</dc:creator>
+            <dc:identifier>doi:10.1038/s41586-026-10653-x</dc:identifier>
+            <dc:source>Nature, Published online: 2026-06-17; | doi:10.1038/s41586-026-10653-x</dc:source>
+            <dc:date>2026-06-17</dc:date>
+            <prism:publicationName>Nature</prism:publicationName>
+            <prism:doi>10.1038/s41586-026-10653-x</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41586-026-10653-x</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41586-026-10660-y">
+            <title><![CDATA[Spatial distribution of the proteome in the human body and in cancers]]></title>
+            <link>https://www.nature.com/articles/s41586-026-10660-y</link>
+            <content:encoded>
+                <![CDATA[<p>Nature, Published online: 17 June 2026; <a href="https://www.nature.com/articles/s41586-026-10660-y">doi:10.1038/s41586-026-10660-y</a></p>A spatially resolved map of the human proteome across a variety of healthy tissues and cancers provides wide-ranging insights in developmental biology and oncology, and could aid the identification of therapeutic targets and development of treatments for cancer.]]></content:encoded>
+            <dc:title><![CDATA[Spatial distribution of the proteome in the human body and in cancers]]></dc:title>
+            <dc:creator>Liang Yue</dc:creator><dc:creator>Wenhao Jiang</dc:creator><dc:creator>Sainan Li</dc:creator><dc:creator>Meng Luo</dc:creator><dc:creator>Ning Fan</dc:creator><dc:creator>Xiaolu Zhan</dc:creator><dc:creator>Rui Sun</dc:creator><dc:creator>Honghan Cheng</dc:creator><dc:creator>Zhangzhi Xue</dc:creator><dc:creator>Tong Liu</dc:creator><dc:creator>Qianhe Zhou</dc:creator><dc:creator>Kexin Chen</dc:creator><dc:creator>Tian Lu</dc:creator><dc:creator>Fang Guo</dc:creator><dc:creator>Dongwei Li</dc:creator><dc:creator>Weigang Ge</dc:creator><dc:creator>Zongxiang Nie</dc:creator><dc:creator>Mengge Lyu</dc:creator><dc:creator>Jun A</dc:creator><dc:creator>Yingrui Wang</dc:creator><dc:creator>Yingdan Chen</dc:creator><dc:creator>Zhenhai Fu</dc:creator><dc:creator>Nan Xiang</dc:creator><dc:creator>Lu Li</dc:creator><dc:creator>Fengchao Yu</dc:creator><dc:creator>Guo Ci Teo</dc:creator><dc:creator>Alexey I. Nesvizhskii</dc:creator><dc:creator>Meng Wang</dc:creator><dc:creator>Michael P. Snyder</dc:creator><dc:creator>Ben C. Collins</dc:creator><dc:creator>Qi Xiao</dc:creator><dc:creator>Ruedi Aebersold</dc:creator><dc:creator>Fei Xu</dc:creator><dc:creator>Hui Yang</dc:creator><dc:creator>Sijia Zhang</dc:creator><dc:creator>Yi Han</dc:creator><dc:creator>Yi Zhu</dc:creator><dc:creator>Yong Ji</dc:creator><dc:creator>Yan Li</dc:creator><dc:creator>Tiannan Guo</dc:creator>
+            <dc:identifier>doi:10.1038/s41586-026-10660-y</dc:identifier>
+            <dc:source>Nature, Published online: 2026-06-17; | doi:10.1038/s41586-026-10660-y</dc:source>
+            <dc:date>2026-06-17</dc:date>
+            <prism:publicationName>Nature</prism:publicationName>
+            <prism:doi>10.1038/s41586-026-10660-y</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41586-026-10660-y</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41586-026-10540-5">
+            <title><![CDATA[Lethal plague outbreaks in Lake Baikal hunter-gatherers 5,500 years ago]]></title>
+            <link>https://www.nature.com/articles/s41586-026-10540-5</link>
+            <content:encoded>
+                <![CDATA[<p>Nature, Published online: 17 June 2026; <a href="https://www.nature.com/articles/s41586-026-10540-5">doi:10.1038/s41586-026-10540-5</a></p>Analyses of ancient DNA from hunter-gatherers near Lake Baikal in southeast Siberia around 5,500 years ago indicate that highly virulent Yersinia pestis emerged earlier than previously estimated, far from the next known cases of infection in Late Neolithic Europe.]]></content:encoded>
+            <dc:title><![CDATA[Lethal plague outbreaks in Lake Baikal hunter-gatherers 5,500 years ago]]></dc:title>
+            <dc:creator>Ruairidh Macleod</dc:creator><dc:creator>Frederik V. Seersholm</dc:creator><dc:creator>Bianca De Sanctis</dc:creator><dc:creator>Angela Lieverse</dc:creator><dc:creator>Adrian Timpson</dc:creator><dc:creator>Rick Schulting</dc:creator><dc:creator>Jesper T. Stenderup</dc:creator><dc:creator>Charleen Gaunitz</dc:creator><dc:creator>Lasse Vinner</dc:creator><dc:creator>Olga Ivanovna Goriunova</dc:creator><dc:creator>Vladimir Ivanovich Bazaliiskii</dc:creator><dc:creator>Sergei V. Vasilyev</dc:creator><dc:creator>Erin Jessup</dc:creator><dc:creator>Yucheng Wang</dc:creator><dc:creator>Christopher Bronk Ramsey</dc:creator><dc:creator>Mark G. Thomas</dc:creator><dc:creator>Russell Corbett-Detig</dc:creator><dc:creator>Astrid K. N. Iversen</dc:creator><dc:creator>Andrzej W. Weber</dc:creator><dc:creator>Martin Sikora</dc:creator><dc:creator>Eske Willerslev</dc:creator>
+            <dc:identifier>doi:10.1038/s41586-026-10540-5</dc:identifier>
+            <dc:source>Nature, Published online: 2026-06-17; | doi:10.1038/s41586-026-10540-5</dc:source>
+            <dc:date>2026-06-17</dc:date>
+            <prism:publicationName>Nature</prism:publicationName>
+            <prism:doi>10.1038/s41586-026-10540-5</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41586-026-10540-5</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41586-026-10691-5">
+            <title><![CDATA[Mapping the neuronal building blocks of human language with language models]]></title>
+            <link>https://www.nature.com/articles/s41586-026-10691-5</link>
+            <content:encoded>
+                <![CDATA[<p>Nature, Published online: 17 June 2026; <a href="https://www.nature.com/articles/s41586-026-10691-5">doi:10.1038/s41586-026-10691-5</a></p>Wide-scale recordings reveal neurons in the human brain that encode fundamental components of language such as the grammatical relationships between words, their parts of speech and the higher-order syntactic structure of phrases and sentences.]]></content:encoded>
+            <dc:title><![CDATA[Mapping the neuronal building blocks of human language with language models]]></dc:title>
+            <dc:creator>Jing Cai</dc:creator><dc:creator>Yoav Kfir</dc:creator><dc:creator>Mohsen Jamali</dc:creator><dc:creator>Hesen Huang</dc:creator><dc:creator>Young Joon Kim</dc:creator><dc:creator>Sydney S. Cash</dc:creator><dc:creator>Ziv M. Williams</dc:creator>
+            <dc:identifier>doi:10.1038/s41586-026-10691-5</dc:identifier>
+            <dc:source>Nature, Published online: 2026-06-17; | doi:10.1038/s41586-026-10691-5</dc:source>
+            <dc:date>2026-06-17</dc:date>
+            <prism:publicationName>Nature</prism:publicationName>
+            <prism:doi>10.1038/s41586-026-10691-5</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41586-026-10691-5</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41586-026-10675-5">
+            <title><![CDATA[Towards autonomous medical artificial intelligence agents]]></title>
+            <link>https://www.nature.com/articles/s41586-026-10675-5</link>
+            <content:encoded>
+                <![CDATA[<p>Nature, Published online: 17 June 2026; <a href="https://www.nature.com/articles/s41586-026-10675-5">doi:10.1038/s41586-026-10675-5</a></p>A large language model artificial intelligence agent operating in a sandboxed electronic health record system can autonomously take patient histories, order tests, interpret findings, diagnose conditions and propose treatments, outperforming experienced clinicians while adhering to safety standards and clinical guidelines.]]></content:encoded>
+            <dc:title><![CDATA[Towards autonomous medical artificial intelligence agents]]></dc:title>
+            <dc:creator>Dyke Ferber</dc:creator><dc:creator>Lars Hilgers</dc:creator><dc:creator>Christiane Höper</dc:creator><dc:creator>Benedict Kinny-Köster</dc:creator><dc:creator>Jan-Niklas Eckardt</dc:creator><dc:creator>Katharina Egger-Heidrich</dc:creator><dc:creator>Marius Bill</dc:creator><dc:creator>Martin M. K. Schneider</dc:creator><dc:creator>Jan Clusmann</dc:creator><dc:creator>Lejla Kadric</dc:creator><dc:creator>Marcel Oehme</dc:creator><dc:creator>Maximilian Mayrhofer-Schmid</dc:creator><dc:creator>Alexander Oeser</dc:creator><dc:creator>Georg Wölflein</dc:creator><dc:creator>Isabella C. Wiest</dc:creator><dc:creator>Jan Moritz Middeke</dc:creator><dc:creator>A. John Iafrate</dc:creator><dc:creator>Daniel Truhn</dc:creator><dc:creator>Dirk Jäger</dc:creator><dc:creator>Jakob Nikolas Kather</dc:creator>
+            <dc:identifier>doi:10.1038/s41586-026-10675-5</dc:identifier>
+            <dc:source>Nature, Published online: 2026-06-17; | doi:10.1038/s41586-026-10675-5</dc:source>
+            <dc:date>2026-06-17</dc:date>
+            <prism:publicationName>Nature</prism:publicationName>
+            <prism:doi>10.1038/s41586-026-10675-5</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41586-026-10675-5</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41586-026-10682-6">
+            <title><![CDATA[<i>CHPO</i> coordinates chilling recovery and nitrogen use in rice]]></title>
+            <link>https://www.nature.com/articles/s41586-026-10682-6</link>
+            <content:encoded>
+                <![CDATA[<p>Nature, Published online: 17 June 2026; <a href="https://www.nature.com/articles/s41586-026-10682-6">doi:10.1038/s41586-026-10682-6</a></p>A rice gene, CHPO, links chilling resilience with nitrogen-use efficiency, revealing a domestication-shaped regulatory mechanism that could guide breeding of climate-resilient, sustainable rice varieties.]]></content:encoded>
+            <dc:title><![CDATA[<i>CHPO</i> coordinates chilling recovery and nitrogen use in rice]]></dc:title>
+            <dc:creator>Jie Cao</dc:creator><dc:creator>Yunyuan Xu</dc:creator><dc:creator>Zhitao Li</dc:creator><dc:creator>Jingdan Han</dc:creator><dc:creator>Qian Qian</dc:creator><dc:creator>Song Ge</dc:creator><dc:creator>Hong Wang</dc:creator><dc:creator>Wei Luo</dc:creator><dc:creator>Kang Chong</dc:creator>
+            <dc:identifier>doi:10.1038/s41586-026-10682-6</dc:identifier>
+            <dc:source>Nature, Published online: 2026-06-17; | doi:10.1038/s41586-026-10682-6</dc:source>
+            <dc:date>2026-06-17</dc:date>
+            <prism:publicationName>Nature</prism:publicationName>
+            <prism:doi>10.1038/s41586-026-10682-6</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41586-026-10682-6</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41586-026-10635-z">
+            <title><![CDATA[Optical metasurfaces for general vision processing on the edge]]></title>
+            <link>https://www.nature.com/articles/s41586-026-10635-z</link>
+            <content:encoded>
+                <![CDATA[<p>Nature, Published online: 17 June 2026; <a href="https://www.nature.com/articles/s41586-026-10635-z">doi:10.1038/s41586-026-10635-z</a></p>By embedding core computer vision principles into a large-scale optical metasurface, an efficient vision processing system using far fewer parameters is demonstrated to outperform many digital models and enables deployment on edge devices.]]></content:encoded>
+            <dc:title><![CDATA[Optical metasurfaces for general vision processing on the edge]]></dc:title>
+            <dc:creator>Jiayong Peng</dc:creator><dc:creator>Mingcheng Luo</dc:creator><dc:creator>Yuxi Han</dc:creator><dc:creator>Siying Wu</dc:creator><dc:creator>Hongsheng Li</dc:creator><dc:creator>Bhavin J. Shastri</dc:creator><dc:creator>Chester Shu</dc:creator><dc:creator>Qi Dou</dc:creator><dc:creator>Yang Chai</dc:creator><dc:creator>Chaoran Huang</dc:creator>
+            <dc:identifier>doi:10.1038/s41586-026-10635-z</dc:identifier>
+            <dc:source>Nature, Published online: 2026-06-17; | doi:10.1038/s41586-026-10635-z</dc:source>
+            <dc:date>2026-06-17</dc:date>
+            <prism:publicationName>Nature</prism:publicationName>
+            <prism:doi>10.1038/s41586-026-10635-z</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41586-026-10635-z</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41586-026-10654-w">
+            <title><![CDATA[Visualizing the impact of quenched disorder on 2D electron Wigner solids]]></title>
+            <link>https://www.nature.com/articles/s41586-026-10654-w</link>
+            <content:encoded>
+                <![CDATA[<p>Nature, Published online: 17 June 2026; <a href="https://www.nature.com/articles/s41586-026-10654-w">doi:10.1038/s41586-026-10654-w</a></p>A technique combining atomically resolved scanning tunnelling microscopy with neural-quantum-state quantum Monte Carlo simulation of disordered 2D electron Wigner solids establishes a powerful framework to enable the clear identification of two distinct defect-induced disorder regimes.]]></content:encoded>
+            <dc:title><![CDATA[Visualizing the impact of quenched disorder on 2D electron Wigner solids]]></dc:title>
+            <dc:creator>Zhehao Ge</dc:creator><dc:creator>Conor Smith</dc:creator><dc:creator>Zehao He</dc:creator><dc:creator>Yubo Yang</dc:creator><dc:creator>Qize Li</dc:creator><dc:creator>Ha-Leem Kim</dc:creator><dc:creator>Ziyu Xiang</dc:creator><dc:creator>Jianghan Xiao</dc:creator><dc:creator>Wenjie Zhou</dc:creator><dc:creator>Salman Kahn</dc:creator><dc:creator>Aining Hu</dc:creator><dc:creator>Melike Erdi</dc:creator><dc:creator>Rounak Banerjee</dc:creator><dc:creator>Takashi Taniguchi</dc:creator><dc:creator>Kenji Watanabe</dc:creator><dc:creator>Seth Ariel Tongay</dc:creator><dc:creator>Miguel A. Morales</dc:creator><dc:creator>Shiwei Zhang</dc:creator><dc:creator>Feng Wang</dc:creator><dc:creator>Michael F. Crommie</dc:creator>
+            <dc:identifier>doi:10.1038/s41586-026-10654-w</dc:identifier>
+            <dc:source>Nature, Published online: 2026-06-17; | doi:10.1038/s41586-026-10654-w</dc:source>
+            <dc:date>2026-06-17</dc:date>
+            <prism:publicationName>Nature</prism:publicationName>
+            <prism:doi>10.1038/s41586-026-10654-w</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41586-026-10654-w</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41586-026-10666-6">
+            <title><![CDATA[Cucurbituril-based anion-conducting membranes with supramolecular nanopores]]></title>
+            <link>https://www.nature.com/articles/s41586-026-10666-6</link>
+            <content:encoded>
+                <![CDATA[<p>Nature, Published online: 17 June 2026; <a href="https://www.nature.com/articles/s41586-026-10666-6">doi:10.1038/s41586-026-10666-6</a></p>A supramolecular strategy, in which uniform, dynamic nanopores are constructed, overcomes the limitations of limited structural control, mechanical fragility or demanding synthesis in nanoporous anion-conducting membranes, providing a versatile tool for molecularly engineering transport pathways.]]></content:encoded>
+            <dc:title><![CDATA[Cucurbituril-based anion-conducting membranes with supramolecular nanopores]]></dc:title>
+            <dc:creator>Ziang Xu</dc:creator><dc:creator>Dongcheng Lin</dc:creator><dc:creator>Haoyu Yin</dc:creator><dc:creator>Qingqing Feng</dc:creator><dc:creator>Fabrizia Foglia</dc:creator><dc:creator>Yihan Zhen</dc:creator><dc:creator>Adam Morris</dc:creator><dc:creator>Quentin Berrod</dc:creator><dc:creator>Maobin Pang</dc:creator><dc:creator>Lida Huang</dc:creator><dc:creator>Jing Liu</dc:creator><dc:creator>Jiekang Tian</dc:creator><dc:creator>Xiaonan Wang</dc:creator><dc:creator>Chunming Yang</dc:creator><dc:creator>Xingchen Tang</dc:creator><dc:creator>Xi Zhang</dc:creator><dc:creator>Baoguo Wang</dc:creator><dc:creator>Haotian Wang</dc:creator><dc:creator>Kai Liu</dc:creator>
+            <dc:identifier>doi:10.1038/s41586-026-10666-6</dc:identifier>
+            <dc:source>Nature, Published online: 2026-06-17; | doi:10.1038/s41586-026-10666-6</dc:source>
+            <dc:date>2026-06-17</dc:date>
+            <prism:publicationName>Nature</prism:publicationName>
+            <prism:doi>10.1038/s41586-026-10666-6</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41586-026-10666-6</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/d41586-026-01756-6">
+            <title><![CDATA[How the zebrafish brain weaves recent experiences into future decisions]]></title>
+            <link>https://www.nature.com/articles/d41586-026-01756-6</link>
+            <content:encoded>
+                <![CDATA[<p>Nature, Published online: 17 June 2026; <a href="https://www.nature.com/articles/d41586-026-01756-6">doi:10.1038/d41586-026-01756-6</a></p>Animals often use recent experience to guide future choices. Whole-brain imaging in larval zebrafish (Danio rerio) reveals a dedicated neural circuit that governs history-biased decisions: the thalamus maintains the most recent event as a stable pattern of neuronal activity, and the brainstem integrates recent experiences into a continuous signal that biases future action.]]></content:encoded>
+            <dc:title><![CDATA[How the zebrafish brain weaves recent experiences into future decisions]]></dc:title>
+            
+            <dc:identifier>doi:10.1038/d41586-026-01756-6</dc:identifier>
+            <dc:source>Nature, Published online: 2026-06-17; | doi:10.1038/d41586-026-01756-6</dc:source>
+            <dc:date>2026-06-17</dc:date>
+            <prism:publicationName>Nature</prism:publicationName>
+            <prism:doi>10.1038/d41586-026-01756-6</prism:doi>
+            <prism:url>https://www.nature.com/articles/d41586-026-01756-6</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/d41586-026-01923-9">
+            <title><![CDATA[Freezing brain damage in its tracks: cooling drugs limit stroke injury in mice]]></title>
+            <link>https://www.nature.com/articles/d41586-026-01923-9</link>
+            <content:encoded>
+                <![CDATA[<p>Nature, Published online: 17 June 2026; <a href="https://www.nature.com/articles/d41586-026-01923-9">doi:10.1038/d41586-026-01923-9</a></p>A two-drug combination induces hypothermia in mice by lowering metabolism and dilating blood vessels.]]></content:encoded>
+            <dc:title><![CDATA[Freezing brain damage in its tracks: cooling drugs limit stroke injury in mice]]></dc:title>
+            <dc:creator>Edward Chen</dc:creator>
+            <dc:identifier>doi:10.1038/d41586-026-01923-9</dc:identifier>
+            <dc:source>Nature, Published online: 2026-06-17; | doi:10.1038/d41586-026-01923-9</dc:source>
+            <dc:date>2026-06-17</dc:date>
+            <prism:publicationName>Nature</prism:publicationName>
+            <prism:doi>10.1038/d41586-026-01923-9</prism:doi>
+            <prism:url>https://www.nature.com/articles/d41586-026-01923-9</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/d41586-026-01938-2">
+            <title><![CDATA[Oceans in Asia smash heat records — what it means for extreme weather]]></title>
+            <link>https://www.nature.com/articles/d41586-026-01938-2</link>
+            <content:encoded>
+                <![CDATA[<p>Nature, Published online: 17 June 2026; <a href="https://www.nature.com/articles/d41586-026-01938-2">doi:10.1038/d41586-026-01938-2</a></p>Report shows region is particularly vulnerable to the effects of climate change.]]></content:encoded>
+            <dc:title><![CDATA[Oceans in Asia smash heat records — what it means for extreme weather]]></dc:title>
+            <dc:creator>Rachel Fieldhouse</dc:creator><dc:creator>Mohana Basu</dc:creator>
+            <dc:identifier>doi:10.1038/d41586-026-01938-2</dc:identifier>
+            <dc:source>Nature, Published online: 2026-06-17; | doi:10.1038/d41586-026-01938-2</dc:source>
+            <dc:date>2026-06-17</dc:date>
+            <prism:publicationName>Nature</prism:publicationName>
+            <prism:doi>10.1038/d41586-026-01938-2</prism:doi>
+            <prism:url>https://www.nature.com/articles/d41586-026-01938-2</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/d41586-026-01719-x">
+            <title><![CDATA[Wah-ult in the vault]]></title>
+            <link>https://www.nature.com/articles/d41586-026-01719-x</link>
+            <content:encoded>
+                <![CDATA[<p>Nature, Published online: 17 June 2026; <a href="https://www.nature.com/articles/d41586-026-01719-x">doi:10.1038/d41586-026-01719-x</a></p>Relics of wonder.]]></content:encoded>
+            <dc:title><![CDATA[Wah-ult in the vault]]></dc:title>
+            <dc:creator>Mark Arnold</dc:creator>
+            <dc:identifier>doi:10.1038/d41586-026-01719-x</dc:identifier>
+            <dc:source>Nature, Published online: 2026-06-17; | doi:10.1038/d41586-026-01719-x</dc:source>
+            <dc:date>2026-06-17</dc:date>
+            <prism:publicationName>Nature</prism:publicationName>
+            <prism:doi>10.1038/d41586-026-01719-x</prism:doi>
+            <prism:url>https://www.nature.com/articles/d41586-026-01719-x</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/d41586-026-01702-6">
+            <title><![CDATA[Reconfigurable quantum computer juggles 98 qubits]]></title>
+            <link>https://www.nature.com/articles/d41586-026-01702-6</link>
+            <content:encoded>
+                <![CDATA[<p>Nature, Published online: 17 June 2026; <a href="https://www.nature.com/articles/d41586-026-01702-6">doi:10.1038/d41586-026-01702-6</a></p>A quantum computer based on trapped ions can connect any two quantum bits, reaching performance levels that conventional computers cannot match.]]></content:encoded>
+            <dc:title><![CDATA[Reconfigurable quantum computer juggles 98 qubits]]></dc:title>
+            <dc:creator>Crystal Noel</dc:creator>
+            <dc:identifier>doi:10.1038/d41586-026-01702-6</dc:identifier>
+            <dc:source>Nature, Published online: 2026-06-17; | doi:10.1038/d41586-026-01702-6</dc:source>
+            <dc:date>2026-06-17</dc:date>
+            <prism:publicationName>Nature</prism:publicationName>
+            <prism:doi>10.1038/d41586-026-01702-6</prism:doi>
+            <prism:url>https://www.nature.com/articles/d41586-026-01702-6</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/d41586-026-01891-0">
+            <title><![CDATA[Reimagining machine vision with optical computing]]></title>
+            <link>https://www.nature.com/articles/d41586-026-01891-0</link>
+            <content:encoded>
+                <![CDATA[<p>Nature, Published online: 17 June 2026; <a href="https://www.nature.com/articles/d41586-026-01891-0">doi:10.1038/d41586-026-01891-0</a></p>A general-purpose artificial-intelligence vision system for use in image-sensing devices has been developed by embedding fundamentals of core computer-vision operations into a light-manipulating planar material called an optical metasurface. A prototype enables accurate, real-time perception and processing across diverse tasks, suggesting that this could be a solution for rapid, low-energy, on-device vision intelligence.]]></content:encoded>
+            <dc:title><![CDATA[Reimagining machine vision with optical computing]]></dc:title>
+            
+            <dc:identifier>doi:10.1038/d41586-026-01891-0</dc:identifier>
+            <dc:source>Nature, Published online: 2026-06-17; | doi:10.1038/d41586-026-01891-0</dc:source>
+            <dc:date>2026-06-17</dc:date>
+            <prism:publicationName>Nature</prism:publicationName>
+            <prism:doi>10.1038/d41586-026-01891-0</prism:doi>
+            <prism:url>https://www.nature.com/articles/d41586-026-01891-0</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/d41586-026-01705-3">
+            <title><![CDATA[Navigating a crowded developing brain leaves neurons with broken DNA]]></title>
+            <link>https://www.nature.com/articles/d41586-026-01705-3</link>
+            <content:encoded>
+                <![CDATA[<p>Nature, Published online: 17 June 2026; <a href="https://www.nature.com/articles/d41586-026-01705-3">doi:10.1038/d41586-026-01705-3</a></p>As neurons migrate to their final destinations in the forming brain, their DNA gets damaged. The brain has evolved a fix, but there can be lasting consequences if repair fails.]]></content:encoded>
+            <dc:title><![CDATA[Navigating a crowded developing brain leaves neurons with broken DNA]]></dc:title>
+            <dc:creator>Monica D. Manam</dc:creator><dc:creator>Christopher A. Walsh</dc:creator>
+            <dc:identifier>doi:10.1038/d41586-026-01705-3</dc:identifier>
+            <dc:source>Nature, Published online: 2026-06-17; | doi:10.1038/d41586-026-01705-3</dc:source>
+            <dc:date>2026-06-17</dc:date>
+            <prism:publicationName>Nature</prism:publicationName>
+            <prism:doi>10.1038/d41586-026-01705-3</prism:doi>
+            <prism:url>https://www.nature.com/articles/d41586-026-01705-3</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/d41586-026-01882-1">
+            <title><![CDATA[The EU needs to back its ambition to end animal testing with cash]]></title>
+            <link>https://www.nature.com/articles/d41586-026-01882-1</link>
+            <content:encoded>
+                <![CDATA[<p>Nature, Published online: 17 June 2026; <a href="https://www.nature.com/articles/d41586-026-01882-1">doi:10.1038/d41586-026-01882-1</a></p>The European Union has declared that it wants to stop using animals in chemical safety testing. Its goal will need a timeline and a serious funding commitment.]]></content:encoded>
+            <dc:title><![CDATA[The EU needs to back its ambition to end animal testing with cash]]></dc:title>
+            
+            <dc:identifier>doi:10.1038/d41586-026-01882-1</dc:identifier>
+            <dc:source>Nature, Published online: 2026-06-17; | doi:10.1038/d41586-026-01882-1</dc:source>
+            <dc:date>2026-06-17</dc:date>
+            <prism:publicationName>Nature</prism:publicationName>
+            <prism:doi>10.1038/d41586-026-01882-1</prism:doi>
+            <prism:url>https://www.nature.com/articles/d41586-026-01882-1</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/d41586-026-01903-z">
+            <title><![CDATA[Should nicotine be regulated like a narcotic? A Pacific nation makes the case]]></title>
+            <link>https://www.nature.com/articles/d41586-026-01903-z</link>
+            <content:encoded>
+                <![CDATA[<p>Nature, Published online: 17 June 2026; <a href="https://www.nature.com/articles/d41586-026-01903-z">doi:10.1038/d41586-026-01903-z</a></p>Existing global efforts to reduce harms caused by smoking have targeted tobacco smoking, but vapes containing nicotine are also harmful.]]></content:encoded>
+            <dc:title><![CDATA[Should nicotine be regulated like a narcotic? A Pacific nation makes the case]]></dc:title>
+            <dc:creator>Rachel Fieldhouse</dc:creator>
+            <dc:identifier>doi:10.1038/d41586-026-01903-z</dc:identifier>
+            <dc:source>Nature, Published online: 2026-06-17; | doi:10.1038/d41586-026-01903-z</dc:source>
+            <dc:date>2026-06-17</dc:date>
+            <prism:publicationName>Nature</prism:publicationName>
+            <prism:doi>10.1038/d41586-026-01903-z</prism:doi>
+            <prism:url>https://www.nature.com/articles/d41586-026-01903-z</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/d41586-026-01922-w">
+            <title><![CDATA[How the brain builds sentences, neuron by neuron]]></title>
+            <link>https://www.nature.com/articles/d41586-026-01922-w</link>
+            <content:encoded>
+                <![CDATA[<p>Nature, Published online: 17 June 2026; <a href="https://www.nature.com/articles/d41586-026-01922-w">doi:10.1038/d41586-026-01922-w</a></p>Neural maps reveal the specialized cells that produce speech.]]></content:encoded>
+            <dc:title><![CDATA[How the brain builds sentences, neuron by neuron]]></dc:title>
+            <dc:creator>Max Kozlov</dc:creator>
+            <dc:identifier>doi:10.1038/d41586-026-01922-w</dc:identifier>
+            <dc:source>Nature, Published online: 2026-06-17; | doi:10.1038/d41586-026-01922-w</dc:source>
+            <dc:date>2026-06-17</dc:date>
+            <prism:publicationName>Nature</prism:publicationName>
+            <prism:doi>10.1038/d41586-026-01922-w</prism:doi>
+            <prism:url>https://www.nature.com/articles/d41586-026-01922-w</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/d41586-026-01703-5">
+            <title><![CDATA[Light-controlled microgripper punches above its weight]]></title>
+            <link>https://www.nature.com/articles/d41586-026-01703-5</link>
+            <content:encoded>
+                <![CDATA[<p>Nature, Published online: 17 June 2026; <a href="https://www.nature.com/articles/d41586-026-01703-5">doi:10.1038/d41586-026-01703-5</a></p>A microscale gripper that can be opened and closed using light can fit into tight spaces and perform tasks linked to clinical applications.]]></content:encoded>
+            <dc:title><![CDATA[Light-controlled microgripper punches above its weight]]></dc:title>
+            <dc:creator>Leander Siegle</dc:creator><dc:creator>Harald Giessen</dc:creator>
+            <dc:identifier>doi:10.1038/d41586-026-01703-5</dc:identifier>
+            <dc:source>Nature, Published online: 2026-06-17; | doi:10.1038/d41586-026-01703-5</dc:source>
+            <dc:date>2026-06-17</dc:date>
+            <prism:publicationName>Nature</prism:publicationName>
+            <prism:doi>10.1038/d41586-026-01703-5</prism:doi>
+            <prism:url>https://www.nature.com/articles/d41586-026-01703-5</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/d41586-026-01739-7">
+            <title><![CDATA[The ancestors of eukaryotic cells contained a mix of genes from various microbes]]></title>
+            <link>https://www.nature.com/articles/d41586-026-01739-7</link>
+            <content:encoded>
+                <![CDATA[<p>Nature, Published online: 17 June 2026; <a href="https://www.nature.com/articles/d41586-026-01739-7">doi:10.1038/d41586-026-01739-7</a></p>Reconstruction of the ancestral gene repertoire of eukaryotic cells reveals traces of a series of close, long-term interactions with diverse microorganisms, and a role of viruses in gene exchange. The findings challenge the view that eukaryotic cells evolved from a simple merger of just two organisms.]]></content:encoded>
+            <dc:title><![CDATA[The ancestors of eukaryotic cells contained a mix of genes from various microbes]]></dc:title>
+            
+            <dc:identifier>doi:10.1038/d41586-026-01739-7</dc:identifier>
+            <dc:source>Nature, Published online: 2026-06-17; | doi:10.1038/d41586-026-01739-7</dc:source>
+            <dc:date>2026-06-17</dc:date>
+            <prism:publicationName>Nature</prism:publicationName>
+            <prism:doi>10.1038/d41586-026-01739-7</prism:doi>
+            <prism:url>https://www.nature.com/articles/d41586-026-01739-7</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/d41586-026-01883-0">
+            <title><![CDATA[These ‘master’ proteins protect us from deadly mutations — and could inspire new drugs]]></title>
+            <link>https://www.nature.com/articles/d41586-026-01883-0</link>
+            <content:encoded>
+                <![CDATA[<p>Nature, Published online: 17 June 2026; <a href="https://www.nature.com/articles/d41586-026-01883-0">doi:10.1038/d41586-026-01883-0</a></p>Biology has clever ways to mask the effects of potentially harmful gene mutations. Scientists are investigating how this ‘buffering’ works — and how to exploit it.]]></content:encoded>
+            <dc:title><![CDATA[These ‘master’ proteins protect us from deadly mutations — and could inspire new drugs]]></dc:title>
+            <dc:creator>Philip Ball</dc:creator>
+            <dc:identifier>doi:10.1038/d41586-026-01883-0</dc:identifier>
+            <dc:source>Nature, Published online: 2026-06-17; | doi:10.1038/d41586-026-01883-0</dc:source>
+            <dc:date>2026-06-17</dc:date>
+            <prism:publicationName>Nature</prism:publicationName>
+            <prism:doi>10.1038/d41586-026-01883-0</prism:doi>
+            <prism:url>https://www.nature.com/articles/d41586-026-01883-0</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41586-026-10770-7">
+            <title><![CDATA[Author Correction: Ontogeny and transcriptional regulation of Thetis cells]]></title>
+            <link>https://www.nature.com/articles/s41586-026-10770-7</link>
+            <content:encoded>
+                <![CDATA[<p>Nature, Published online: 16 June 2026; <a href="https://www.nature.com/articles/s41586-026-10770-7">doi:10.1038/s41586-026-10770-7</a></p>Author Correction: Ontogeny and transcriptional regulation of Thetis cells]]></content:encoded>
+            <dc:title><![CDATA[Author Correction: Ontogeny and transcriptional regulation of Thetis cells]]></dc:title>
+            <dc:creator>Yoselin A. Paucar Iza</dc:creator><dc:creator>Tyler Park</dc:creator><dc:creator>Eliyambuya Baker</dc:creator><dc:creator>Gayathri Shibu</dc:creator><dc:creator>Tilman Hoelting</dc:creator><dc:creator>Greyson Feather</dc:creator><dc:creator>Anushka Yadav</dc:creator><dc:creator>Yollanda Franco Parisotto</dc:creator><dc:creator>Zihan Zhao</dc:creator><dc:creator>Blossom Akagbosu</dc:creator><dc:creator>Marc Elosua Bayes</dc:creator><dc:creator>Logan Fisher</dc:creator><dc:creator>Lucas M. James</dc:creator><dc:creator>Jianping Ma</dc:creator><dc:creator>Benjamin D. Philpot</dc:creator><dc:creator>Behdad Afzali</dc:creator><dc:creator>Christina Leslie</dc:creator><dc:creator>Chrysothemis C. Brown</dc:creator>
+            <dc:identifier>doi:10.1038/s41586-026-10770-7</dc:identifier>
+            <dc:source>Nature, Published online: 2026-06-16; | doi:10.1038/s41586-026-10770-7</dc:source>
+            <dc:date>2026-06-16</dc:date>
+            <prism:publicationName>Nature</prism:publicationName>
+            <prism:doi>10.1038/s41586-026-10770-7</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41586-026-10770-7</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/d41586-026-01916-8">
+            <title><![CDATA[Terms of endearment? Bias in first-name eponyms for species named after people]]></title>
+            <link>https://www.nature.com/articles/d41586-026-01916-8</link>
+            <content:encoded>
+                <![CDATA[<p>Nature, Published online: 16 June 2026; <a href="https://www.nature.com/articles/d41586-026-01916-8">doi:10.1038/d41586-026-01916-8</a></p>Terms of endearment? Bias in first-name eponyms for species named after people]]></content:encoded>
+            <dc:title><![CDATA[Terms of endearment? Bias in first-name eponyms for species named after people]]></dc:title>
+            <dc:creator>Elizabeth J. Carlen</dc:creator><dc:creator>Jonathan B. Losos</dc:creator><dc:creator>Samantha E. E. Kreling</dc:creator>
+            <dc:identifier>doi:10.1038/d41586-026-01916-8</dc:identifier>
+            <dc:source>Nature, Published online: 2026-06-16; | doi:10.1038/d41586-026-01916-8</dc:source>
+            <dc:date>2026-06-16</dc:date>
+            <prism:publicationName>Nature</prism:publicationName>
+            <prism:doi>10.1038/d41586-026-01916-8</prism:doi>
+            <prism:url>https://www.nature.com/articles/d41586-026-01916-8</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/d41586-026-01914-w">
+            <title><![CDATA[The Haber–Bosch fertilizer production process should be taught through a social-ecological lens]]></title>
+            <link>https://www.nature.com/articles/d41586-026-01914-w</link>
+            <content:encoded>
+                <![CDATA[<p>Nature, Published online: 16 June 2026; <a href="https://www.nature.com/articles/d41586-026-01914-w">doi:10.1038/d41586-026-01914-w</a></p>The Haber–Bosch fertilizer production process should be taught through a social-ecological lens]]></content:encoded>
+            <dc:title><![CDATA[The Haber–Bosch fertilizer production process should be taught through a social-ecological lens]]></dc:title>
+            <dc:creator>Jianjun Wu</dc:creator>
+            <dc:identifier>doi:10.1038/d41586-026-01914-w</dc:identifier>
+            <dc:source>Nature, Published online: 2026-06-16; | doi:10.1038/d41586-026-01914-w</dc:source>
+            <dc:date>2026-06-16</dc:date>
+            <prism:publicationName>Nature</prism:publicationName>
+            <prism:doi>10.1038/d41586-026-01914-w</prism:doi>
+            <prism:url>https://www.nature.com/articles/d41586-026-01914-w</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/d41586-026-01811-2">
+            <title><![CDATA[How do researchers choose what to work on?]]></title>
+            <link>https://www.nature.com/articles/d41586-026-01811-2</link>
+            <content:encoded>
+                <![CDATA[<p>Nature, Published online: 16 June 2026; <a href="https://www.nature.com/articles/d41586-026-01811-2">doi:10.1038/d41586-026-01811-2</a></p>A scientist’s account of switching focus to tackle pressing problems, and researchers consider the best way to preserve eggs, in our weekly dip into Nature’s archive.]]></content:encoded>
+            <dc:title><![CDATA[How do researchers choose what to work on?]]></dc:title>
+            
+            <dc:identifier>doi:10.1038/d41586-026-01811-2</dc:identifier>
+            <dc:source>Nature, Published online: 2026-06-16; | doi:10.1038/d41586-026-01811-2</dc:source>
+            <dc:date>2026-06-16</dc:date>
+            <prism:publicationName>Nature</prism:publicationName>
+            <prism:doi>10.1038/d41586-026-01811-2</prism:doi>
+            <prism:url>https://www.nature.com/articles/d41586-026-01811-2</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/d41586-026-01915-9">
+            <title><![CDATA[El Niño in a thermally saturated world]]></title>
+            <link>https://www.nature.com/articles/d41586-026-01915-9</link>
+            <content:encoded>
+                <![CDATA[<p>Nature, Published online: 16 June 2026; <a href="https://www.nature.com/articles/d41586-026-01915-9">doi:10.1038/d41586-026-01915-9</a></p>El Niño in a thermally saturated world]]></content:encoded>
+            <dc:title><![CDATA[El Niño in a thermally saturated world]]></dc:title>
+            <dc:creator>Carlos García-Soto</dc:creator>
+            <dc:identifier>doi:10.1038/d41586-026-01915-9</dc:identifier>
+            <dc:source>Nature, Published online: 2026-06-16; | doi:10.1038/d41586-026-01915-9</dc:source>
+            <dc:date>2026-06-16</dc:date>
+            <prism:publicationName>Nature</prism:publicationName>
+            <prism:doi>10.1038/d41586-026-01915-9</prism:doi>
+            <prism:url>https://www.nature.com/articles/d41586-026-01915-9</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/d41586-026-01881-2">
+            <title><![CDATA[Mathematicians are developing rules for AI use — other fields should follow]]></title>
+            <link>https://www.nature.com/articles/d41586-026-01881-2</link>
+            <content:encoded>
+                <![CDATA[<p>Nature, Published online: 16 June 2026; <a href="https://www.nature.com/articles/d41586-026-01881-2">doi:10.1038/d41586-026-01881-2</a></p>The mathematics community is right to call for transparency, integrity and fairness to be protected when AI tools are used. Researchers in other disciplines could learn from this approach.]]></content:encoded>
+            <dc:title><![CDATA[Mathematicians are developing rules for AI use — other fields should follow]]></dc:title>
+            
+            <dc:identifier>doi:10.1038/d41586-026-01881-2</dc:identifier>
+            <dc:source>Nature, Published online: 2026-06-16; | doi:10.1038/d41586-026-01881-2</dc:source>
+            <dc:date>2026-06-16</dc:date>
+            <prism:publicationName>Nature</prism:publicationName>
+            <prism:doi>10.1038/d41586-026-01881-2</prism:doi>
+            <prism:url>https://www.nature.com/articles/d41586-026-01881-2</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/d41586-026-01877-y">
+            <title><![CDATA[AI has entered the workforce: tax tech profits, not people]]></title>
+            <link>https://www.nature.com/articles/d41586-026-01877-y</link>
+            <content:encoded>
+                <![CDATA[<p>Nature, Published online: 16 June 2026; <a href="https://www.nature.com/articles/d41586-026-01877-y">doi:10.1038/d41586-026-01877-y</a></p>As machines replace human labour, welfare states built on salary-linked taxation will need fundamental redesign.]]></content:encoded>
+            <dc:title><![CDATA[AI has entered the workforce: tax tech profits, not people]]></dc:title>
+            <dc:creator>Ljubica Nedelkoska</dc:creator>
+            <dc:identifier>doi:10.1038/d41586-026-01877-y</dc:identifier>
+            <dc:source>Nature, Published online: 2026-06-16; | doi:10.1038/d41586-026-01877-y</dc:source>
+            <dc:date>2026-06-16</dc:date>
+            <prism:publicationName>Nature</prism:publicationName>
+            <prism:doi>10.1038/d41586-026-01877-y</prism:doi>
+            <prism:url>https://www.nature.com/articles/d41586-026-01877-y</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/d41586-026-01884-z">
+            <title><![CDATA[Tech titans are hacking their bodies for a longer life: is there science behind their methods?]]></title>
+            <link>https://www.nature.com/articles/d41586-026-01884-z</link>
+            <content:encoded>
+                <![CDATA[<p>Nature, Published online: 16 June 2026; <a href="https://www.nature.com/articles/d41586-026-01884-z">doi:10.1038/d41586-026-01884-z</a></p>Influencers and ultra-rich people looking to extend their lifespan are trading tips and tricks on how to eke out extra years.]]></content:encoded>
+            <dc:title><![CDATA[Tech titans are hacking their bodies for a longer life: is there science behind their methods?]]></dc:title>
+            <dc:creator>Chris Stokel-Walker</dc:creator>
+            <dc:identifier>doi:10.1038/d41586-026-01884-z</dc:identifier>
+            <dc:source>Nature, Published online: 2026-06-16; | doi:10.1038/d41586-026-01884-z</dc:source>
+            <dc:date>2026-06-16</dc:date>
+            <prism:publicationName>Nature</prism:publicationName>
+            <prism:doi>10.1038/d41586-026-01884-z</prism:doi>
+            <prism:url>https://www.nature.com/articles/d41586-026-01884-z</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/d41586-026-01939-1">
+            <title><![CDATA[Daily briefing: How many elementary particles are there?]]></title>
+            <link>https://www.nature.com/articles/d41586-026-01939-1</link>
+            <content:encoded>
+                <![CDATA[<p>Nature, Published online: 16 June 2026; <a href="https://www.nature.com/articles/d41586-026-01939-1">doi:10.1038/d41586-026-01939-1</a></p>Estimates range from 17 to 995.5. Plus, one man with paralysis is using a brain–computer interface at home and GLP-1 obesity drugs appear to boost testosterone and sperm quality.]]></content:encoded>
+            <dc:title><![CDATA[Daily briefing: How many elementary particles are there?]]></dc:title>
+            <dc:creator>Flora Graham</dc:creator>
+            <dc:identifier>doi:10.1038/d41586-026-01939-1</dc:identifier>
+            <dc:source>Nature, Published online: 2026-06-16; | doi:10.1038/d41586-026-01939-1</dc:source>
+            <dc:date>2026-06-16</dc:date>
+            <prism:publicationName>Nature</prism:publicationName>
+            <prism:doi>10.1038/d41586-026-01939-1</prism:doi>
+            <prism:url>https://www.nature.com/articles/d41586-026-01939-1</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41586-026-10768-1">
+            <title><![CDATA[Nanocrystal-tailored recombination for all-perovskite tandem solar modules]]></title>
+            <link>https://www.nature.com/articles/s41586-026-10768-1</link>
+            <content:encoded>
+                <![CDATA[<p>Nature, Published online: 15 June 2026; <a href="https://www.nature.com/articles/s41586-026-10768-1">doi:10.1038/s41586-026-10768-1</a></p>Nanocrystal-tailored recombination for all-perovskite tandem solar modules]]></content:encoded>
+            <dc:title><![CDATA[Nanocrystal-tailored recombination for all-perovskite tandem solar modules]]></dc:title>
+            <dc:creator>Ke Xiao</dc:creator><dc:creator>Hongfei Sun</dc:creator><dc:creator>Xinke Kong</dc:creator><dc:creator>Han Gao</dc:creator><dc:creator>Jing Lou</dc:creator><dc:creator>Xingze Chen</dc:creator><dc:creator>Zimo Hu</dc:creator><dc:creator>Dongdong Xu</dc:creator><dc:creator>Renxing Lin</dc:creator><dc:creator>Runnan Liu</dc:creator><dc:creator>Siyu Xia</dc:creator><dc:creator>Jin Xie</dc:creator><dc:creator>Ye Liu</dc:creator><dc:creator>Xin Luo</dc:creator><dc:creator>Fengjia Fan</dc:creator><dc:creator>Changqi Ma</dc:creator><dc:creator>Chao Chang</dc:creator><dc:creator>Yuanyuan Wang</dc:creator><dc:creator>Hairen Tan</dc:creator>
+            <dc:identifier>doi:10.1038/s41586-026-10768-1</dc:identifier>
+            <dc:source>Nature, Published online: 2026-06-15; | doi:10.1038/s41586-026-10768-1</dc:source>
+            <dc:date>2026-06-15</dc:date>
+            <prism:publicationName>Nature</prism:publicationName>
+            <prism:doi>10.1038/s41586-026-10768-1</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41586-026-10768-1</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/d41586-026-01833-w">
+            <title><![CDATA[Bones of Iron Age skeleton were whittled into tools]]></title>
+            <link>https://www.nature.com/articles/d41586-026-01833-w</link>
+            <content:encoded>
+                <![CDATA[<p>Nature, Published online: 15 June 2026; <a href="https://www.nature.com/articles/d41586-026-01833-w">doi:10.1038/d41586-026-01833-w</a></p>The female individual’s brain was removed after her death, but her remains were carefully reassembled for her interment.]]></content:encoded>
+            <dc:title><![CDATA[Bones of Iron Age skeleton were whittled into tools]]></dc:title>
+            
+            <dc:identifier>doi:10.1038/d41586-026-01833-w</dc:identifier>
+            <dc:source>Nature, Published online: 2026-06-15; | doi:10.1038/d41586-026-01833-w</dc:source>
+            <dc:date>2026-06-15</dc:date>
+            <prism:publicationName>Nature</prism:publicationName>
+            <prism:doi>10.1038/d41586-026-01833-w</prism:doi>
+            <prism:url>https://www.nature.com/articles/d41586-026-01833-w</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/d41586-026-01867-0">
+            <title><![CDATA[The latest benefit of obesity drugs: boosting testosterone and sperm quality]]></title>
+            <link>https://www.nature.com/articles/d41586-026-01867-0</link>
+            <content:encoded>
+                <![CDATA[<p>Nature, Published online: 15 June 2026; <a href="https://www.nature.com/articles/d41586-026-01867-0">doi:10.1038/d41586-026-01867-0</a></p>Preliminary study finds that testosterone levels increase or stabilize in people taking GLP-1 medications.]]></content:encoded>
+            <dc:title><![CDATA[The latest benefit of obesity drugs: boosting testosterone and sperm quality]]></dc:title>
+            <dc:creator>Mariana Lenharo</dc:creator>
+            <dc:identifier>doi:10.1038/d41586-026-01867-0</dc:identifier>
+            <dc:source>Nature, Published online: 2026-06-15; | doi:10.1038/d41586-026-01867-0</dc:source>
+            <dc:date>2026-06-15</dc:date>
+            <prism:publicationName>Nature</prism:publicationName>
+            <prism:doi>10.1038/d41586-026-01867-0</prism:doi>
+            <prism:url>https://www.nature.com/articles/d41586-026-01867-0</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/d41586-026-01929-3">
+            <title><![CDATA[Daily briefing: Iron-Age human bones were made into tools before interment]]></title>
+            <link>https://www.nature.com/articles/d41586-026-01929-3</link>
+            <content:encoded>
+                <![CDATA[<p>Nature, Published online: 15 June 2026; <a href="https://www.nature.com/articles/d41586-026-01929-3">doi:10.1038/d41586-026-01929-3</a></p>Newly uncovered bones hint at how Iron Age Britons treated their dead. Plus, AI models have failed to beat human mathematicians at research-level problems and the everyday items that make great scientific tools.]]></content:encoded>
+            <dc:title><![CDATA[Daily briefing: Iron-Age human bones were made into tools before interment]]></dc:title>
+            <dc:creator>Flora Graham</dc:creator>
+            <dc:identifier>doi:10.1038/d41586-026-01929-3</dc:identifier>
+            <dc:source>Nature, Published online: 2026-06-15; | doi:10.1038/d41586-026-01929-3</dc:source>
+            <dc:date>2026-06-15</dc:date>
+            <prism:publicationName>Nature</prism:publicationName>
+            <prism:doi>10.1038/d41586-026-01929-3</prism:doi>
+            <prism:url>https://www.nature.com/articles/d41586-026-01929-3</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/d41586-026-01917-7">
+            <title><![CDATA[‘Every box has been opened’: London botanic gardens digitizes 7 million specimens]]></title>
+            <link>https://www.nature.com/articles/d41586-026-01917-7</link>
+            <content:encoded>
+                <![CDATA[<p>Nature, Published online: 15 June 2026; <a href="https://www.nature.com/articles/d41586-026-01917-7">doi:10.1038/d41586-026-01917-7</a></p>As Kew Botanic Gardens completes a scan of its collections, AI tools could help in the fight against biodiversity loss.]]></content:encoded>
+            <dc:title><![CDATA[‘Every box has been opened’: London botanic gardens digitizes 7 million specimens]]></dc:title>
+            <dc:creator>Davide Castelvecchi</dc:creator>
+            <dc:identifier>doi:10.1038/d41586-026-01917-7</dc:identifier>
+            <dc:source>Nature, Published online: 2026-06-15; | doi:10.1038/d41586-026-01917-7</dc:source>
+            <dc:date>2026-06-15</dc:date>
+            <prism:publicationName>Nature</prism:publicationName>
+            <prism:doi>10.1038/d41586-026-01917-7</prism:doi>
+            <prism:url>https://www.nature.com/articles/d41586-026-01917-7</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/d41586-026-01889-8">
+            <title><![CDATA[Why people should work together to shape the economy]]></title>
+            <link>https://www.nature.com/articles/d41586-026-01889-8</link>
+            <content:encoded>
+                <![CDATA[<p>Nature, Published online: 15 June 2026; <a href="https://www.nature.com/articles/d41586-026-01889-8">doi:10.1038/d41586-026-01889-8</a></p>An economist sets out how communities can direct economic decisions and not just endure their consequences.]]></content:encoded>
+            <dc:title><![CDATA[Why people should work together to shape the economy]]></dc:title>
+            <dc:creator>Clara Mattei</dc:creator>
+            <dc:identifier>doi:10.1038/d41586-026-01889-8</dc:identifier>
+            <dc:source>Nature, Published online: 2026-06-15; | doi:10.1038/d41586-026-01889-8</dc:source>
+            <dc:date>2026-06-15</dc:date>
+            <prism:publicationName>Nature</prism:publicationName>
+            <prism:doi>10.1038/d41586-026-01889-8</prism:doi>
+            <prism:url>https://www.nature.com/articles/d41586-026-01889-8</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/d41586-026-01863-4">
+            <title><![CDATA[At-home brain implant gives man with motor neuron disease his daily life back]]></title>
+            <link>https://www.nature.com/articles/d41586-026-01863-4</link>
+            <content:encoded>
+                <![CDATA[<p>Nature, Published online: 15 June 2026; <a href="https://www.nature.com/articles/d41586-026-01863-4">doi:10.1038/d41586-026-01863-4</a></p>The device has helped a man with motor neuron disease communicate and control his computer for nearly two years.]]></content:encoded>
+            <dc:title><![CDATA[At-home brain implant gives man with motor neuron disease his daily life back]]></dc:title>
+            <dc:creator>Miryam Naddaf</dc:creator>
+            <dc:identifier>doi:10.1038/d41586-026-01863-4</dc:identifier>
+            <dc:source>Nature, Published online: 2026-06-15; | doi:10.1038/d41586-026-01863-4</dc:source>
+            <dc:date>2026-06-15</dc:date>
+            <prism:publicationName>Nature</prism:publicationName>
+            <prism:doi>10.1038/d41586-026-01863-4</prism:doi>
+            <prism:url>https://www.nature.com/articles/d41586-026-01863-4</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/d41586-026-01887-w">
+            <title><![CDATA[How AI is revealing the secret lives of animals from hummingbirds to pumas]]></title>
+            <link>https://www.nature.com/articles/d41586-026-01887-w</link>
+            <content:encoded>
+                <![CDATA[<p>Nature, Published online: 15 June 2026; <a href="https://www.nature.com/articles/d41586-026-01887-w">doi:10.1038/d41586-026-01887-w</a></p>Advances in machine learning and other technologies are helping researchers to trace the movements, landmarks and social practices of wildlife.]]></content:encoded>
+            <dc:title><![CDATA[How AI is revealing the secret lives of animals from hummingbirds to pumas]]></dc:title>
+            <dc:creator>Ryan Huling</dc:creator>
+            <dc:identifier>doi:10.1038/d41586-026-01887-w</dc:identifier>
+            <dc:source>Nature, Published online: 2026-06-15; | doi:10.1038/d41586-026-01887-w</dc:source>
+            <dc:date>2026-06-15</dc:date>
+            <prism:publicationName>Nature</prism:publicationName>
+            <prism:doi>10.1038/d41586-026-01887-w</prism:doi>
+            <prism:url>https://www.nature.com/articles/d41586-026-01887-w</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/d41586-026-01885-y">
+            <title><![CDATA[In the field — and in the lab — sometimes the simplest tool is best]]></title>
+            <link>https://www.nature.com/articles/d41586-026-01885-y</link>
+            <content:encoded>
+                <![CDATA[<p>Nature, Published online: 15 June 2026; <a href="https://www.nature.com/articles/d41586-026-01885-y">doi:10.1038/d41586-026-01885-y</a></p>Technology has led to unprecedented innovation, but common household items can help make research more reproducible — and accessible.]]></content:encoded>
+            <dc:title><![CDATA[In the field — and in the lab — sometimes the simplest tool is best]]></dc:title>
+            <dc:creator>Amanda Heidt</dc:creator>
+            <dc:identifier>doi:10.1038/d41586-026-01885-y</dc:identifier>
+            <dc:source>Nature, Published online: 2026-06-15; | doi:10.1038/d41586-026-01885-y</dc:source>
+            <dc:date>2026-06-15</dc:date>
+            <prism:publicationName>Nature</prism:publicationName>
+            <prism:doi>10.1038/d41586-026-01885-y</prism:doi>
+            <prism:url>https://www.nature.com/articles/d41586-026-01885-y</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/d41586-026-01834-9">
+            <title><![CDATA[Huge study hints at risks of switching from tobacco cigarettes to vapes]]></title>
+            <link>https://www.nature.com/articles/d41586-026-01834-9</link>
+            <content:encoded>
+                <![CDATA[<p>Nature, Published online: 14 June 2026; <a href="https://www.nature.com/articles/d41586-026-01834-9">doi:10.1038/d41586-026-01834-9</a></p>Lung cancer risk was higher in people who took up electronic cigarettes than in those who quit smoking completely.]]></content:encoded>
+            <dc:title><![CDATA[Huge study hints at risks of switching from tobacco cigarettes to vapes]]></dc:title>
+            
+            <dc:identifier>doi:10.1038/d41586-026-01834-9</dc:identifier>
+            <dc:source>Nature, Published online: 2026-06-14; | doi:10.1038/d41586-026-01834-9</dc:source>
+            <dc:date>2026-06-14</dc:date>
+            <prism:publicationName>Nature</prism:publicationName>
+            <prism:doi>10.1038/d41586-026-01834-9</prism:doi>
+            <prism:url>https://www.nature.com/articles/d41586-026-01834-9</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/d41586-026-01911-z">
+            <title><![CDATA[Why we seek to fly: Books in brief]]></title>
+            <link>https://www.nature.com/articles/d41586-026-01911-z</link>
+            <content:encoded>
+                <![CDATA[<p>Nature, Published online: 12 June 2026; <a href="https://www.nature.com/articles/d41586-026-01911-z">doi:10.1038/d41586-026-01911-z</a></p>Andrew Robinson reviews five of the best science picks.]]></content:encoded>
+            <dc:title><![CDATA[Why we seek to fly: Books in brief]]></dc:title>
+            <dc:creator>Andrew Robinson</dc:creator>
+            <dc:identifier>doi:10.1038/d41586-026-01911-z</dc:identifier>
+            <dc:source>Nature, Published online: 2026-06-12; | doi:10.1038/d41586-026-01911-z</dc:source>
+            <dc:date>2026-06-12</dc:date>
+            <prism:publicationName>Nature</prism:publicationName>
+            <prism:doi>10.1038/d41586-026-01911-z</prism:doi>
+            <prism:url>https://www.nature.com/articles/d41586-026-01911-z</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/d41586-026-01912-y">
+            <title><![CDATA[Briefing Chat: The epic journey of Stonehenge’s central stone]]></title>
+            <link>https://www.nature.com/articles/d41586-026-01912-y</link>
+            <content:encoded>
+                <![CDATA[<p>Nature, Published online: 12 June 2026; <a href="https://www.nature.com/articles/d41586-026-01912-y">doi:10.1038/d41586-026-01912-y</a></p>Nature staff discuss some of the week’s top science news.]]></content:encoded>
+            <dc:title><![CDATA[Briefing Chat: The epic journey of Stonehenge’s central stone]]></dc:title>
+            <dc:creator>Benjamin Thompson</dc:creator><dc:creator>Nick Petrić Howe</dc:creator>
+            <dc:identifier>doi:10.1038/d41586-026-01912-y</dc:identifier>
+            <dc:source>Nature, Published online: 2026-06-12; | doi:10.1038/d41586-026-01912-y</dc:source>
+            <dc:date>2026-06-12</dc:date>
+            <prism:publicationName>Nature</prism:publicationName>
+            <prism:doi>10.1038/d41586-026-01912-y</prism:doi>
+            <prism:url>https://www.nature.com/articles/d41586-026-01912-y</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/d41586-026-01876-z">
+            <title><![CDATA[I advise the Vatican and the UN on AI — don’t dismiss the Pope’s message as theology]]></title>
+            <link>https://www.nature.com/articles/d41586-026-01876-z</link>
+            <content:encoded>
+                <![CDATA[<p>Nature, Published online: 12 June 2026; <a href="https://www.nature.com/articles/d41586-026-01876-z">doi:10.1038/d41586-026-01876-z</a></p>The papal letter goes beyond a religious document and diagnoses a failure in AI governance that the scientific community should heed.]]></content:encoded>
+            <dc:title><![CDATA[I advise the Vatican and the UN on AI — don’t dismiss the Pope’s message as theology]]></dc:title>
+            <dc:creator>Paolo Benanti</dc:creator>
+            <dc:identifier>doi:10.1038/d41586-026-01876-z</dc:identifier>
+            <dc:source>Nature, Published online: 2026-06-12; | doi:10.1038/d41586-026-01876-z</dc:source>
+            <dc:date>2026-06-12</dc:date>
+            <prism:publicationName>Nature</prism:publicationName>
+            <prism:doi>10.1038/d41586-026-01876-z</prism:doi>
+            <prism:url>https://www.nature.com/articles/d41586-026-01876-z</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/d41586-026-01902-0">
+            <title><![CDATA[‘Student Geng’ ignites research-integrity scandal in China after calling out senior academics]]></title>
+            <link>https://www.nature.com/articles/d41586-026-01902-0</link>
+            <content:encoded>
+                <![CDATA[<p>Nature, Published online: 12 June 2026; <a href="https://www.nature.com/articles/d41586-026-01902-0">doi:10.1038/d41586-026-01902-0</a></p>Video blogger’s viral accusations of data manipulation in Nature journals have sparked intense debate and speedy institutional investigations.]]></content:encoded>
+            <dc:title><![CDATA[‘Student Geng’ ignites research-integrity scandal in China after calling out senior academics]]></dc:title>
+            <dc:creator>Xiaoying You</dc:creator>
+            <dc:identifier>doi:10.1038/d41586-026-01902-0</dc:identifier>
+            <dc:source>Nature, Published online: 2026-06-12; | doi:10.1038/d41586-026-01902-0</dc:source>
+            <dc:date>2026-06-12</dc:date>
+            <prism:publicationName>Nature</prism:publicationName>
+            <prism:doi>10.1038/d41586-026-01902-0</prism:doi>
+            <prism:url>https://www.nature.com/articles/d41586-026-01902-0</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/d41586-026-01888-9">
+            <title><![CDATA[Humans outperform AI at this highly rigorous mathematics test]]></title>
+            <link>https://www.nature.com/articles/d41586-026-01888-9</link>
+            <content:encoded>
+                <![CDATA[<p>Nature, Published online: 12 June 2026; <a href="https://www.nature.com/articles/d41586-026-01888-9">doi:10.1038/d41586-026-01888-9</a></p>A new benchmark pitting AI against previously unseen maths problems shows that systems still fall short of top human expertise.]]></content:encoded>
+            <dc:title><![CDATA[Humans outperform AI at this highly rigorous mathematics test]]></dc:title>
+            <dc:creator>Davide Castelvecchi</dc:creator>
+            <dc:identifier>doi:10.1038/d41586-026-01888-9</dc:identifier>
+            <dc:source>Nature, Published online: 2026-06-12; | doi:10.1038/d41586-026-01888-9</dc:source>
+            <dc:date>2026-06-12</dc:date>
+            <prism:publicationName>Nature</prism:publicationName>
+            <prism:doi>10.1038/d41586-026-01888-9</prism:doi>
+            <prism:url>https://www.nature.com/articles/d41586-026-01888-9</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/d41586-026-01858-1">
+            <title><![CDATA[An innovative technology boosts image quality for protein structures]]></title>
+            <link>https://www.nature.com/articles/d41586-026-01858-1</link>
+            <content:encoded>
+                <![CDATA[<p>Nature, Published online: 12 June 2026; <a href="https://www.nature.com/articles/d41586-026-01858-1">doi:10.1038/d41586-026-01858-1</a></p>After years of effort, two research teams have developed ‘laser phase plate’ systems that could help cryo-electron-microscopy users to generate high-quality structures for a broad range of proteins.]]></content:encoded>
+            <dc:title><![CDATA[An innovative technology boosts image quality for protein structures]]></dc:title>
+            <dc:creator>Michael Eisenstein</dc:creator>
+            <dc:identifier>doi:10.1038/d41586-026-01858-1</dc:identifier>
+            <dc:source>Nature, Published online: 2026-06-12; | doi:10.1038/d41586-026-01858-1</dc:source>
+            <dc:date>2026-06-12</dc:date>
+            <prism:publicationName>Nature</prism:publicationName>
+            <prism:doi>10.1038/d41586-026-01858-1</prism:doi>
+            <prism:url>https://www.nature.com/articles/d41586-026-01858-1</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/d41586-026-01920-y">
+            <title><![CDATA[Daily briefing: How Venus flytraps snap shut]]></title>
+            <link>https://www.nature.com/articles/d41586-026-01920-y</link>
+            <content:encoded>
+                <![CDATA[<p>Nature, Published online: 12 June 2026; <a href="https://www.nature.com/articles/d41586-026-01920-y">doi:10.1038/d41586-026-01920-y</a></p>Softening cells enable flytraps to shut with astonishing speed. Plus, the cutting-edge science happening at the World Cup and why scientists shouldn’t ignore the Pope’s AI message.]]></content:encoded>
+            <dc:title><![CDATA[Daily briefing: How Venus flytraps snap shut]]></dc:title>
+            <dc:creator>Flora Graham</dc:creator>
+            <dc:identifier>doi:10.1038/d41586-026-01920-y</dc:identifier>
+            <dc:source>Nature, Published online: 2026-06-12; | doi:10.1038/d41586-026-01920-y</dc:source>
+            <dc:date>2026-06-12</dc:date>
+            <prism:publicationName>Nature</prism:publicationName>
+            <prism:doi>10.1038/d41586-026-01920-y</prism:doi>
+            <prism:url>https://www.nature.com/articles/d41586-026-01920-y</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41586-026-10784-1">
+            <title><![CDATA[Author Correction: Plasticity and language in the anaesthetized human hippocampus]]></title>
+            <link>https://www.nature.com/articles/s41586-026-10784-1</link>
+            <content:encoded>
+                <![CDATA[<p>Nature, Published online: 11 June 2026; <a href="https://www.nature.com/articles/s41586-026-10784-1">doi:10.1038/s41586-026-10784-1</a></p>Author Correction: Plasticity and language in the anaesthetized human hippocampus]]></content:encoded>
+            <dc:title><![CDATA[Author Correction: Plasticity and language in the anaesthetized human hippocampus]]></dc:title>
+            <dc:creator>Kalman A. Katlowitz</dc:creator><dc:creator>Eric R. Cole</dc:creator><dc:creator>Elizabeth A. Mickiewicz</dc:creator><dc:creator>Shraddha Shah</dc:creator><dc:creator>Melissa Franch</dc:creator><dc:creator>Joshua A. Adkinson</dc:creator><dc:creator>James L. Belanger</dc:creator><dc:creator>Raissa K. Mathura</dc:creator><dc:creator>Domokos Meszéna</dc:creator><dc:creator>Matthew McGinley</dc:creator><dc:creator>William Muñoz</dc:creator><dc:creator>Garrett P. Banks</dc:creator><dc:creator>Sydney S. Cash</dc:creator><dc:creator>Chih-Wei Hsu</dc:creator><dc:creator>Angelique C. Paulk</dc:creator><dc:creator>Nicole R. Provenza</dc:creator><dc:creator>Andrew J. Watrous</dc:creator><dc:creator>Ziv Williams</dc:creator><dc:creator>Alica M. Goldman</dc:creator><dc:creator>Vaishnav Krishnan</dc:creator><dc:creator>Atul Maheshwari</dc:creator><dc:creator>Sarah R. Heilbronner</dc:creator><dc:creator>Robert Kim</dc:creator><dc:creator>Nuttida Rungratsameetaweemana</dc:creator><dc:creator>Benjamin Y. Hayden</dc:creator><dc:creator>Sameer A. Sheth</dc:creator>
+            <dc:identifier>doi:10.1038/s41586-026-10784-1</dc:identifier>
+            <dc:source>Nature, Published online: 2026-06-11; | doi:10.1038/s41586-026-10784-1</dc:source>
+            <dc:date>2026-06-11</dc:date>
+            <prism:publicationName>Nature</prism:publicationName>
+            <prism:doi>10.1038/s41586-026-10784-1</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41586-026-10784-1</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/d41586-026-01886-x">
+            <title><![CDATA[Whale graveyard discovered 7km under the sea]]></title>
+            <link>https://www.nature.com/articles/d41586-026-01886-x</link>
+            <content:encoded>
+                <![CDATA[<p>Nature, Published online: 11 June 2026; <a href="https://www.nature.com/articles/d41586-026-01886-x">doi:10.1038/d41586-026-01886-x</a></p>The treasure trove of fossils and bones has already revealed a new species of extinct whale.]]></content:encoded>
+            <dc:title><![CDATA[Whale graveyard discovered 7km under the sea]]></dc:title>
+            <dc:creator>Shamini Bundell</dc:creator>
+            <dc:identifier>doi:10.1038/d41586-026-01886-x</dc:identifier>
+            <dc:source>Nature, Published online: 2026-06-11; | doi:10.1038/d41586-026-01886-x</dc:source>
+            <dc:date>2026-06-11</dc:date>
+            <prism:publicationName>Nature</prism:publicationName>
+            <prism:doi>10.1038/d41586-026-01886-x</prism:doi>
+            <prism:url>https://www.nature.com/articles/d41586-026-01886-x</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/d41586-026-01129-z">
+            <title><![CDATA[My diverse academic background is affecting my PhD studies — what do I do?]]></title>
+            <link>https://www.nature.com/articles/d41586-026-01129-z</link>
+            <content:encoded>
+                <![CDATA[<p>Nature, Published online: 11 June 2026; <a href="https://www.nature.com/articles/d41586-026-01129-z">doi:10.1038/d41586-026-01129-z</a></p>A PhD student in China who has changed his focus twice since obtaining his undergraduate degree is struggling to keep up.]]></content:encoded>
+            <dc:title><![CDATA[My diverse academic background is affecting my PhD studies — what do I do?]]></dc:title>
+            <dc:creator>Xiaoying You</dc:creator>
+            <dc:identifier>doi:10.1038/d41586-026-01129-z</dc:identifier>
+            <dc:source>Nature, Published online: 2026-06-11; | doi:10.1038/d41586-026-01129-z</dc:source>
+            <dc:date>2026-06-11</dc:date>
+            <prism:publicationName>Nature</prism:publicationName>
+            <prism:doi>10.1038/d41586-026-01129-z</prism:doi>
+            <prism:url>https://www.nature.com/articles/d41586-026-01129-z</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/d41586-026-01707-1">
+            <title><![CDATA[Tool flags suspicious journals before researchers submit papers]]></title>
+            <link>https://www.nature.com/articles/d41586-026-01707-1</link>
+            <content:encoded>
+                <![CDATA[<p>Nature, Published online: 11 June 2026; <a href="https://www.nature.com/articles/d41586-026-01707-1">doi:10.1038/d41586-026-01707-1</a></p>The free platform, called Journal Trends, could also allow integrity sleuths to spot low-quality publications.]]></content:encoded>
+            <dc:title><![CDATA[Tool flags suspicious journals before researchers submit papers]]></dc:title>
+            <dc:creator>Mohana Basu</dc:creator>
+            <dc:identifier>doi:10.1038/d41586-026-01707-1</dc:identifier>
+            <dc:source>Nature, Published online: 2026-06-11; | doi:10.1038/d41586-026-01707-1</dc:source>
+            <dc:date>2026-06-11</dc:date>
+            <prism:publicationName>Nature</prism:publicationName>
+            <prism:doi>10.1038/d41586-026-01707-1</prism:doi>
+            <prism:url>https://www.nature.com/articles/d41586-026-01707-1</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/d41586-026-01865-2">
+            <title><![CDATA[World Cup: science must tackle footballers’ mental and physical health]]></title>
+            <link>https://www.nature.com/articles/d41586-026-01865-2</link>
+            <content:encoded>
+                <![CDATA[<p>Nature, Published online: 11 June 2026; <a href="https://www.nature.com/articles/d41586-026-01865-2">doi:10.1038/d41586-026-01865-2</a></p>Professional player turned medical scientist, Vincent Gouttebarge, tells Nature how sport weighs on the health of athletes.]]></content:encoded>
+            <dc:title><![CDATA[World Cup: science must tackle footballers’ mental and physical health]]></dc:title>
+            <dc:creator>David Adam</dc:creator>
+            <dc:identifier>doi:10.1038/d41586-026-01865-2</dc:identifier>
+            <dc:source>Nature, Published online: 2026-06-11; | doi:10.1038/d41586-026-01865-2</dc:source>
+            <dc:date>2026-06-11</dc:date>
+            <prism:publicationName>Nature</prism:publicationName>
+            <prism:doi>10.1038/d41586-026-01865-2</prism:doi>
+            <prism:url>https://www.nature.com/articles/d41586-026-01865-2</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/d41586-026-01905-x">
+            <title><![CDATA[Daily briefing: Deep-sea whale graveyard is a treasure trove of fossils]]></title>
+            <link>https://www.nature.com/articles/d41586-026-01905-x</link>
+            <content:encoded>
+                <![CDATA[<p>Nature, Published online: 11 June 2026; <a href="https://www.nature.com/articles/d41586-026-01905-x">doi:10.1038/d41586-026-01905-x</a></p>Researchers have uncovered more than 400 fossilized whale bones in an ocean-floor chasm. Plus, the working lives of scientists, in pictures, and how AI could slow the pace of research publication for the better.]]></content:encoded>
+            <dc:title><![CDATA[Daily briefing: Deep-sea whale graveyard is a treasure trove of fossils]]></dc:title>
+            <dc:creator>Jacob Smith</dc:creator>
+            <dc:identifier>doi:10.1038/d41586-026-01905-x</dc:identifier>
+            <dc:source>Nature, Published online: 2026-06-11; | doi:10.1038/d41586-026-01905-x</dc:source>
+            <dc:date>2026-06-11</dc:date>
+            <prism:publicationName>Nature</prism:publicationName>
+            <prism:doi>10.1038/d41586-026-01905-x</prism:doi>
+            <prism:url>https://www.nature.com/articles/d41586-026-01905-x</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/d41586-026-01866-1">
+            <title><![CDATA[This World Cup could be the most high-tech yet — the innovations to watch for]]></title>
+            <link>https://www.nature.com/articles/d41586-026-01866-1</link>
+            <content:encoded>
+                <![CDATA[<p>Nature, Published online: 11 June 2026; <a href="https://www.nature.com/articles/d41586-026-01866-1">doi:10.1038/d41586-026-01866-1</a></p>Nature asked a football-journal chief about emerging trends in the sport, from AI tools to PhD students embedded in teams.]]></content:encoded>
+            <dc:title><![CDATA[This World Cup could be the most high-tech yet — the innovations to watch for]]></dc:title>
+            <dc:creator>Mariana Lenharo</dc:creator>
+            <dc:identifier>doi:10.1038/d41586-026-01866-1</dc:identifier>
+            <dc:source>Nature, Published online: 2026-06-11; | doi:10.1038/d41586-026-01866-1</dc:source>
+            <dc:date>2026-06-11</dc:date>
+            <prism:publicationName>Nature</prism:publicationName>
+            <prism:doi>10.1038/d41586-026-01866-1</prism:doi>
+            <prism:url>https://www.nature.com/articles/d41586-026-01866-1</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/d41586-026-01857-2">
+            <title><![CDATA[Revealed: how Venus flytraps snap shut with astonishing speed]]></title>
+            <link>https://www.nature.com/articles/d41586-026-01857-2</link>
+            <content:encoded>
+                <![CDATA[<p>Nature, Published online: 11 June 2026; <a href="https://www.nature.com/articles/d41586-026-01857-2">doi:10.1038/d41586-026-01857-2</a></p>Softening of the cells on the outermost surface of the trap lets the plant move at a breakneck pace.]]></content:encoded>
+            <dc:title><![CDATA[Revealed: how Venus flytraps snap shut with astonishing speed]]></dc:title>
+            <dc:creator>Lauren Wolf</dc:creator>
+            <dc:identifier>doi:10.1038/d41586-026-01857-2</dc:identifier>
+            <dc:source>Nature, Published online: 2026-06-11; | doi:10.1038/d41586-026-01857-2</dc:source>
+            <dc:date>2026-06-11</dc:date>
+            <prism:publicationName>Nature</prism:publicationName>
+            <prism:doi>10.1038/d41586-026-01857-2</prism:doi>
+            <prism:url>https://www.nature.com/articles/d41586-026-01857-2</prism:url>
+        </item>
+    
+</rdf:RDF>
