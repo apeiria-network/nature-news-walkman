@@ -41,6 +41,13 @@ NEWS_MARKER_RE = re.compile(
 )
 
 
+INLINE_TAGS = frozenset({
+    'a', 'abbr', 'acronym', 'b', 'bdo', 'big', 'br', 'cite', 'code',
+    'dfn', 'em', 'i', 'kbd', 'label', 'mark', 'q', 's', 'samp', 'small',
+    'span', 'strong', 'sub', 'time', 'tt', 'u', 'var',
+})
+
+
 class NatureBodyParser(HTMLParser):
     def __init__(self) -> None:
         super().__init__(convert_charrefs=True)
@@ -80,9 +87,10 @@ class NatureBodyParser(HTMLParser):
             self.capture_depth = 1
             return
 
-        if self.current_tag:
+        if self.current_tag and not self.ignore_stack:
             self.capture_depth += 1
-            if tag == 'br':
+            # Inline tags: add a space boundary to prevent word concatenation
+            if tag in INLINE_TAGS:
                 self.current_parts.append(' ')
 
     def handle_endtag(self, tag: str) -> None:
@@ -107,6 +115,9 @@ class NatureBodyParser(HTMLParser):
 
             if self.capture_depth > 0:
                 self.capture_depth -= 1
+                # Inline tags: add a space boundary on close too
+                if tag in INLINE_TAGS and not self.ignore_stack:
+                    self.current_parts.append(' ')
 
     def handle_data(self, data: str) -> None:
         if self.current_tag and not self.ignore_stack and not self.skip_block_depth:
