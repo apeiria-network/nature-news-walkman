@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+from html.parser import HTMLParser
 import json
 import random
 import re
@@ -38,6 +39,78 @@ NEWS_MARKER_RE = re.compile(
     r'<li[^>]*data-test=["\']article-category["\'][^>]*>\s*<span[^>]*class=["\']c-article-identifiers__type["\'][^>]*>\s*NEWS\s*</span>',
     re.I | re.S,
 )
+
+
+class NatureBodyParser(HTMLParser):
+    def __init__(self) -> None:
+        super().__init__(convert_charrefs=True)
+        self.blocks: list[str] = []
+        self.current_tag: str | None = None
+        self.current_parts: list[str] = []
+        self.capture_depth = 0
+        self.ignore_stack: list[str] = []
+        self.skip_block_depth = 0
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        attrs_map = {key: (value or '') for key, value in attrs}
+        class_value = attrs_map.get('class', '')
+        lower_class = class_value.lower()
+
+        if self.skip_block_depth:
+            if tag in {'div', 'article', 'figure'}:
+                self.skip_block_depth += 1
+            return
+
+        if tag == 'sup':
+            self.ignore_stack.append(tag)
+            return
+
+        if tag in {'figure', 'article', 'div'} and (
+            'figure' in lower_class
+            or 'recommended' in lower_class
+            or 'app-access-wall' in lower_class
+            or 'article-related' in lower_class
+        ):
+            self.skip_block_depth = 1
+            return
+
+        if tag in {'p', 'h2'}:
+            self.current_tag = tag
+            self.current_parts = []
+            self.capture_depth = 1
+            return
+
+        if self.current_tag:
+            self.capture_depth += 1
+            if tag == 'br':
+                self.current_parts.append(' ')
+
+    def handle_endtag(self, tag: str) -> None:
+        if self.skip_block_depth:
+            if tag in {'div', 'article', 'figure'}:
+                self.skip_block_depth -= 1
+            return
+
+        if self.ignore_stack and tag == self.ignore_stack[-1]:
+            self.ignore_stack.pop()
+            return
+
+        if self.current_tag:
+            if tag == self.current_tag:
+                text = clean_text(''.join(self.current_parts))
+                if text:
+                    self.blocks.append(text)
+                self.current_tag = None
+                self.current_parts = []
+                self.capture_depth = 0
+                return
+
+            if self.capture_depth > 0:
+                self.capture_depth -= 1
+
+    def handle_data(self, data: str) -> None:
+        if self.current_tag and not self.ignore_stack and not self.skip_block_depth:
+            self.current_parts.append(data)
 
 
 def clean_text(text: str) -> str:
@@ -82,8 +155,15 @@ def read_url_file(path: Path) -> list[str]:
     return urls
 
 
-def fetch_html(url: str, timeout: float) -> tuple[str, str]:
-    request = Request(url, headers={'User-Agent': USER_AGENT})
+def read_cookie_file(path: Path) -> str:
+    return path.read_text(encoding='utf-8').strip()
+
+
+def fetch_html(url: str, timeout: float, cookie: str = '') -> tuple[str, str]:
+    headers = {'User-Agent': USER_AGENT}
+    if cookie:
+        headers['Cookie'] = cookie
+    request = Request(url, headers=headers)
     try:
         with urlopen(request, timeout=timeout) as response:
             final_url = response.geturl()
@@ -227,13 +307,11 @@ def extract_full_text(html: str) -> str:
     if not segment:
         return ''
 
-    segment = re.sub(r'<article[^>]*class=["\'][^"\']*recommended[^"\']*["\'][^>]*>.*?</article>', '', segment, flags=re.I | re.S)
-    segment = re.sub(r'<div[^>]*class=["\'][^"\']*app-access-wall[^"\']*["\'][^>]*>.*?</div>', '', segment, flags=re.I | re.S)
-    segment = re.sub(r'<figure[^>]*>.*?</figure>', '', segment, flags=re.I | re.S)
+    parser = NatureBodyParser()
+    parser.feed(segment)
 
     blocks = []
     seen = set()
-    matches = re.findall(r'<(h2|p)[^>]*>(.*?)</\1>', segment, re.I | re.S)
     noise_prefixes = (
         'access nature and',
         'get nature+',
@@ -255,10 +333,9 @@ def extract_full_text(html: str) -> str:
         'continue with orcid',
     )
 
-    for tag_name, raw in matches:
-        text = clean_text(raw)
+    for text in parser.blocks:
         lower = text.lower()
-        if not text or len(text) < 2:
+        if len(text) < 2:
             continue
         if any(lower.startswith(prefix) for prefix in noise_prefixes):
             continue
@@ -270,12 +347,10 @@ def extract_full_text(html: str) -> str:
             continue
         if lower in seen:
             continue
-
+        if len(text) < 25 and text.lower() not in {'inconsistent rules', 'just chilling'}:
+            continue
         seen.add(lower)
-        if tag_name.lower() == 'h2':
-            blocks.append(text)
-        elif len(text) >= 25:
-            blocks.append(text)
+        blocks.append(text)
 
     return '\n\n'.join(blocks)
 
@@ -294,8 +369,8 @@ def extract_reference_list(html: str) -> list[str]:
     return references
 
 
-def build_article(url: str, timeout: float) -> dict:
-    final_url, html = fetch_html(url, timeout=timeout)
+def build_article(url: str, timeout: float, cookie: str = '') -> dict:
+    final_url, html = fetch_html(url, timeout=timeout, cookie=cookie)
     if not is_news_article(html):
         raise RuntimeError(f'Skipping non-NEWS article: {url}')
 
@@ -350,6 +425,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument('--url', help='Single Nature article URL')
     parser.add_argument('--url-file', help='Text file containing one Nature article URL per line')
     parser.add_argument('--output', default=str(DEFAULT_OUTPUT_PATH), help='Path to save structured JSON')
+    parser.add_argument('--cookie-file', help='Path to a local file containing the Nature Cookie header value')
     parser.add_argument('--pretty', action='store_true', help='Pretty-print JSON output')
     parser.add_argument('--timeout', type=float, default=20.0, help='HTTP timeout in seconds')
     return parser.parse_args()
@@ -362,6 +438,14 @@ def main() -> int:
         return 1
 
     urls = []
+    cookie = ''
+    if args.cookie_file:
+        cookie_file = Path(args.cookie_file)
+        if not cookie_file.exists():
+            print(f'Cookie file not found: {cookie_file}', file=sys.stderr)
+            return 1
+        cookie = read_cookie_file(cookie_file)
+
     if args.url:
         urls.append(args.url.strip())
     if args.url_file:
@@ -390,7 +474,7 @@ def main() -> int:
     articles = []
     for index, url in enumerate(deduped_urls):
         try:
-            article = build_article(url, timeout=args.timeout)
+            article = build_article(url, timeout=args.timeout, cookie=cookie)
             articles.append(article)
         except RuntimeError as exc:
             print(str(exc), file=sys.stderr)
