@@ -1,211 +1,248 @@
 #!/usr/bin/env python3
 """
-Nature News Sound - TTS Helper
+Generate English TTS audio for selected Nature news articles.
 
 Usage:
-    python3 nature_news_digest.py --output-dir .claude/nature-news-walkman --tts
-    python3 nature_news_digest.py --output-dir .claude/nature-news-walkman --tts --tts-engine edge-tts
+    python scripts/nature_news_sound.py 1 2 3
+    python scripts/nature_news_sound.py 1 --engine edge-tts
+    python scripts/nature_news_sound.py 1 2 --input .claude/nature-news-walkman/data/nature_articles.json
 
-Outputs:
-    - Nature_News{N}_English.mp3   (English TTS audio per news, if --tts)
+Indices correspond to the article numbers printed by news_read.py (1-based, newest first).
 
-TTS runtime:
-    - Reuse scripts/.venv under the sound skill when it is available and valid
-    - Create scripts/.venv under the sound skill if it does not exist yet
-    - Install missing runtime dependencies into that same scripts/.venv
-    - Run TTS through the Python interpreter inside scripts/.venv
-
-TTS engines:
-    - gTTS (default): Google TTS, requires internet access to Google servers
-    - edge-tts (fallback): Microsoft Edge TTS, works in China without VPN
+Outputs mp3 files to: .claude/nature-news-walkman/audio/
 """
 
+from __future__ import annotations
+
 import argparse
+import json
+import re
 import subprocess
 import sys
-import re
+from datetime import datetime
 from pathlib import Path
 
-from local_venv import ensure_local_venv
+DEFAULT_INPUT_PATH = Path('.claude/nature-news-walkman/data/nature_articles.json')
+DEFAULT_AUDIO_DIR = Path('.claude/nature-news-walkman/audio')
+MAX_ARTICLES = 10
+EDGE_TTS_VOICES = {
+    'en': 'en-US-AvaNeural',
+    'en-US': 'en-US-AvaNeural',
+    'en-GB': 'en-GB-SoniaNeural',
+    'zh-CN': 'zh-CN-XiaoxiaoNeural',
+    'zh': 'zh-CN-XiaoxiaoNeural',
+}
 
 
-DEFAULT_OUTPUT_SUBDIR = Path('.claude/nature-news-walkman')
+# ─── helpers ──────────────────────────────────────────────────────────────────
+
+def get_venv_python() -> str:
+    scripts_dir = Path(__file__).resolve().parent
+    venv_dir = scripts_dir / '.venv'
+    candidates = [
+        venv_dir / 'Scripts' / 'python.exe',
+        venv_dir / 'bin' / 'python',
+    ]
+    for candidate in candidates:
+        if candidate.exists():
+            return str(candidate)
+    raise RuntimeError(
+        f'Virtual environment not found at {venv_dir}. '
+        'Run: bash scripts/venv_install.sh'
+    )
 
 
-def resolve_default_output_dir() -> str:
-    """Return the default writable project storage directory, creating it if needed."""
-    project_root = Path(__file__).resolve().parents[2]
-    candidate = project_root / DEFAULT_OUTPUT_SUBDIR
-    try:
-        candidate.mkdir(parents=True, exist_ok=True)
-        test_file = candidate / '.write_test.tmp'
-        test_file.write_text('ok', encoding='utf-8')
-        test_file.unlink()
-        return str(candidate)
-    except OSError:
-        candidate.mkdir(parents=True, exist_ok=True)
-        return str(candidate)
+def parse_sort_key(date_value: str) -> tuple[int, str]:
+    value = (date_value or '').strip()
+    if not value:
+        return (0, '')
+    for fmt in ('%Y-%m-%d', '%Y-%m-%dT%H:%M:%S%z', '%Y-%m-%dT%H:%M:%S', '%Y-%m-%dT%H:%M:%SZ'):
+        try:
+            return (1, datetime.strptime(value, fmt).isoformat())
+        except ValueError:
+            continue
+    return (0, value)
+
+
+def load_sorted_articles(input_path: Path) -> list[dict]:
+    data = json.loads(input_path.read_text(encoding='utf-8'))
+    if not isinstance(data, list):
+        raise ValueError('Input JSON must be a list of article objects.')
+    articles = [a for a in data if isinstance(a, dict) and a.get('title') and a.get('link')]
+    articles.sort(key=lambda a: parse_sort_key(a.get('date', '')), reverse=True)
+    return articles[:MAX_ARTICLES]
 
 
 def clean_text_for_tts(text: str) -> str:
-    """Clean news text for TTS: remove markdown formatting, credit lines, etc."""
-    # Remove markdown bold/italic
     text = re.sub(r'\*{1,2}(.*?)\*{1,2}', r'\1', text)
-    # Remove markdown links
     text = re.sub(r'\[(.*?)\]\(.*?\)', r'\1', text)
-    # Remove credit lines
     text = re.sub(r'Credit:.*', '', text)
-    # Remove image references
     text = re.sub(r'!\[(.*?)\]\(.*?\)', '', text)
-    # Remove heading markers
     text = re.sub(r'^#{1,6}\s+', '', text, flags=re.MULTILINE)
-    # Remove horizontal rules
     text = re.sub(r'^---+$', '', text, flags=re.MULTILINE)
-    # Remove source/DOI lines
     text = re.sub(r'\*?doi:.*', '', text)
     text = re.sub(r'\*?Source:.*', '', text)
-    # Remove bracketed notes like [in vitro]
     text = re.sub(r'\[([^\]]+)\]', r'\1', text)
-    # Collapse multiple whitespace
     text = re.sub(r'\n{3,}', '\n\n', text)
     text = re.sub(r' {2,}', ' ', text)
     return text.strip()
 
 
-# ============================================================
-# TTS Engine: gTTS (primary)
-# ============================================================
+def safe_filename(title: str, index: int) -> str:
+    slug = re.sub(r'[^\w\s-]', '', title.lower())
+    slug = re.sub(r'[\s_-]+', '-', slug).strip('-')[:60]
+    return f'{index:03d}_{slug}.mp3'
 
-def generate_tts_gtts(text: str, output_path: str, lang: str = 'en', python_path: str | None = None) -> bool:
-    """Generate TTS audio using gTTS (Google). Returns True on success."""
-    cleaned = clean_text_for_tts(text)
-    runner = python_path or sys.executable
+
+# ─── TTS engines ──────────────────────────────────────────────────────────────
+
+def generate_gtts(text: str, output_path: str, lang: str, python_path: str) -> bool:
     script = (
-        "import sys; "
-        "from gtts import gTTS; "
+        "import sys; from gtts import gTTS; "
         "gTTS(text=sys.argv[1], lang=sys.argv[2], slow=False).save(sys.argv[3])"
     )
-    completed = subprocess.run(
-        [runner, '-c', script, cleaned, lang, output_path],
-        check=False,
-        capture_output=True,
-        text=True,
+    result = subprocess.run(
+        [python_path, '-c', script, text, lang, output_path],
+        check=False, capture_output=True, text=True,
     )
-    if completed.returncode == 0:
+    if result.returncode == 0:
         return True
-    print(f"WARNING: gTTS generation failed: {completed.stderr.strip() or completed.stdout.strip()}", file=sys.stderr)
+    print(f'  gTTS error: {result.stderr.strip() or result.stdout.strip()}', file=sys.stderr)
     return False
 
 
-# ============================================================
-# TTS Engine: edge-tts (fallback, works in China)
-# ============================================================
-
-# Voice mapping for edge-tts
-EDGE_TTS_VOICES = {
-    'en': 'en-US-AvaNeural',         # Female, US English
-    'en-US': 'en-US-AvaNeural',
-    'en-GB': 'en-GB-SoniaNeural',    # Female, British English
-    'zh-CN': 'zh-CN-XiaoxiaoNeural', # Female, Mandarin Chinese
-    'zh': 'zh-CN-XiaoxiaoNeural',
-}
-
-
-def generate_tts_edge(text: str, output_path: str, lang: str = 'en', python_path: str | None = None) -> bool:
-    """Generate TTS audio using edge-tts (Microsoft Edge). Returns True on success."""
-    cleaned = clean_text_for_tts(text)
+def generate_edge_tts(text: str, output_path: str, lang: str, python_path: str) -> bool:
     voice = EDGE_TTS_VOICES.get(lang, EDGE_TTS_VOICES['en'])
-    runner = python_path or sys.executable
     script = (
-        "import asyncio, sys, edge_tts; "
+        "import asyncio, sys, edge_tts\n"
         "async def main():\n"
-        "    communicate = edge_tts.Communicate(sys.argv[1], sys.argv[2])\n"
-        "    await communicate.save(sys.argv[3])\n"
+        "    await edge_tts.Communicate(sys.argv[1], sys.argv[2]).save(sys.argv[3])\n"
         "asyncio.run(main())"
     )
-    completed = subprocess.run(
-        [runner, '-c', script, cleaned, voice, output_path],
-        check=False,
-        capture_output=True,
-        text=True,
+    result = subprocess.run(
+        [python_path, '-c', script, text, voice, output_path],
+        check=False, capture_output=True, text=True,
     )
-    if completed.returncode == 0:
+    if result.returncode == 0:
         return True
-    print(f"WARNING: edge-tts generation failed: {completed.stderr.strip() or completed.stdout.strip()}", file=sys.stderr)
+    print(f'  edge-tts error: {result.stderr.strip() or result.stdout.strip()}', file=sys.stderr)
     return False
 
 
-# ============================================================
-# Unified TTS interface with auto-fallback
-# ============================================================
-
-def generate_tts_audio(text: str, output_path: str, lang: str = 'en',
-                       engine: str = 'auto') -> tuple:
-    """
-    Generate TTS audio with automatic fallback.
-
-    Priority: gTTS -> edge-tts
-
-    Args:
-        text: News text to convert
-        output_path: Output MP3 file path
-        lang: Language code ('en', 'zh-CN', etc.)
-        engine: 'auto' | 'gtts' | 'edge-tts'
-
-    Returns:
-        (success: bool, engine_used: str)
-    """
-    runtime_root = Path(__file__).resolve().parent
-    env_info = ensure_local_venv(runtime_root, runtime_root / 'requirements.txt')
-    python_path = env_info['python_path']
-
-    if engine == 'edge-tts':
-        success = generate_tts_edge(text, output_path, lang, python_path=python_path)
-        return (success, 'edge-tts' if success else '')
+def generate_audio(text: str, output_path: str, lang: str, engine: str, python_path: str) -> tuple[bool, str]:
+    cleaned = clean_text_for_tts(text)
 
     if engine == 'gtts':
-        success = generate_tts_gtts(text, output_path, lang, python_path=python_path)
-        return (success, 'gTTS' if success else '')
+        ok = generate_gtts(cleaned, output_path, lang, python_path)
+        return (ok, 'gTTS' if ok else '')
 
-    print("Trying gTTS (primary engine)...")
-    success = generate_tts_gtts(text, output_path, lang, python_path=python_path)
-    if success:
-        print(f"OK gTTS succeeded: {output_path}")
+    if engine == 'edge-tts':
+        ok = generate_edge_tts(cleaned, output_path, lang, python_path)
+        return (ok, 'edge-tts' if ok else '')
+
+    # auto: gTTS first, edge-tts fallback
+    print('  Trying gTTS...', end=' ', flush=True)
+    ok = generate_gtts(cleaned, output_path, lang, python_path)
+    if ok:
+        print('OK')
         return (True, 'gTTS')
-
-    print("gTTS failed, falling back to edge-tts...")
-    success = generate_tts_edge(text, output_path, lang, python_path=python_path)
-    if success:
-        print(f"OK edge-tts succeeded: {output_path}")
+    print('failed, trying edge-tts...', end=' ', flush=True)
+    ok = generate_edge_tts(cleaned, output_path, lang, python_path)
+    if ok:
+        print('OK')
         return (True, 'edge-tts')
-
-    print("ERROR: Both TTS engines failed!", file=sys.stderr)
+    print('ERROR: both engines failed.', file=sys.stderr)
     return (False, '')
 
 
-# ============================================================
-# CLI
-# ============================================================
+# ─── CLI ──────────────────────────────────────────────────────────────────────
 
-def main():
-    parser = argparse.ArgumentParser(description='Nature News Digest TTS Helper')
-    parser.add_argument('--top', type=int, default=3, help='Number of top news to process')
-    parser.add_argument('--output-dir', type=str, default=resolve_default_output_dir(),
-                        help='Output directory (default: .claude/nature-news-walkman)')
-    parser.add_argument('--tts', action='store_true', help='Generate TTS audio files')
-    parser.add_argument('--tts-engine', type=str, default='auto',
-                        choices=['auto', 'gtts', 'edge-tts'],
-                        help='TTS engine: auto (gTTS->edge-tts fallback), gtts, edge-tts')
-    parser.add_argument('--tts-lang', type=str, default='en', help='TTS language (en, zh-CN, etc.)')
-    args = parser.parse_args()
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(
+        description='Generate TTS audio for selected Nature news articles.'
+    )
+    parser.add_argument(
+        'indices', nargs='+', type=int,
+        help='1-based article indices from news_read.py output (e.g. 1 2 3)',
+    )
+    parser.add_argument(
+        '--input', default=str(DEFAULT_INPUT_PATH),
+        help='Path to fetched article JSON',
+    )
+    parser.add_argument(
+        '--output-dir', default=str(DEFAULT_AUDIO_DIR),
+        help='Directory to save mp3 files',
+    )
+    parser.add_argument(
+        '--engine', default='auto', choices=['auto', 'gtts', 'edge-tts'],
+        help='TTS engine (default: auto, gTTS first then edge-tts fallback)',
+    )
+    parser.add_argument(
+        '--lang', default='en',
+        help='Language code (default: en)',
+    )
+    return parser.parse_args()
 
-    print("Nature News Digest TTS Helper")
-    print(f"  Top news: {args.top}")
-    print(f"  Output dir: {args.output_dir}")
-    print(f"  TTS: {args.tts}")
-    print(f"  TTS engine: {args.tts_engine}")
-    print(f"  TTS language: {args.tts_lang}")
+
+def main() -> int:
+    args = parse_args()
+    input_path = Path(args.input)
+    output_dir = Path(args.output_dir)
+
+    if not input_path.exists():
+        print(f'Input file not found: {input_path}', file=sys.stderr)
+        return 1
+
+    try:
+        python_path = get_venv_python()
+    except RuntimeError as exc:
+        print(str(exc), file=sys.stderr)
+        return 1
+
+    try:
+        articles = load_sorted_articles(input_path)
+    except ValueError as exc:
+        print(str(exc), file=sys.stderr)
+        return 1
+
+    if not articles:
+        print('No articles found in input file.', file=sys.stderr)
+        return 1
+
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+    results = []
+    for idx in args.indices:
+        if idx < 1 or idx > len(articles):
+            print(f'Index {idx} out of range (1–{len(articles)}), skipping.', file=sys.stderr)
+            continue
+
+        article = articles[idx - 1]
+        title = article.get('title', f'Article {idx}')
+        body = (article.get('full_text') or '').strip()
+        if not body:
+            print(f'[{idx}] {title}: no body text, skipping.', file=sys.stderr)
+            continue
+
+        filename = safe_filename(title, idx)
+        output_path = str(output_dir / filename)
+
+        print(f'[{idx}] {title}')
+        success, engine_used = generate_audio(body, output_path, args.lang, args.engine, python_path)
+
+        if success:
+            print(f'  Saved: {output_path}')
+            results.append({'index': idx, 'title': title, 'audio': output_path, 'engine': engine_used})
+        else:
+            print(f'  Failed to generate audio for article {idx}.', file=sys.stderr)
+
+    if not results:
+        print('No audio files were generated.', file=sys.stderr)
+        return 1
+
+    print(f'\nDone. {len(results)} file(s) generated.')
+    return 0
 
 
 if __name__ == '__main__':
-    main()
+    raise SystemExit(main())

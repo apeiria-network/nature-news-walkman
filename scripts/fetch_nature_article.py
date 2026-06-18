@@ -439,6 +439,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument('--cookie-file', help='Path to a local file containing the Nature Cookie header value')
     parser.add_argument('--pretty', action='store_true', help='Pretty-print JSON output')
     parser.add_argument('--timeout', type=float, default=20.0, help='HTTP timeout in seconds')
+    parser.add_argument('--limit', type=int, default=20, help='Maximum number of URLs to process in one run (default: 20)')
     return parser.parse_args()
 
 
@@ -481,6 +482,9 @@ def main() -> int:
     if not deduped_urls:
         print('No valid Nature news article URLs were provided.', file=sys.stderr)
         return 1
+
+    if args.limit > 0:
+        deduped_urls = deduped_urls[:args.limit]
 
     articles = []
     for index, url in enumerate(deduped_urls):
