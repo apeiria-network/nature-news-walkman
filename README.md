@@ -29,7 +29,7 @@
 从 GitHub 下载这个项目，或者直接克隆仓库：
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/apeiria-network/nature-news-walkman.git
 cd nature-news-walkman
 ```
 
