@@ -1,4 +1,0 @@
-# Runtime dependencies for nature-news-sound
-
-gTTS>=2.5.4;
-edge-tts>=7.0.0;
