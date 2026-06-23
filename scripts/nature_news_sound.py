@@ -5,6 +5,7 @@ Generate English TTS audio for selected Nature news articles.
 Usage:
     python scripts/nature_news_sound.py 1 2 3
     python scripts/nature_news_sound.py 1 --engine edge-tts
+    python scripts/nature_news_sound.py 1 --speed 0.8
     python scripts/nature_news_sound.py 1 2 --input .claude/nature-news-walkman/data/nature_articles.json
 
 Indices correspond to the article numbers printed by news_read.py (1-based, newest first).
@@ -35,6 +36,7 @@ EDGE_TTS_VOICES = {
 
 
 # ─── helpers ──────────────────────────────────────────────────────────────────
+
 
 def get_venv_python() -> str:
     scripts_dir = Path(__file__).resolve().parent
@@ -88,6 +90,20 @@ def clean_text_for_tts(text: str) -> str:
     return text.strip()
 
 
+def speed_to_edge_rate(speed: float | None) -> str | None:
+    if speed is None or abs(speed - 1.0) < 1e-9:
+        return None
+    percent = round((speed - 1.0) * 100)
+    sign = '+' if percent > 0 else ''
+    return f'{sign}{percent}%'
+
+
+def describe_speed(speed: float | None) -> str:
+    if speed is None:
+        return 'default speed'
+    return f'{speed:g}x speed'
+
+
 def safe_filename(title: str, index: int) -> str:
     slug = re.sub(r'[^\w\s-]', '', title.lower())
     slug = re.sub(r'[\s_-]+', '-', slug).strip('-')[:60]
@@ -96,13 +112,14 @@ def safe_filename(title: str, index: int) -> str:
 
 # ─── TTS engines ──────────────────────────────────────────────────────────────
 
-def generate_gtts(text: str, output_path: str, lang: str, python_path: str) -> bool:
+
+def generate_gtts(text: str, output_path: str, lang: str, python_path: str, slow: bool = False) -> bool:
     script = (
         "import sys; from gtts import gTTS; "
-        "gTTS(text=sys.argv[1], lang=sys.argv[2], slow=False).save(sys.argv[3])"
+        "gTTS(text=sys.argv[1], lang=sys.argv[2], slow=(sys.argv[4]=='1')).save(sys.argv[3])"
     )
     result = subprocess.run(
-        [python_path, '-c', script, text, lang, output_path],
+        [python_path, '-c', script, text, lang, output_path, '1' if slow else '0'],
         check=False, capture_output=True, text=True,
     )
     if result.returncode == 0:
@@ -111,16 +128,26 @@ def generate_gtts(text: str, output_path: str, lang: str, python_path: str) -> b
     return False
 
 
-def generate_edge_tts(text: str, output_path: str, lang: str, python_path: str) -> bool:
+def generate_edge_tts(text: str, output_path: str, lang: str, python_path: str, rate: str | None = None) -> bool:
     voice = EDGE_TTS_VOICES.get(lang, EDGE_TTS_VOICES['en'])
-    script = (
-        "import asyncio, sys, edge_tts\n"
-        "async def main():\n"
-        "    await edge_tts.Communicate(sys.argv[1], sys.argv[2]).save(sys.argv[3])\n"
-        "asyncio.run(main())"
-    )
+    if rate is None:
+        script = (
+            "import asyncio, sys, edge_tts\n"
+            "async def main():\n"
+            "    await edge_tts.Communicate(sys.argv[1], sys.argv[2]).save(sys.argv[3])\n"
+            "asyncio.run(main())"
+        )
+        command = [python_path, '-c', script, text, voice, output_path]
+    else:
+        script = (
+            "import asyncio, sys, edge_tts\n"
+            "async def main():\n"
+            "    await edge_tts.Communicate(sys.argv[1], sys.argv[2], rate=sys.argv[4]).save(sys.argv[3])\n"
+            "asyncio.run(main())"
+        )
+        command = [python_path, '-c', script, text, voice, output_path, rate]
     result = subprocess.run(
-        [python_path, '-c', script, text, voice, output_path],
+        command,
         check=False, capture_output=True, text=True,
     )
     if result.returncode == 0:
@@ -129,33 +156,49 @@ def generate_edge_tts(text: str, output_path: str, lang: str, python_path: str) 
     return False
 
 
-def generate_audio(text: str, output_path: str, lang: str, engine: str, python_path: str) -> tuple[bool, str]:
+def generate_audio(text: str, output_path: str, lang: str, engine: str, python_path: str, speed: float | None) -> tuple[bool, str]:
     cleaned = clean_text_for_tts(text)
+    edge_rate = speed_to_edge_rate(speed)
+    gtts_slow = speed is not None and speed < 1.0
+    gtts_fast_unsupported = speed is not None and speed > 1.0
+    speed_desc = describe_speed(speed)
 
     if engine == 'gtts':
-        ok = generate_gtts(cleaned, output_path, lang, python_path)
+        if gtts_slow:
+            print(f'  gTTS only supports slow/default speed; approximating {speed_desc} with slow=True.')
+        elif gtts_fast_unsupported:
+            print(f'  gTTS does not support accelerated speech; requested {speed_desc}, using default speed.')
+        ok = generate_gtts(cleaned, output_path, lang, python_path, slow=gtts_slow)
         return (ok, 'gTTS' if ok else '')
 
     if engine == 'edge-tts':
-        ok = generate_edge_tts(cleaned, output_path, lang, python_path)
+        ok = generate_edge_tts(cleaned, output_path, lang, python_path, rate=edge_rate)
         return (ok, 'edge-tts' if ok else '')
 
-    # auto: gTTS first, edge-tts fallback
-    print('  Trying gTTS...', end=' ', flush=True)
-    ok = generate_gtts(cleaned, output_path, lang, python_path)
-    if ok:
-        print('OK')
-        return (True, 'gTTS')
-    print('failed, trying edge-tts...', end=' ', flush=True)
-    ok = generate_edge_tts(cleaned, output_path, lang, python_path)
+    # auto: edge-tts first, gTTS fallback
+    if edge_rate is None:
+        print('  Trying edge-tts at default speed...', end=' ', flush=True)
+    else:
+        print(f'  Trying edge-tts at {speed_desc} (rate {edge_rate})...', end=' ', flush=True)
+    ok = generate_edge_tts(cleaned, output_path, lang, python_path, rate=edge_rate)
     if ok:
         print('OK')
         return (True, 'edge-tts')
+    print('failed, trying gTTS...', end=' ', flush=True)
+    if gtts_slow:
+        print(f'\n  gTTS only supports slow/default speed; approximating {speed_desc} with slow=True.')
+    elif gtts_fast_unsupported:
+        print(f'\n  gTTS does not support accelerated speech; requested {speed_desc}, using default speed.')
+    ok = generate_gtts(cleaned, output_path, lang, python_path, slow=gtts_slow)
+    if ok:
+        print('OK')
+        return (True, 'gTTS')
     print('ERROR: both engines failed.', file=sys.stderr)
     return (False, '')
 
 
 # ─── CLI ──────────────────────────────────────────────────────────────────────
+
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
@@ -175,11 +218,15 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         '--engine', default='auto', choices=['auto', 'gtts', 'edge-tts'],
-        help='TTS engine (default: auto, gTTS first then edge-tts fallback)',
+        help='TTS engine (default: auto, edge-tts first then gTTS fallback)',
     )
     parser.add_argument(
         '--lang', default='en',
         help='Language code (default: en)',
+    )
+    parser.add_argument(
+        '--speed', type=float, default=None,
+        help='Speech speed multiplier (e.g. 0.8, 1.0, 1.25). Omit to use the engine default speed.',
     )
     return parser.parse_args()
 
@@ -228,11 +275,12 @@ def main() -> int:
         output_path = str(output_dir / filename)
 
         print(f'[{idx}] {title}')
-        success, engine_used = generate_audio(body, output_path, args.lang, args.engine, python_path)
+        success, engine_used = generate_audio(body, output_path, args.lang, args.engine, python_path, args.speed)
 
         if success:
-            print(f'  Saved: {output_path}')
-            results.append({'index': idx, 'title': title, 'audio': output_path, 'engine': engine_used})
+            speed_label = describe_speed(args.speed)
+            print(f'  Saved: {output_path} ({engine_used}, {speed_label})')
+            results.append({'index': idx, 'title': title, 'audio': output_path, 'engine': engine_used, 'speed': args.speed})
         else:
             print(f'  Failed to generate audio for article {idx}.', file=sys.stderr)
 

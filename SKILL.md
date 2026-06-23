@@ -71,6 +71,7 @@ Use [reference/audio_tts_guide.md](reference/audio_tts_guide.md) for:
 - TTS engine behavior
 - audio file naming and storage
 - text cleaning for speech
+- speed control of audio
 - `gTTS` / `edge-tts` / `auto` behavior
 - user-selection-to-audio workflow
 

@@ -144,6 +144,12 @@ python scripts/nature_news_sound.py 2 5
 
 # 强制使用 edge-tts
 python scripts/nature_news_sound.py 2 --engine edge-tts
+
+# 以 0.8 倍速生成音频
+python scripts/nature_news_sound.py 2 --speed 0.8
+
+# 以 1.25 倍速生成音频
+python scripts/nature_news_sound.py 2 --speed 1.25
 ```
 
 ## skill 工作流程
