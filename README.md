@@ -81,6 +81,15 @@ cd nature-news-walkman
    - **例句**: Scientists are studying how the brain regulates body temperature.
 ```
 
+### 4.1 Oxford 词表下载
+
+如果你需要查看原始的 Oxford 词表 PDF，可以单独下载以下官方文件：
+
+- [The Oxford 3000 by CEFR level (PDF)](https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf)
+- [The Oxford 5000 by CEFR level (PDF)](https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf)
+
+这些 PDF 仅作为参考资料，不是本项目运行所必需的文件。
+
 ### 5. 朗读音频生成完成后去哪里找
 
 音频通常会保存在当前工作目录下的 `nature-news-walkman/audio/` 子目录中，例如：
