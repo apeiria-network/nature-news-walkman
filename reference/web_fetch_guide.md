@@ -27,12 +27,12 @@ This installs the required dependencies into `scripts/.venv`.
 
 ## Storage Convention
 
-Helper scripts write into a `nature-news-walkman/` subdirectory inside the project's active workspace folder. The exact workspace folder depends on the platform or tool environment, but it should follow the tool's local work-directory convention, such as `.claude/`, `.workbuddy/`, or a similar writable project-local folder.
+Helper scripts write into `<your workspace>/nature-news-walkman/`.
+Here `<your workspace>` means the current working directory from which the scripts are run.
 
 Typical subdirectories:
-- `<workspace>/nature-news-walkman/tmp/`
-- `<workspace>/nature-news-walkman/data/`
-- `<workspace>/nature-news-walkman/audio/`
+- `<your workspace>/nature-news-walkman/temp/`
+- `<your workspace>/nature-news-walkman/audio/`
 
 ## Retrieval Workflow
 
@@ -55,7 +55,7 @@ This should:
 Run:
 
 ```sh
-python scripts/fetch_nature_article.py --url-file <workspace>/nature-news-walkman/tmp/nature_article_urls.txt
+python scripts/fetch_nature_article.py --url-file <your workspace>/nature-news-walkman/temp/nature_article_urls.txt
 ```
 
 This script should:
@@ -77,7 +77,7 @@ Default behavior:
 Example:
 
 ```sh
-python scripts/fetch_nature_article.py --url-file <workspace>/nature-news-walkman/tmp/nature_article_urls.txt --limit 5
+python scripts/fetch_nature_article.py --url-file <your workspace>/nature-news-walkman/temp/nature_article_urls.txt --limit 5
 ```
 
 ## NEWS-Only Filtering Rule
@@ -107,7 +107,7 @@ Example:
 ```sh
 python scripts/fetch_nature_article.py \
   --url https://www.nature.com/articles/d41586-026-01903-z \
-  --cookie-file <workspace>/nature-news-walkman/cookie.txt
+  --cookie-file <your workspace>/nature-news-walkman/temp/cookie.txt
 ```
 
 Rules:
@@ -159,8 +159,8 @@ Do not generate audio before the user selects article numbers.
 ```sh
 bash scripts/venv_install.sh
 python scripts/rss_fetch.py
-python scripts/fetch_nature_article.py --url-file <workspace>/nature-news-walkman/tmp/nature_article_urls.txt
+python scripts/fetch_nature_article.py --url-file <your workspace>/nature-news-walkman/temp/nature_article_urls.txt
 python scripts/fetch_nature_article.py --url https://www.nature.com/articles/d41586-026-01923-9
-python scripts/fetch_nature_article.py --url https://www.nature.com/articles/d41586-026-01903-z --cookie-file <workspace>/nature-news-walkman/cookie.txt
+python scripts/fetch_nature_article.py --url https://www.nature.com/articles/d41586-026-01903-z --cookie-file <your workspace>/nature-news-walkman/temp/cookie.txt
 python scripts/news_read.py
 ```

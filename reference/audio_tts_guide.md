@@ -172,7 +172,7 @@ Section headings preserved in the article body text (such as `Just chilling` or 
 Audio files are saved to:
 
 ```
-<workspace>/nature-news-walkman/audio/
+<your workspace>/nature-news-walkman/audio/
 ```
 
 Each file is named using the 1-based article index and a slug derived from the article title:
@@ -202,7 +202,7 @@ Example output:
 ```
 [2] Freezing brain damage in its tracks: cooling drugs limit stroke injury in mice
   Trying edge-tts at 0.8x speed (rate -20%)... OK
-  Saved: .claude/nature-news-walkman/audio/002_freezing-brain-damage-in-its-tracks-cooling-drugs-limit-stro.mp3 (edge-tts, 0.8x speed)
+  Saved: <your workspace>/nature-news-walkman/audio/002_freezing-brain-damage-in-its-tracks-cooling-drugs-limit-stro.mp3 (edge-tts, 0.8x speed)
 
 Done. 1 file(s) generated.
 ```
@@ -245,8 +245,8 @@ python scripts/nature_news_sound.py 2 --engine edge-tts
 python scripts/nature_news_sound.py 2 --engine gtts --speed 0.8
 
 # Use a different input JSON
-python scripts/nature_news_sound.py 1 --input <workspace>/nature-news-walkman/data/nature_articles.json
+python scripts/nature_news_sound.py 1 --input <your workspace>/nature-news-walkman/temp/nature_articles.json
 
 # Use a different output directory
-python scripts/nature_news_sound.py 1 --output-dir <workspace>/nature-news-walkman/audio
+python scripts/nature_news_sound.py 1 --output-dir <your workspace>/nature-news-walkman/audio
 ```

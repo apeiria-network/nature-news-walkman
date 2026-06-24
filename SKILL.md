@@ -114,11 +114,12 @@ When the user asks for vocabulary support for a selected article:
 
 ## Default Storage
 
-All helper scripts write output under `Path.cwd() / 'nature-news-walkman'`.
+All helper scripts write output under `<your workspace>/nature-news-walkman/`.
+Here `<your workspace>` means the current working directory from which the scripts are run.
 
 Typical subdirectories:
-- `Path.cwd()/nature-news-walkman/temp/` — RSS text, URL lists, and fetched article JSON
-- `Path.cwd()/nature-news-walkman/audio/` — generated mp3 files
+- `<your workspace>/nature-news-walkman/temp/` — RSS text, URL lists, and fetched article JSON
+- `<your workspace>/nature-news-walkman/audio/` — generated mp3 files
 
 ## Error Handling
 
