@@ -107,7 +107,7 @@ Example:
 ```sh
 python scripts/fetch_nature_article.py \
   --url https://www.nature.com/articles/d41586-026-01903-z \
-  --cookie-file <your workspace>/nature-news-walkman/temp/cookie.txt
+  --cookie-file <your workspace>/nature-news-walkman/cookie.txt
 ```
 
 Rules:
@@ -161,6 +161,6 @@ bash scripts/venv_install.sh
 python scripts/rss_fetch.py
 python scripts/fetch_nature_article.py --url-file <your workspace>/nature-news-walkman/temp/nature_article_urls.txt
 python scripts/fetch_nature_article.py --url https://www.nature.com/articles/d41586-026-01923-9
-python scripts/fetch_nature_article.py --url https://www.nature.com/articles/d41586-026-01903-z --cookie-file <your workspace>/nature-news-walkman/temp/cookie.txt
+python scripts/fetch_nature_article.py --url https://www.nature.com/articles/d41586-026-01903-z --cookie-file <your workspace>/nature-news-walkman/cookie.txt
 python scripts/news_read.py
 ```

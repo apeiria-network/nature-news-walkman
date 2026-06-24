@@ -33,6 +33,7 @@ Examples:
 3. Fetch article pages with `python scripts/fetch_nature_article.py`.
    - Default behavior reads only the publicly visible article content.
    - If the user provides a local cookie file, the script may use it to fetch more complete article text.
+   - The default cookie-file path is `<your workspace>/nature-news-walkman/cookie.txt`.
    - Only pages with the `NEWS` marker are kept.
    - Batch fetches wait 5-10 seconds between requests.
 4. Read the fetched article list with `python scripts/news_read.py`.

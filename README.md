@@ -124,7 +124,7 @@ python scripts/fetch_nature_article.py --url-file nature-news-walkman/temp/natur
 python scripts/fetch_nature_article.py --url-file nature-news-walkman/temp/nature_article_urls.txt --limit 5
 
 # 使用本地 cookie 文件获取更完整正文
-python scripts/fetch_nature_article.py --url https://www.nature.com/articles/d41586-026-01903-z --cookie-file nature-news-walkman/temp/cookie.txt
+python scripts/fetch_nature_article.py --url https://www.nature.com/articles/d41586-026-01903-z --cookie-file <your workspace>/nature-news-walkman/cookie.txt
 ```
 
 ### `scripts/news_read.py`
@@ -191,7 +191,7 @@ python scripts/nature_news_sound.py 2 --speed 1.25
 ```bash
 python scripts/fetch_nature_article.py \
   --url https://www.nature.com/articles/d41586-026-01903-z \
-  --cookie-file nature-news-walkman/temp/cookie.txt
+  --cookie-file <your workspace>/nature-news-walkman/cookie.txt
 ```
 
 `--cookie-file` 指向的文件应来自**用户本人**在浏览器中的有效 Nature 登录会话（[nature.com](https://www.nature.com/)）。该文件通常可通过浏览器开发者工具或本地 cookie 导出工具生成，具体导出方式请参考对应浏览器或工具的官方说明。
