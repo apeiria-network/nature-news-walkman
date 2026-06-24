@@ -1,6 +1,6 @@
 ---
 name: nature-news-walkman
-description: Retrieve recent Nature NEWS articles, summarize them in English, ask the user to choose article numbers, then generate English TTS audio for the selected full texts. Use when the user wants Nature news reading-plus-listening practice or `/nature-news-walkman`.
+description: Retrieve recent Nature NEWS articles, summarize them in English, ask the user to choose article numbers, then generate English TTS audio for the selected full texts. It can also generate a vocabulary card list for a selected article when the user asks for word study support. Use when the user wants Nature news reading-plus-listening practice or `/nature-news-walkman`.
 ---
 
 # Nature News Walkman
@@ -12,6 +12,7 @@ Provide a summary-first Nature NEWS workflow built on the project-level helper s
 - User wants recent Nature NEWS articles for English reading or listening practice
 - User wants shortlist summaries before choosing which items to hear
 - User wants English mp3 audio for selected Nature news articles
+- User wants a vocabulary list or difficult-word study support for a selected article
 - User uses `/nature-news-walkman`
 
 ## Command
@@ -32,13 +33,15 @@ Examples:
 3. Fetch article pages with `python scripts/fetch_nature_article.py`.
    - Default behavior reads only the publicly visible article content.
    - If the user provides a local cookie file, the script may use it to fetch more complete article text.
+   - The default cookie-file path is `<your workspace>/nature-news-walkman/cookie.txt`.
    - Only pages with the `NEWS` marker are kept.
    - Batch fetches wait 5-10 seconds between requests.
 4. Read the fetched article list with `python scripts/news_read.py`.
 5. Summarize the shortlisted articles in English and present them in numbered order.
 6. Ask the user to choose one or more article numbers.
-7. After the user selects numbers, generate English audio with `python scripts/nature_news_sound.py <numbers>`.
-8. Return the generated mp3 file paths, and send the audio files when the environment supports file delivery.
+7. Generate a vocabulary card list for the selected article when the user asks for vocabulary support.
+8. After the user selects numbers, generate English audio with `python scripts/nature_news_sound.py <numbers>` when the user wants audio.
+9. Return the generated mp3 file paths when audio was created, and send the audio files when the environment supports file delivery.
 
 ## Required Interaction Rules
 
@@ -47,6 +50,7 @@ Examples:
 - Keep the shortlist in ranking order and preserve article indices.
 - Do not generate audio for unselected articles.
 - If the user asks for multiple items, generate audio for all selected indices in one run.
+- Generate a vocabulary list only when the user explicitly asks for vocabulary or difficult-word support.
 
 ## Script Responsibilities
 
@@ -71,8 +75,16 @@ Use [reference/audio_tts_guide.md](reference/audio_tts_guide.md) for:
 - TTS engine behavior
 - audio file naming and storage
 - text cleaning for speech
+- speed control of audio
 - `gTTS` / `edge-tts` / `auto` behavior
 - user-selection-to-audio workflow
+
+Use [reference/vocab_list_guide.md](reference/vocab_list_guide.md) for:
+- vocabulary list trigger conditions
+- Oxford 5000 based filtering rules
+- academic and domain-word inclusion rules
+- card-style output structure
+- required Chinese field labels for each vocabulary item
 
 ## Output Expectations
 
@@ -93,14 +105,22 @@ After the user selects numbers:
 - report the saved mp3 paths
 - if audio cannot be delivered directly, tell the user where the files were saved
 
+### Vocabulary Stage
+
+When the user asks for vocabulary support for a selected article:
+- generate a card-style vocabulary list rather than a markdown table
+- include word, part of speech, Chinese meaning, additional meanings, word family / inflections, and one example sentence
+- default to excluding Oxford `A1`, `A2`, and `B1` words from the difficult-word list
+- include academic and domain-specific vocabulary when it is important for understanding the article
+
 ## Default Storage
 
-All helper scripts write output under a `nature-news-walkman/` subdirectory inside the project's active workspace folder. The workspace folder is determined at runtime and is typically the first writable directory that follows the project's tool convention, such as `.claude/`, `.workbuddy/`, or a similar platform-specific folder.
+All helper scripts write output under `<your workspace>/nature-news-walkman/`.
+Here `<your workspace>` means the current working directory from which the scripts are run.
 
 Typical subdirectories:
-- `<workspace>/nature-news-walkman/tmp/` — RSS text and URL lists
-- `<workspace>/nature-news-walkman/data/` — fetched article JSON
-- `<workspace>/nature-news-walkman/audio/` — generated mp3 files
+- `<your workspace>/nature-news-walkman/temp/` — RSS text, URL lists, and fetched article JSON
+- `<your workspace>/nature-news-walkman/audio/` — generated mp3 files
 
 ## Error Handling
 

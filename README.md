@@ -9,6 +9,7 @@
 - 获取 Nature `NEWS` 类型文章的英文原文
 - 对候选文章做摘要总结
 - 为NEWS文章生成英文朗读音频（mp3）
+- 为选中的文章生成用于英语学习的生词卡片列表
 
 ## 使用边界声明
 
@@ -69,17 +70,31 @@ cd nature-news-walkman
 - 输出英文原文
 - 输出摘要总结
 - 为你选中的文章生成英文朗读音频
+- 为你选中的文章生成生词卡片列表（含词性、中文词义、一词多义、词族/变形、例句）
+例如：
+```md
+1. **单词**: regulate
+   - **词性**: v.
+   - **中文词义**: 调节；控制；管理
+   - **一词多义**: 在政策或法律语境中，也常表示“监管；规范”。
+   - **词族 / 变形**: regulates, regulated, regulating, regulation (n.), regulatory (adj.)
+   - **例句**: Scientists are studying how the brain regulates body temperature.
+```
+
+### 4.1 Oxford 词表下载
+
+如果你需要查看原始的 Oxford 词表 PDF，可以单独下载以下官方文件：
+
+- [The Oxford 3000 by CEFR level (PDF)](https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf)
+- [The Oxford 5000 by CEFR level (PDF)](https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf)
+
+这些 PDF 仅作为参考资料，不是本项目运行所必需的文件。
 
 ### 5. 朗读音频生成完成后去哪里找
 
-音频通常会保存在当前项目工作目录下的 workspace 子目录中，例如：
+音频通常会保存在当前工作目录下的 `nature-news-walkman/audio/` 子目录中，例如：
 
-- `<workspace>/nature-news-walkman/audio/`
-
-在常见环境里，可能类似：
-
-- `.claude/nature-news-walkman/audio/`
-- `.workbuddy/nature-news-walkman/audio/`
+- `<your workspace>/nature-news-walkman/audio/`
 
 如果平台支持文件直接发送，你也可能直接收到 mp3 文件；否则就去上面的音频输出目录查找。
 
@@ -112,13 +127,13 @@ python scripts/rss_fetch.py
 python scripts/fetch_nature_article.py --url https://www.nature.com/articles/d41586-026-01923-9
 
 # 从 URL 文件批量抓取
-python scripts/fetch_nature_article.py --url-file .claude/nature-news-walkman/tmp/nature_article_urls.txt
+python scripts/fetch_nature_article.py --url-file nature-news-walkman/temp/nature_article_urls.txt
 
 # 一次最多抓 5 篇
-python scripts/fetch_nature_article.py --url-file .claude/nature-news-walkman/tmp/nature_article_urls.txt --limit 5
+python scripts/fetch_nature_article.py --url-file nature-news-walkman/temp/nature_article_urls.txt --limit 5
 
 # 使用本地 cookie 文件获取更完整正文
-python scripts/fetch_nature_article.py --url https://www.nature.com/articles/d41586-026-01903-z --cookie-file .claude/nature-news-walkman/cookie.txt
+python scripts/fetch_nature_article.py --url https://www.nature.com/articles/d41586-026-01903-z --cookie-file <your workspace>/nature-news-walkman/cookie.txt
 ```
 
 ### `scripts/news_read.py`
@@ -144,6 +159,12 @@ python scripts/nature_news_sound.py 2 5
 
 # 强制使用 edge-tts
 python scripts/nature_news_sound.py 2 --engine edge-tts
+
+# 以 0.8 倍速生成音频
+python scripts/nature_news_sound.py 2 --speed 0.8
+
+# 以 1.25 倍速生成音频
+python scripts/nature_news_sound.py 2 --speed 1.25
 ```
 
 ## skill 工作流程
@@ -158,12 +179,13 @@ python scripts/nature_news_sound.py 2 --engine edge-tts
 6. 由模型先做摘要总结并把候选文章按顺序展示给用户
 7. 用户选择想听的文章编号
 8. 为选中的文章生成英文朗读音频
+9. 如果用户需要，可以基于选中的文章生成生词卡片列表
 
 也就是说，这个 skill 的设计是：
 
 - **获取候选文章**
 - **先输出摘要供用户选择**
-- **对选中文章再输出全文 / 音频**
+- **对选中文章再输出全文 / 音频 / 生词卡片**
 
 ## cookie 使用说明
 
@@ -178,7 +200,7 @@ python scripts/nature_news_sound.py 2 --engine edge-tts
 ```bash
 python scripts/fetch_nature_article.py \
   --url https://www.nature.com/articles/d41586-026-01903-z \
-  --cookie-file .claude/nature-news-walkman/cookie.txt
+  --cookie-file <your workspace>/nature-news-walkman/cookie.txt
 ```
 
 `--cookie-file` 指向的文件应来自**用户本人**在浏览器中的有效 Nature 登录会话（[nature.com](https://www.nature.com/)）。该文件通常可通过浏览器开发者工具或本地 cookie 导出工具生成，具体导出方式请参考对应浏览器或工具的官方说明。
@@ -196,9 +218,8 @@ python scripts/fetch_nature_article.py \
 
 运行过程中通常会生成以下内容：
 
-- `<workspace>/nature-news-walkman/tmp/`：RSS 与 URL 列表
-- `<workspace>/nature-news-walkman/data/`：抓取后的文章 JSON
-- `<workspace>/nature-news-walkman/audio/`：生成的 mp3 音频
+- `<your workspace>/nature-news-walkman/temp/`：RSS、URL 列表，以及抓取后的文章 JSON
+- `<your workspace>/nature-news-walkman/audio/`：生成的 mp3 音频
 
 ## 常见问题
 
@@ -226,7 +247,7 @@ python scripts/fetch_nature_article.py \
 
 通常在：
 
-- `<workspace>/nature-news-walkman/audio/`
+- `<your workspace>/nature-news-walkman/audio/`
 
 如果平台支持直接发文件，也可能直接在对话中收到生成的 mp3。
 

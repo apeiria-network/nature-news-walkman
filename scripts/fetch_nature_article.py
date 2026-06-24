@@ -20,7 +20,10 @@ USER_AGENT = (
     'AppleWebKit/537.36 (KHTML, like Gecko) '
     'Chrome/137.0.0.0 Safari/537.36'
 )
-DEFAULT_OUTPUT_PATH = Path('.claude/nature-news-walkman/data/nature_articles.json')
+DEFAULT_BASE_DIR = Path.cwd() / 'nature-news-walkman'
+DEFAULT_TEMP_DIR = DEFAULT_BASE_DIR / 'temp'
+DEFAULT_COOKIE_PATH = DEFAULT_BASE_DIR / 'cookie.txt'
+DEFAULT_OUTPUT_PATH = DEFAULT_TEMP_DIR / 'nature_articles.json'
 DEFAULT_MIN_DELAY = 5.0
 DEFAULT_MAX_DELAY = 10.0
 ARTICLE_URL_RE = re.compile(r'https://www\.nature\.com/articles/d[\w\-]+')
@@ -436,7 +439,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument('--url', help='Single Nature article URL')
     parser.add_argument('--url-file', help='Text file containing one Nature article URL per line')
     parser.add_argument('--output', default=str(DEFAULT_OUTPUT_PATH), help='Path to save structured JSON')
-    parser.add_argument('--cookie-file', help='Path to a local file containing the Nature Cookie header value')
+    parser.add_argument('--cookie-file', default=str(DEFAULT_COOKIE_PATH), help='Path to a local file containing the Nature Cookie header value (default: nature-news-walkman/cookie.txt under the current working directory)')
     parser.add_argument('--pretty', action='store_true', help='Pretty-print JSON output')
     parser.add_argument('--timeout', type=float, default=20.0, help='HTTP timeout in seconds')
     parser.add_argument('--limit', type=int, default=20, help='Maximum number of URLs to process in one run (default: 20)')

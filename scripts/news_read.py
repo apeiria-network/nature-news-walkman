@@ -9,7 +9,9 @@ import sys
 from datetime import datetime
 from pathlib import Path
 
-DEFAULT_INPUT_PATH = Path('.claude/nature-news-walkman/data/nature_articles.json')
+DEFAULT_BASE_DIR = Path.cwd() / 'nature-news-walkman'
+DEFAULT_TEMP_DIR = DEFAULT_BASE_DIR / 'temp'
+DEFAULT_INPUT_PATH = DEFAULT_TEMP_DIR / 'nature_articles.json'
 MAX_ARTICLES = 10
 
 
