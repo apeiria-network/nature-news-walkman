@@ -12,9 +12,10 @@ from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 
 DEFAULT_RSS_URL = 'http://feeds.nature.com/nature/rss/current'
-DEFAULT_OUTPUT_DIR = Path('.claude/nature-news-walkman/tmp')
-DEFAULT_RSS_PATH = DEFAULT_OUTPUT_DIR / 'NatureRSS.txt'
-DEFAULT_URL_PATH = DEFAULT_OUTPUT_DIR / 'nature_article_urls.txt'
+DEFAULT_BASE_DIR = Path.cwd() / 'nature-news-walkman'
+DEFAULT_TEMP_DIR = DEFAULT_BASE_DIR / 'temp'
+DEFAULT_RSS_PATH = DEFAULT_TEMP_DIR / 'NatureRSS.txt'
+DEFAULT_URL_PATH = DEFAULT_TEMP_DIR / 'nature_article_urls.txt'
 USER_AGENT = (
     'Mozilla/5.0 (Windows NT 10.0; Win64; x64) '
     'AppleWebKit/537.36 (KHTML, like Gecko) '

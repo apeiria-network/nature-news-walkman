@@ -6,11 +6,11 @@ Usage:
     python scripts/nature_news_sound.py 1 2 3
     python scripts/nature_news_sound.py 1 --engine edge-tts
     python scripts/nature_news_sound.py 1 --speed 0.8
-    python scripts/nature_news_sound.py 1 2 --input .claude/nature-news-walkman/data/nature_articles.json
+    python scripts/nature_news_sound.py 1 2 --input nature-news-walkman/temp/nature_articles.json
 
 Indices correspond to the article numbers printed by news_read.py (1-based, newest first).
 
-Outputs mp3 files to: .claude/nature-news-walkman/audio/
+Outputs mp3 files to: nature-news-walkman/audio/
 """
 
 from __future__ import annotations
@@ -23,8 +23,10 @@ import sys
 from datetime import datetime
 from pathlib import Path
 
-DEFAULT_INPUT_PATH = Path('.claude/nature-news-walkman/data/nature_articles.json')
-DEFAULT_AUDIO_DIR = Path('.claude/nature-news-walkman/audio')
+DEFAULT_BASE_DIR = Path.cwd() / 'nature-news-walkman'
+DEFAULT_TEMP_DIR = DEFAULT_BASE_DIR / 'temp'
+DEFAULT_INPUT_PATH = DEFAULT_TEMP_DIR / 'nature_articles.json'
+DEFAULT_AUDIO_DIR = DEFAULT_BASE_DIR / 'audio'
 MAX_ARTICLES = 10
 EDGE_TTS_VOICES = {
     'en': 'en-US-AvaNeural',

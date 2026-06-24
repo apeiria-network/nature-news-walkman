@@ -114,12 +114,11 @@ When the user asks for vocabulary support for a selected article:
 
 ## Default Storage
 
-All helper scripts write output under a `nature-news-walkman/` subdirectory inside the project's active workspace folder. The workspace folder is determined at runtime and is typically the first writable directory that follows the project's tool convention, such as `.claude/`, `.workbuddy/`, or a similar platform-specific folder.
+All helper scripts write output under `Path.cwd() / 'nature-news-walkman'`.
 
 Typical subdirectories:
-- `<workspace>/nature-news-walkman/tmp/` — RSS text and URL lists
-- `<workspace>/nature-news-walkman/data/` — fetched article JSON
-- `<workspace>/nature-news-walkman/audio/` — generated mp3 files
+- `Path.cwd()/nature-news-walkman/temp/` — RSS text, URL lists, and fetched article JSON
+- `Path.cwd()/nature-news-walkman/audio/` — generated mp3 files
 
 ## Error Handling
 

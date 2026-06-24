@@ -20,7 +20,9 @@ USER_AGENT = (
     'AppleWebKit/537.36 (KHTML, like Gecko) '
     'Chrome/137.0.0.0 Safari/537.36'
 )
-DEFAULT_OUTPUT_PATH = Path('.claude/nature-news-walkman/data/nature_articles.json')
+DEFAULT_BASE_DIR = Path.cwd() / 'nature-news-walkman'
+DEFAULT_TEMP_DIR = DEFAULT_BASE_DIR / 'temp'
+DEFAULT_OUTPUT_PATH = DEFAULT_TEMP_DIR / 'nature_articles.json'
 DEFAULT_MIN_DELAY = 5.0
 DEFAULT_MAX_DELAY = 10.0
 ARTICLE_URL_RE = re.compile(r'https://www\.nature\.com/articles/d[\w\-]+')

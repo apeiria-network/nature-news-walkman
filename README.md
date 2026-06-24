@@ -83,14 +83,9 @@ cd nature-news-walkman
 
 ### 5. 朗读音频生成完成后去哪里找
 
-音频通常会保存在当前项目工作目录下的 workspace 子目录中，例如：
+音频通常会保存在当前工作目录下的 `nature-news-walkman/audio/` 子目录中，例如：
 
-- `<workspace>/nature-news-walkman/audio/`
-
-在常见环境里，可能类似：
-
-- `.claude/nature-news-walkman/audio/`
-- `.workbuddy/nature-news-walkman/audio/`
+- `<your workspace>/nature-news-walkman/audio/`
 
 如果平台支持文件直接发送，你也可能直接收到 mp3 文件；否则就去上面的音频输出目录查找。
 
@@ -123,13 +118,13 @@ python scripts/rss_fetch.py
 python scripts/fetch_nature_article.py --url https://www.nature.com/articles/d41586-026-01923-9
 
 # 从 URL 文件批量抓取
-python scripts/fetch_nature_article.py --url-file .claude/nature-news-walkman/tmp/nature_article_urls.txt
+python scripts/fetch_nature_article.py --url-file nature-news-walkman/temp/nature_article_urls.txt
 
 # 一次最多抓 5 篇
-python scripts/fetch_nature_article.py --url-file .claude/nature-news-walkman/tmp/nature_article_urls.txt --limit 5
+python scripts/fetch_nature_article.py --url-file nature-news-walkman/temp/nature_article_urls.txt --limit 5
 
 # 使用本地 cookie 文件获取更完整正文
-python scripts/fetch_nature_article.py --url https://www.nature.com/articles/d41586-026-01903-z --cookie-file .claude/nature-news-walkman/cookie.txt
+python scripts/fetch_nature_article.py --url https://www.nature.com/articles/d41586-026-01903-z --cookie-file nature-news-walkman/temp/cookie.txt
 ```
 
 ### `scripts/news_read.py`
@@ -196,7 +191,7 @@ python scripts/nature_news_sound.py 2 --speed 1.25
 ```bash
 python scripts/fetch_nature_article.py \
   --url https://www.nature.com/articles/d41586-026-01903-z \
-  --cookie-file .claude/nature-news-walkman/cookie.txt
+  --cookie-file nature-news-walkman/temp/cookie.txt
 ```
 
 `--cookie-file` 指向的文件应来自**用户本人**在浏览器中的有效 Nature 登录会话（[nature.com](https://www.nature.com/)）。该文件通常可通过浏览器开发者工具或本地 cookie 导出工具生成，具体导出方式请参考对应浏览器或工具的官方说明。
@@ -214,9 +209,8 @@ python scripts/fetch_nature_article.py \
 
 运行过程中通常会生成以下内容：
 
-- `<workspace>/nature-news-walkman/tmp/`：RSS 与 URL 列表
-- `<workspace>/nature-news-walkman/data/`：抓取后的文章 JSON
-- `<workspace>/nature-news-walkman/audio/`：生成的 mp3 音频
+- `<your workspace>/nature-news-walkman/temp/`：RSS、URL 列表，以及抓取后的文章 JSON
+- `<your workspace>/nature-news-walkman/audio/`：生成的 mp3 音频
 
 ## 常见问题
 
@@ -244,7 +238,7 @@ python scripts/fetch_nature_article.py \
 
 通常在：
 
-- `<workspace>/nature-news-walkman/audio/`
+- `<your workspace>/nature-news-walkman/audio/`
 
 如果平台支持直接发文件，也可能直接在对话中收到生成的 mp3。
 
